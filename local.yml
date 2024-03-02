@@ -4,6 +4,16 @@
   become: true
 
   tasks:
-  - name: install htop
+  - name: install packages
     package:
+      name: nvidia-drivers
+      name: snapd
       name: htop
+      name: vlc
+      name: timeshift
+      name: ksystemlog
+      name: brave-browser
+      name: qbittorrent
+      name: teamviewer
+      name: zsh
+      name: flatpak
