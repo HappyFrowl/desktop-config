@@ -7,13 +7,35 @@
   - name: install packages
     package:
       name: nvidia-drivers
+      name: curl
       name: snapd
+      name: python3-psutils
       name: htop
       name: vlc
       name: timeshift
-      name: ksystemlog
+      name: Ksystemlog
       name: brave-browser
       name: qbittorrent
       name: teamviewer
       name: zsh
       name: flatpak
+
+  - name: copy wallpaper file
+    copy:
+      src: files/wallpaper.png
+      dst: /usr/shr/background.png
+      owner: root
+      group: root
+
+  - name: set wallpaper
+    become_user: filip
+    dconf:
+      key:
+      value:
+
+  - name: set wallpaper position
+    become_user: filip
+    dconf:
+      key:
+      value:
+      ke

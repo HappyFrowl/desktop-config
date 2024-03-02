@@ -1,0 +1,10 @@
+2024/01/02-13:37:45.285 1f8e5 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_make.powerapps.com_0.indexeddb.leveldb since it was missing.
+2024/01/02-13:37:45.287 1f8e5 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_make.powerapps.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/02-13:37:58.799 1f8f2 Level-0 table #5: started
+2024/01/02-13:37:58.800 1f8f2 Level-0 table #5: 17806 bytes OK
+2024/01/02-13:37:58.801 1f8f2 Delete type=0 #3
+2024/01/02-13:37:58.801 1f8f1 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/01/02-13:38:31.770 1f8e4 Level-0 table #7: started
+2024/01/02-13:38:31.771 1f8e4 Level-0 table #7: 18541 bytes OK
+2024/01/02-13:38:31.772 1f8e4 Delete type=0 #4
+2024/01/02-13:38:31.772 1f8e7 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)

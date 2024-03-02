@@ -1,0 +1,15 @@
+2024/02/16-19:59:21.711 75df Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_chat.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/16-19:59:21.711 75df Recovering log #6
+2024/02/16-19:59:21.711 75df Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_chat.reddit.com_0.indexeddb.leveldb/000006.log 
+2024/02/16-19:59:32.930 75e0 Level-0 table #11: started
+2024/02/16-19:59:32.931 75e0 Level-0 table #11: 17746 bytes OK
+2024/02/16-19:59:32.932 75e0 Delete type=0 #6
+2024/02/16-19:59:32.932 75e0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/02/16-19:59:32.932 75e0 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x06\x02\x04\x01\x01\x01\x00-' @ 667 : 1
+2024/02/16-19:59:32.932 75e0 Compacting 1@1 + 1@2 files
+2024/02/16-19:59:32.933 75e0 Generated table #12@1: 92 keys, 12666 bytes
+2024/02/16-19:59:32.933 75e0 Compacted 1@1 + 1@2 files => 12666 bytes
+2024/02/16-19:59:32.934 75e0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/02/16-19:59:32.934 75e0 Delete type=2 #11
+2024/02/16-19:59:32.934 75e0 Delete type=2 #8
+2024/02/16-19:59:32.934 75e0 Manual compaction at level-1 from '\x00\x02\x06\x02\x04\x01\x01\x01\x00-' @ 667 : 1 .. (end); will stop at (end)

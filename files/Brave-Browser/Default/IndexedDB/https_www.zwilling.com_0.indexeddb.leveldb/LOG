@@ -1,0 +1,6 @@
+2023/12/04-20:49:05.227 156df Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.zwilling.com_0.indexeddb.leveldb since it was missing.
+2023/12/04-20:49:05.229 156df Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.zwilling.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/12/04-20:49:07.242 156df Level-0 table #5: started
+2023/12/04-20:49:07.243 156df Level-0 table #5: 896 bytes OK
+2023/12/04-20:49:07.244 156df Delete type=0 #3
+2023/12/04-20:49:07.244 156df Manual compaction at level-0 from (begin) .. (end); will stop at (end)

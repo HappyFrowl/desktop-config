@@ -1,0 +1,17 @@
+2024/02/22-19:33:58.715 6fc6e Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.nu.nl_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/22-19:33:58.715 6fc6e Recovering log #48
+2024/02/22-19:33:58.715 6fc6e Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.nu.nl_0.indexeddb.leveldb/000048.log 
+2024/02/22-19:33:58.719 6fc74 Level-0 table #53: started
+2024/02/22-19:33:58.720 6fc74 Level-0 table #53: 619 bytes OK
+2024/02/22-19:33:58.721 6fc74 Delete type=0 #48
+2024/02/22-19:33:58.721 6fc74 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/22-19:34:06.415 6fc6e Level-0 table #55: started
+2024/02/22-19:34:06.416 6fc6e Level-0 table #55: 1118 bytes OK
+2024/02/22-19:34:06.417 6fc6e Delete type=0 #52
+2024/02/22-19:34:06.417 6fc6e Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\x05' @ 3567 : 1
+2024/02/22-19:34:06.417 6fc6e Compacting 1@0 + 1@1 files
+2024/02/22-19:34:06.418 6fc6e Generated table #56@0: 18 keys, 814 bytes
+2024/02/22-19:34:06.418 6fc6e Compacted 1@0 + 1@1 files => 814 bytes
+2024/02/22-19:34:06.419 6fc6e compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/22-19:34:06.419 6fc6e Delete type=2 #55
+2024/02/22-19:34:06.419 6fc6e Manual compaction at level-0 from '\x00\x08\x00\x00\x05' @ 3567 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)

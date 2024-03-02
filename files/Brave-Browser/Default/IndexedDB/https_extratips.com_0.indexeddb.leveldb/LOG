@@ -1,0 +1,6 @@
+2023/12/05-20:04:20.271 1ba9f Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_extratips.com_0.indexeddb.leveldb since it was missing.
+2023/12/05-20:04:20.273 1ba9f Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_extratips.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/12/05-20:04:34.329 1ba9f Level-0 table #5: started
+2023/12/05-20:04:34.330 1ba9f Level-0 table #5: 5215 bytes OK
+2023/12/05-20:04:34.331 1ba9f Delete type=0 #3
+2023/12/05-20:04:34.331 1ba9f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

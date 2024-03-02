@@ -1,0 +1,18 @@
+2023/11/20-17:02:51.739 2bcc Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_outlook.office365.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/20-17:02:51.739 2bcc Recovering log #206
+2023/11/20-17:02:51.739 2bcc Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_outlook.office365.com_0.indexeddb.leveldb/000206.log 
+2023/11/20-17:02:51.906 2bda Manual compaction at level-0 from '\x00A\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00B\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/11/20-17:02:51.908 2bd9 Level-0 table #212: started
+2023/11/20-17:02:51.908 2bd9 Level-0 table #212: 780 bytes OK
+2023/11/20-17:02:51.909 2bd9 Delete type=0 #206
+2023/11/20-17:02:51.910 2bd0 Manual compaction at level-0 from '\x00B\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00C\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/11/20-17:02:52.450 2bcd Level-0 table #214: started
+2023/11/20-17:02:52.451 2bcd Level-0 table #214: 556 bytes OK
+2023/11/20-17:02:52.452 2bcd Delete type=0 #211
+2023/11/20-17:02:52.452 2bcc Manual compaction at level-0 from '\x00C\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00D\x00\x00\x00' @ 0 : 0; will stop at '\x00C\x00\x00\x05' @ 2687 : 1
+2023/11/20-17:02:52.452 2bcc Compacting 1@0 + 1@1 files
+2023/11/20-17:02:52.453 2bcc Generated table #215@0: 16 keys, 613 bytes
+2023/11/20-17:02:52.453 2bcc Compacted 1@0 + 1@1 files => 613 bytes
+2023/11/20-17:02:52.454 2bcc compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/11/20-17:02:52.455 2bcc Delete type=2 #214
+2023/11/20-17:02:52.455 2bcc Manual compaction at level-0 from '\x00C\x00\x00\x05' @ 2687 : 1 .. '\x00D\x00\x00\x00' @ 0 : 0; will stop at (end)

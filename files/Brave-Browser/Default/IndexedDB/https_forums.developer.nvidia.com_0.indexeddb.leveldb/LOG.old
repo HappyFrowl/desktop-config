@@ -1,0 +1,15 @@
+2024/02/25-14:33:59.212 d137 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_forums.developer.nvidia.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/25-14:33:59.212 d137 Recovering log #4
+2024/02/25-14:33:59.212 d137 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_forums.developer.nvidia.com_0.indexeddb.leveldb/000004.log 
+2024/02/25-14:34:46.182 d138 Level-0 table #8: started
+2024/02/25-14:34:46.183 d138 Level-0 table #8: 9269 bytes OK
+2024/02/25-14:34:46.184 d138 Delete type=0 #4
+2024/02/25-14:34:46.185 d138 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/02/25-14:34:46.185 d138 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01 \x03\x000d\x92\x07\xdexB\x00\x01`\x00d\x00i\x00s\x00c\x00o\x00u\x00r\x00s\x00e\x00-\x002\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00f\x00o\x00r\x00u\x00m\x00s\x00.\x00d\x00e\x00v\x00e\x00l\x00o\x00p\x00e\x00r\x00.\x00n\x00v\x00i\x00d\x00i\x00a\x00.\x00c\x00o\x00m\x00/\x00t\x00/\x007\x009\x007\x003\x001\x00/\x002\x004\x000\x00.\x00j\x00s\x00o\x00n\x00?\x00t\x00r\x00a\x00c\x00k\x00_\x00v\x00i\x00s\x00i\x00t\x00=\x00t\x00r\x00u\x00e\x00&\x00f\x00o\x00r\x00c\x00e\x00L\x00o\x00a\x00d\x00=\x00t\x00r\x00u\x00e' @ 346 : 1
+2024/02/25-14:34:46.185 d138 Compacting 1@1 + 1@2 files
+2024/02/25-14:34:46.186 d138 Generated table #9@1: 61 keys, 5468 bytes
+2024/02/25-14:34:46.186 d138 Compacted 1@1 + 1@2 files => 5468 bytes
+2024/02/25-14:34:46.187 d138 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/02/25-14:34:46.187 d138 Delete type=2 #5
+2024/02/25-14:34:46.187 d138 Delete type=2 #8
+2024/02/25-14:34:46.187 d138 Manual compaction at level-1 from '\x00\x01\x01 \x03\x000d\x92\x07\xdexB\x00\x01`\x00d\x00i\x00s\x00c\x00o\x00u\x00r\x00s\x00e\x00-\x002\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00f\x00o\x00r\x00u\x00m\x00s\x00.\x00d\x00e\x00v\x00e\x00l\x00o\x00p\x00e\x00r\x00.\x00n\x00v\x00i\x00d\x00i\x00a\x00.\x00c\x00o\x00m\x00/\x00t\x00/\x007\x009\x007\x003\x001\x00/\x002\x004\x000\x00.\x00j\x00s\x00o\x00n\x00?\x00t\x00r\x00a\x00c\x00k\x00_\x00v\x00i\x00s\x00i\x00t\x00=\x00t\x00r\x00u\x00e\x00&\x00f\x00o\x00r\x00c\x00e\x00L\x00o\x00a\x00d\x00=\x00t\x00r\x00u\x00e' @ 346 : 1 .. (end); will stop at (end)

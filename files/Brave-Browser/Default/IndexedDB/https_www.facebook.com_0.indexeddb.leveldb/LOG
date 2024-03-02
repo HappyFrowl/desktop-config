@@ -1,0 +1,17 @@
+2024/02/26-22:01:06.105 18982 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/26-22:01:06.105 18982 Recovering log #11
+2024/02/26-22:01:06.110 18982 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/000011.log 
+2024/02/26-22:01:06.110 18982 Delete type=2 #12
+2024/02/26-22:01:06.110 18982 Delete type=2 #9
+2024/02/26-22:01:50.594 18983 Level-0 table #16: started
+2024/02/26-22:01:50.599 18983 Level-0 table #16: 431859 bytes OK
+2024/02/26-22:01:50.600 18983 Delete type=0 #11
+2024/02/26-22:01:50.600 18983 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/02/26-22:01:50.600 18983 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x07\x01\x03\x01\x17\x00s\x00t\x00o\x00r\x00a\x00g\x00e\x00_\x00q\x00u\x00o\x00t\x00a\x00_\x00c\x00h\x00e\x00c\x00k\x00_\x00k\x00e\x00y' @ 67166 : 1
+2024/02/26-22:01:50.600 18983 Compacting 1@1 + 1@2 files
+2024/02/26-22:01:50.605 18983 Generated table #17@1: 3072 keys, 184901 bytes
+2024/02/26-22:01:50.605 18983 Compacted 1@1 + 1@2 files => 184901 bytes
+2024/02/26-22:01:50.606 18983 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/02/26-22:01:50.606 18983 Delete type=2 #16
+2024/02/26-22:01:50.606 18983 Delete type=2 #13
+2024/02/26-22:01:50.606 18983 Manual compaction at level-1 from '\x00\x07\x01\x03\x01\x17\x00s\x00t\x00o\x00r\x00a\x00g\x00e\x00_\x00q\x00u\x00o\x00t\x00a\x00_\x00c\x00h\x00e\x00c\x00k\x00_\x00k\x00e\x00y' @ 67166 : 1 .. (end); will stop at (end)
