@@ -20,22 +20,9 @@
       name: zsh
       name: flatpak
 
-  - name: copy wallpaper file
+  - name: copy Brave browser files
     copy:
-      src: files/wallpaper.png
-      dst: /usr/shr/background.png
+      src: files/Brave-Browser
+      dst: ~/.config/Brave-Browser
       owner: root
       group: root
-
-  - name: set wallpaper
-    become_user: filip
-    dconf:
-      key:
-      value:
-
-  - name: set wallpaper position
-    become_user: filip
-    dconf:
-      key:
-      value:
-      ke
