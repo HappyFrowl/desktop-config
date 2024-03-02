@@ -1,0 +1,36 @@
+2024/02/19-16:01:19.113 615f5 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_outlook.office.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/19-16:01:19.114 615f5 Recovering log #1442
+2024/02/19-16:01:19.114 615f5 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_outlook.office.com_0.indexeddb.leveldb/001442.log 
+2024/02/19-16:01:19.114 615f5 Delete type=2 #1441
+2024/02/19-16:01:21.922 615f6 Level-0 table #1447: started
+2024/02/19-16:01:21.924 615f6 Level-0 table #1447: 11731 bytes OK
+2024/02/19-16:01:21.925 615f6 Delete type=0 #1442
+2024/02/19-16:01:21.925 615f6 Manual compaction at level-0 from ' \xaf\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' \xb0\x01\x00\x00\x00' @ 0 : 0; will stop at ' \xaf\x01\x00\x00\x05' @ 19007 : 1
+2024/02/19-16:01:21.925 615f6 Compacting 1@0 + 1@1 files
+2024/02/19-16:01:21.926 615f6 Generated table #1448@0: 48 keys, 7005 bytes
+2024/02/19-16:01:21.926 615f6 Compacted 1@0 + 1@1 files => 7005 bytes
+2024/02/19-16:01:21.927 615f6 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/19-16:01:21.927 615f6 Delete type=2 #1447
+2024/02/19-16:01:21.927 615f6 Manual compaction at level-0 from ' \xaf\x01\x00\x00\x05' @ 19007 : 1 .. ' \xb0\x01\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/19-16:01:22.427 61614 Level-0 table #1450: started
+2024/02/19-16:01:22.429 61614 Level-0 table #1450: 515 bytes OK
+2024/02/19-16:01:22.430 61614 Delete type=0 #1446
+2024/02/19-16:01:22.430 61614 Delete type=2 #1444
+2024/02/19-16:01:22.430 615f6 Manual compaction at level-0 from ' \xae\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' \xaf\x01\x00\x00\x00' @ 0 : 0; will stop at ' \xae\x01\x00\x00\x05' @ 19033 : 0
+2024/02/19-16:01:22.430 615f6 Compacting 1@0 + 1@1 files
+2024/02/19-16:01:22.431 615f6 Generated table #1451@0: 50 keys, 7010 bytes
+2024/02/19-16:01:22.431 615f6 Compacted 1@0 + 1@1 files => 7010 bytes
+2024/02/19-16:01:22.432 615f6 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/19-16:01:22.433 615f6 Delete type=2 #1450
+2024/02/19-16:01:22.433 615f6 Manual compaction at level-0 from ' \xae\x01\x00\x00\x05' @ 19033 : 0 .. ' \xaf\x01\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/19-16:01:22.433 615f6 Level-0 table #1453: started
+2024/02/19-16:01:22.434 615f6 Level-0 table #1453: 559 bytes OK
+2024/02/19-16:01:22.436 615f6 Delete type=2 #1448
+2024/02/19-16:01:22.436 615f6 Delete type=0 #1449
+2024/02/19-16:01:22.436 615f6 Manual compaction at level-0 from ' \xb0\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' \xb1\x01\x00\x00\x00' @ 0 : 0; will stop at ' \xb0\x01\x00\x00\x05' @ 19037 : 1
+2024/02/19-16:01:22.436 615f6 Compacting 1@0 + 1@1 files
+2024/02/19-16:01:22.437 615f6 Generated table #1454@0: 54 keys, 7049 bytes
+2024/02/19-16:01:22.437 615f6 Compacted 1@0 + 1@1 files => 7049 bytes
+2024/02/19-16:01:22.438 615f6 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/19-16:01:22.439 615f6 Delete type=2 #1453
+2024/02/19-16:01:22.439 615f6 Manual compaction at level-0 from ' \xb0\x01\x00\x00\x05' @ 19037 : 1 .. ' \xb1\x01\x00\x00\x00' @ 0 : 0; will stop at (end)

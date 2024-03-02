@@ -1,0 +1,6 @@
+2024/01/10-22:02:34.428 15365 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.dailymail.co.uk_0.indexeddb.leveldb since it was missing.
+2024/01/10-22:02:34.431 15365 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.dailymail.co.uk_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/10-22:03:06.447 15368 Level-0 table #5: started
+2024/01/10-22:03:06.449 15368 Level-0 table #5: 1551 bytes OK
+2024/01/10-22:03:06.450 15368 Delete type=0 #3
+2024/01/10-22:03:06.450 15368 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

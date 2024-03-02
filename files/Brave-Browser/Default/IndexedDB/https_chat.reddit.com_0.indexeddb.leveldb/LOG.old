@@ -1,0 +1,18 @@
+2024/02/03-12:50:45.347 59e8 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_chat.reddit.com_0.indexeddb.leveldb since it was missing.
+2024/02/03-12:50:45.349 59e8 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_chat.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/03-12:50:45.791 59e9 Level-0 table #5: started
+2024/02/03-12:50:45.792 59e9 Level-0 table #5: 3945 bytes OK
+2024/02/03-12:50:45.793 59e9 Delete type=0 #3
+2024/02/03-12:50:45.793 59e9 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/03-12:51:11.476 59e9 Level-0 table #7: started
+2024/02/03-12:51:11.479 59e9 Level-0 table #7: 11040 bytes OK
+2024/02/03-12:51:11.482 59e9 Delete type=0 #4
+2024/02/03-12:51:11.482 59e9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/02/03-12:51:11.483 59e9 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x06\x02\x04\x01\x01\x01\x00-' @ 573 : 1
+2024/02/03-12:51:11.483 59e9 Compacting 1@1 + 1@2 files
+2024/02/03-12:51:11.485 59e9 Generated table #8@1: 91 keys, 7767 bytes
+2024/02/03-12:51:11.485 59e9 Compacted 1@1 + 1@2 files => 7767 bytes
+2024/02/03-12:51:11.486 59e9 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/02/03-12:51:11.487 59e9 Delete type=2 #5
+2024/02/03-12:51:11.487 59e9 Delete type=2 #7
+2024/02/03-12:51:11.487 59e9 Manual compaction at level-1 from '\x00\x02\x06\x02\x04\x01\x01\x01\x00-' @ 573 : 1 .. (end); will stop at (end)

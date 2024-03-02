@@ -1,0 +1,6 @@
+2023/11/11-17:17:24.218 919 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_jsoneditoronline.org_0.indexeddb.leveldb since it was missing.
+2023/11/11-17:17:24.226 919 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_jsoneditoronline.org_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/11-17:18:46.810 91a Level-0 table #5: started
+2023/11/11-17:18:46.813 91a Level-0 table #5: 5501 bytes OK
+2023/11/11-17:18:46.814 91a Delete type=0 #3
+2023/11/11-17:18:46.815 91a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

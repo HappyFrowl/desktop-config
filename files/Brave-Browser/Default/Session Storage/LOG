@@ -1,0 +1,26 @@
+2024/03/01-21:45:06.842 6 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
+2024/03/01-21:45:06.843 6 Recovering log #3576
+2024/03/01-21:45:06.843 6 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/Session Storage/003576.log 
+2024/03/01-21:48:19.330 6 Level-0 table #3580: started
+2024/03/01-21:48:19.338 6 Level-0 table #3580: 16413 bytes OK
+2024/03/01-21:48:19.339 6 Delete type=0 #3576
+2024/03/01-22:41:30.407 6 Level-0 table #3582: started
+2024/03/01-22:41:30.411 6 Level-0 table #3582: 17329 bytes OK
+2024/03/01-22:41:30.412 6 Delete type=0 #3579
+2024/03/02-03:43:46.015 6 Level-0 table #3584: started
+2024/03/02-03:43:46.023 6 Level-0 table #3584: 17093 bytes OK
+2024/03/02-03:43:46.024 6 Delete type=0 #3581
+2024/03/02-03:43:46.025 6 Compacting 4@0 + 2@1 files
+2024/03/02-03:43:46.065 6 Generated table #3585@0: 89575 keys, 2129586 bytes
+2024/03/02-03:43:46.080 6 Generated table #3586@0: 32918 keys, 1128888 bytes
+2024/03/02-03:43:46.080 6 Compacted 4@0 + 2@1 files => 3258474 bytes
+2024/03/02-03:43:46.081 6 compacted to: files[ 0 2 1 0 0 0 0 ]
+2024/03/02-03:43:46.082 6 Delete type=2 #3573
+2024/03/02-03:43:46.082 6 Delete type=2 #3584
+2024/03/02-03:43:46.082 6 Delete type=2 #3574
+2024/03/02-03:43:46.082 6 Delete type=2 #3580
+2024/03/02-03:43:46.082 6 Delete type=2 #3582
+2024/03/02-03:43:46.082 6 Delete type=2 #3577
+2024/03/02-13:59:34.331 6 Level-0 table #3588: started
+2024/03/02-13:59:34.339 6 Level-0 table #3588: 20601 bytes OK
+2024/03/02-13:59:34.340 6 Delete type=0 #3583

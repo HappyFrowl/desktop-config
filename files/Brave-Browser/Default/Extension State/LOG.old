@@ -1,0 +1,24 @@
+2024/02/29-21:09:39.550 5caf Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/Extension State/MANIFEST-000001
+2024/02/29-21:09:39.551 5caf Recovering log #894
+2024/02/29-21:09:39.555 5caf Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/Extension State/000894.log 
+2024/02/29-21:10:20.318 5cb0 Level-0 table #898: started
+2024/02/29-21:10:20.329 5cb0 Level-0 table #898: 4079938 bytes OK
+2024/02/29-21:10:20.331 5cb0 Delete type=0 #894
+2024/02/29-21:40:39.571 5caf Level-0 table #900: started
+2024/02/29-21:40:39.582 5caf Level-0 table #900: 3990494 bytes OK
+2024/02/29-21:40:39.584 5caf Delete type=0 #897
+2024/02/29-21:40:39.584 5caf Compacting 4@0 + 1@1 files
+2024/02/29-21:40:39.598 5caf Generated table #901@0: 5 keys, 16084 bytes
+2024/02/29-21:40:39.598 5caf Compacted 4@0 + 1@1 files => 16084 bytes
+2024/02/29-21:40:39.599 5caf compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/29-21:40:39.599 5caf Delete type=2 #898
+2024/02/29-21:40:39.599 5caf Delete type=2 #891
+2024/02/29-21:40:39.599 5caf Delete type=2 #900
+2024/02/29-21:40:39.599 5caf Delete type=2 #893
+2024/02/29-21:40:39.599 5caf Delete type=2 #895
+2024/02/29-23:14:36.736 5cb0 Level-0 table #903: started
+2024/02/29-23:14:36.745 5cb0 Level-0 table #903: 3903030 bytes OK
+2024/02/29-23:14:36.747 5cb0 Delete type=0 #899
+2024/02/29-23:43:39.009 5cb0 Level-0 table #905: started
+2024/02/29-23:43:39.020 5cb0 Level-0 table #905: 3968639 bytes OK
+2024/02/29-23:43:39.022 5cb0 Delete type=0 #902

@@ -1,0 +1,15 @@
+2024/02/03-22:44:06.653 102e8 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/03-22:44:06.653 102e8 Recovering log #15
+2024/02/03-22:44:06.653 102e8 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.fandom.com_0.indexeddb.leveldb/000015.log 
+2024/02/03-22:44:36.200 102e8 Level-0 table #20: started
+2024/02/03-22:44:36.201 102e8 Level-0 table #20: 1530 bytes OK
+2024/02/03-22:44:36.202 102e8 Delete type=0 #15
+2024/02/03-22:44:36.202 102e8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/02/03-22:44:36.202 102e8 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x03\x02\x03\x00\x00\x00\x00\x00\x00>@' @ 851 : 1
+2024/02/03-22:44:36.202 102e8 Compacting 1@1 + 1@2 files
+2024/02/03-22:44:36.204 102e8 Generated table #21@1: 155 keys, 8743 bytes
+2024/02/03-22:44:36.204 102e8 Compacted 1@1 + 1@2 files => 8743 bytes
+2024/02/03-22:44:36.205 102e8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/02/03-22:44:36.205 102e8 Delete type=2 #20
+2024/02/03-22:44:36.205 102e8 Delete type=2 #17
+2024/02/03-22:44:36.205 102e8 Manual compaction at level-1 from '\x00\x01\x03\x02\x03\x00\x00\x00\x00\x00\x00>@' @ 851 : 1 .. (end); will stop at (end)

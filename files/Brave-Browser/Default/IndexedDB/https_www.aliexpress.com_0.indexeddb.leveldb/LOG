@@ -1,0 +1,7 @@
+2024/02/14-23:37:30.861 15a3 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.aliexpress.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/14-23:37:30.861 15a3 Recovering log #3
+2024/02/14-23:37:30.861 15a3 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.aliexpress.com_0.indexeddb.leveldb/000003.log 
+2024/02/14-23:38:02.870 15a4 Level-0 table #5: started
+2024/02/14-23:38:02.871 15a4 Level-0 table #5: 848 bytes OK
+2024/02/14-23:38:02.872 15a4 Delete type=0 #3
+2024/02/14-23:38:02.873 15a4 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

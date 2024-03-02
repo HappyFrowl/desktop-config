@@ -1,0 +1,6 @@
+2024/01/13-17:25:07.026 1e706 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.apotheek.nl_0.indexeddb.leveldb since it was missing.
+2024/01/13-17:25:07.034 1e706 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.apotheek.nl_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/13-17:26:28.169 1e709 Level-0 table #5: started
+2024/01/13-17:26:28.170 1e709 Level-0 table #5: 2567 bytes OK
+2024/01/13-17:26:28.171 1e709 Delete type=0 #3
+2024/01/13-17:26:28.171 1e709 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

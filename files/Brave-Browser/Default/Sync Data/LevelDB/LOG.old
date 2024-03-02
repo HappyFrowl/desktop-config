@@ -1,0 +1,6 @@
+2024/02/29-21:09:38.812 5cb0 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
+2024/02/29-21:09:38.813 5cb0 Recovering log #4345
+2024/02/29-21:09:38.814 5cb0 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/004345.log 
+2024/02/29-23:30:28.267 5caf Level-0 table #4349: started
+2024/02/29-23:30:28.269 5caf Level-0 table #4349: 89339 bytes OK
+2024/02/29-23:30:28.271 5caf Delete type=0 #4345
