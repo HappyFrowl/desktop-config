@@ -4,6 +4,13 @@
   become: true
 
   tasks:
+  - name: copy sources.list
+    copy:
+      src: files/sources.list
+      dest: /etc/apt/sources.list
+      owner: root
+      group: root
+
   - name: install packages
     package:
       name: nvidia-drivers
@@ -23,6 +30,6 @@
   - name: copy Brave browser files
     copy:
       src: files/Brave-Browser
-      dst: ~/.config/Brave-Browser
+      dest: ~/.config/Brave-Browser
       owner: root
       group: root
