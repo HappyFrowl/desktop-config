@@ -14,11 +14,11 @@
   - name: install htop
     package:
       name: htop
+      name: curl
 
   - name: install packages
     package:
       name: nvidia-drivers
-      name: curl
       name: snapd
       name: python3-psutils
       name: vlc
