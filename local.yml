@@ -15,14 +15,14 @@
     package:
       name: htop
       name: curl
-      name: qbittorrent
       name: python3-psutil
+      name: vlc
+      name: qbittorrent
 
   - name: install packages
     package:
       name: nvidia-drivers
       name: snapd
-      name: vlc
       name: timeshift
       name: Ksystemlog
       name: brave-browser
