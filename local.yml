@@ -11,21 +11,21 @@
       owner: root
       group: root
 
-  - name: install htop
+  - name: install packages
     package:
       name: htop
       name: curl
+      name: qbittorrent
+      name: python3-psutils
 
   - name: install packages
     package:
       name: nvidia-drivers
       name: snapd
-      name: python3-psutils
       name: vlc
       name: timeshift
       name: Ksystemlog
       name: brave-browser
-      name: qbittorrent
       name: teamviewer
       name: zsh
       name: flatpak
