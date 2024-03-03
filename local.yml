@@ -16,7 +16,7 @@
       name: htop
       name: curl
       name: qbittorrent
-      name: python3-psutils
+      name: python3-psutil
 
   - name: install packages
     package:
