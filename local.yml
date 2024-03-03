@@ -13,22 +13,22 @@
 
   - name: install packages
     package:
-      name: htop
-      name: curl
-      name: python3-psutil
-      name: vlc
-      name: qbittorrent
-
-  - name: install packages
-    package:
-      name: nvidia-drivers
-      name: snapd
-      name: timeshift
-      name: Ksystemlog
-      name: brave-browser
-      name: teamviewer
-      name: zsh
-      name: flatpak
+      name: "{{ item }}"
+      state: present
+    loop:
+      - htop
+      - curl
+      - python3-psutil
+      - vlc
+      - qbittorrent
+      - nvidia-drivers
+      - snapd
+      - timeshift
+      - Ksystemlog
+      - brave-browser
+      - teamviewer
+      - zsh
+      - flatpak
 
   - name: copy .bashrc file
     copy:
