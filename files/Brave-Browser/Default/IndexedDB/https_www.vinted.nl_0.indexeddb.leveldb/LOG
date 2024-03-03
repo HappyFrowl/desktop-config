@@ -1,6 +1,0 @@
-2023/12/30-14:08:38.966 9ad Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.vinted.nl_0.indexeddb.leveldb since it was missing.
-2023/12/30-14:08:38.968 9ad Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.vinted.nl_0.indexeddb.leveldb/MANIFEST-000001
-2023/12/30-14:10:59.056 9ae Level-0 table #5: started
-2023/12/30-14:10:59.058 9ae Level-0 table #5: 5894 bytes OK
-2023/12/30-14:10:59.061 9ae Delete type=0 #3
-2023/12/30-14:10:59.061 9ae Manual compaction at level-0 from (begin) .. (end); will stop at (end)
