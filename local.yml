@@ -19,7 +19,7 @@
     become: true
     file:
       path: /etc/apt/sources.list.d/brave-browser-release.list
-      state: directory
+      state: file
 
   - name: Add brave browser repository
     become: true
