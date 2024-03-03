@@ -18,7 +18,7 @@
   - name: Create directory for repository file
     become: true
     file:
-      path: /etc/apt/sources.list.d
+      path: /etc/apt/sources.list.d/brave-browser-release.list
       state: directory
 
   - name: Add brave browser repository
