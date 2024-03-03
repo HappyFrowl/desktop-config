@@ -31,5 +31,13 @@
     copy:
       src: files/Brave-Browser
       dest: ~/.config/Brave-Browser
-      owner: root
-      group: root
+      owner: filip
+      group: filip
+
+  - name: copy .bashrc file
+    copy:
+      src: files/bashrc
+      dest: ~/.bashrc
+      owner: filip
+      group: filip
+
