@@ -15,6 +15,12 @@
     become: true
     shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 
+  - name: Create directory for repository file
+    become: true
+    file:
+      path: /etc/apt/sources.list.d
+      state: directory
+
   - name: Add brave browser repository
     become: true
     lineinfile:
