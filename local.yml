@@ -11,10 +11,26 @@
       owner: root
       group: root
 
+  - name: Add brave browser repository key
+    become: true
+    shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+  - name: Add brave browser repository
+    become: true
+    lineinfile:
+      path: /etc/apt/sources.list.d/brave-browser-release.list
+      line: "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"
+
   - name: Update apt cache
     become: true
     apt:
       update_cache: yes
+
+  - name: Install brave browser
+    become: true
+    apt:
+      name: brave-browser
+      state: present
 
   - name: install packages
     package:
@@ -29,8 +45,7 @@
       - nvidia-driver
       - snapd
       - timeshift
-      - Ksystemlog
-      - brave-browser
+      - ksystemlog
       - teamviewer
       - zsh
       - flatpak
