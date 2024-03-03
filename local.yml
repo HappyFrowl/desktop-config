@@ -27,13 +27,6 @@
       name: zsh
       name: flatpak
 
-  - name: copy Brave browser files
-    copy:
-      src: files/Brave-Browser
-      dest: ~/.config/Brave-Browser
-      owner: filip
-      group: filip
-
   - name: copy .bashrc file
     copy:
       src: files/bashrc
