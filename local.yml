@@ -23,7 +23,7 @@
 
   - name: copy brave browser repo
     copy:
-      src: brave-browser-release.list
+      src: files/brave-browser-release.list
       dest: /etc/apt/sources.list/brave-browser-release.list
       owner: filip
       group: filip
