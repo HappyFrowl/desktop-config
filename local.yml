@@ -21,11 +21,12 @@
       path: /etc/apt/sources.list.d/brave-browser-release.list
       state: file
 
-  - name: Add brave browser repository
-    become: true
-    lineinfile:
-      path: /etc/apt/sources.list.d/brave-browser-release.list
-      line: "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"
+  - name: copy brave browser repo
+    copy:
+      src: brave-browser-release.list
+      dest: /etc/apt/sources.list/brave-browser-release.list
+      owner: filip
+      group: filip
 
   - name: Update apt cache
     become: true
@@ -36,6 +37,12 @@
     become: true
     apt:
       name: brave-browser
+      state: present
+
+  - name: Install spotify
+    become: true
+    snap:
+      name: spotify
       state: present
 
   - name: install packages
