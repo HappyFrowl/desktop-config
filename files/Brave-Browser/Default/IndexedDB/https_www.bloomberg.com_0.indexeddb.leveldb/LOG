@@ -1,6 +1,0 @@
-2023/11/26-19:18:19.337 3e18 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.bloomberg.com_0.indexeddb.leveldb since it was missing.
-2023/11/26-19:18:19.339 3e18 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.bloomberg.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/11/26-19:18:37.389 3e19 Level-0 table #5: started
-2023/11/26-19:18:37.391 3e19 Level-0 table #5: 843 bytes OK
-2023/11/26-19:18:37.392 3e19 Delete type=0 #3
-2023/11/26-19:18:37.392 3e19 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
