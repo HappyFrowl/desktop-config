@@ -58,6 +58,22 @@
       - name: code
         classic: true
 
+  - name: find all snap package desktop file
+    become: true
+    find:
+      paths: /var/lib/snapd/desktop/applications/
+      patterns: "*.desktop"
+    register: snap_files
+
+  - name: copy snap package desktop files
+    become: true
+    fetch:
+      src: "{{ item.path }}"
+      dest: /usr/share/applications
+      owner: root
+      group: root
+    loop: "{{ snap_files.files }}"
+
   - name: copy snap packages to /usr/share
     copy:
      src: /var/lib/snapd/desktop/application/*.desktop
@@ -83,3 +99,4 @@
       - teamviewer
       - zsh
       - flatpak
+      - putty
