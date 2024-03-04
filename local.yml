@@ -120,21 +120,21 @@
     copy:
       src: files/plasma-org.kde.plasma.desktop-appletsrc
       dest: /home/filip/.config/plasma-org.kde.plasma.desktop-appletsrc
-      owner: root
-      group: root
+      owner: filip
+      group: filip
 
   - name: configure plasma
     become: true
     copy:
       src: files/kdeglobals
       dest: /home/filip/.config/kdeglobals
-      owner: root
-      group: root
+      owner: filip
+      group: filip
 
   - name: configure plasma
     become: true
     copy:
       src: files/xsettingsd.conf
       dest: /home/filip/.config/xsettingsd/xsettingsd.conf
-      owner: root
-      group: root
+      owner: filip
+      group: filip
