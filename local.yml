@@ -34,11 +34,10 @@
       state: present
 
   - name: install spotify
+    become: true
     community.general.plugins.module_utils.cmd_runner.CmdRunner:
-    snap:
       name: spotify
       state: present
-    become: true
 
   - name: install packages
     package:
