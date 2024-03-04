@@ -71,14 +71,14 @@
       patterns: "*.desktop"
     register: snap_files
 
-  - name: copy snap package desktop files
-    become: true
-    fetch:
-      src: "{{ item.path }}"
-      dest: /usr/share/applications
-      owner: root
-      group: root
-    loop: "{{ snap_files.files }}"
+#  - name: copy snap package desktop files
+#    become: true
+#    fetch:
+#      src: "{{ item.path }}"
+#      dest: /usr/share/applications
+#      owner: root
+#      group: root
+#    loop: "{{ snap_files.files }}"
 
   - name: install packages
     package:
@@ -160,6 +160,7 @@
       group: root
 
   - name: add kwinrc - night colour
+    become: true
     copy:
       src: files/kwinrc
       dest: /home/filip/.config/kwinrc
@@ -167,7 +168,7 @@
       group: filip
 
   - name: add konsolerc
-    become_user: true
+    become_user: filip
     copy:
       src: files/konsolerc
       dest: /home/filip/.config/konsolerc
