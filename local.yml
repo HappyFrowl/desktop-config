@@ -35,7 +35,7 @@
 
   - name: Install spotify
     community.general.plugins.module_utils.cmd_runner.CmdRunner
-      become: true
+    become: true
     snap:
       name: spotify
       state: present
