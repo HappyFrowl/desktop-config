@@ -160,7 +160,6 @@
       group: root
 
   - name: add kwinrc - night colour
-    become_user: true
     copy:
       src: files/kwinrc
       dest: /home/filip/.config/kwinrc
