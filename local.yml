@@ -34,7 +34,8 @@
       state: present
 
   - name: Install spotify
-    become: true
+    community.general.plugins.module_utils.cmd_runner.CmdRunner
+      become: true
     snap:
       name: spotify
       state: present
@@ -63,4 +64,15 @@
       dest: ~/.bashrc
       owner: filip
       group: filip
+
+  - name: Install snap packages
+    community.general.snap:
+      name:
+        - whatsdesk
+        - powershell
+
+  - name: install visual studio code
+    community.general.snap:
+      name: code
+      classic: true
 
