@@ -4,6 +4,13 @@
   become: true
 
   tasks:
+  - name: copy .bashrc file
+    copy:
+      src: files/bashrc
+      dest: /home/filip/.bashrc
+      owner: filip
+      group: filip
+
   - name: copy sources.list
     copy:
       src: files/sources.list
@@ -75,11 +82,3 @@
       - teamviewer
       - zsh
       - flatpak
-
-  - name: copy .bashrc file
-    copy:
-      src: files/bashrc
-      dest: /home/filip/.bashrc
-      owner: filip
-      group: filip
-
