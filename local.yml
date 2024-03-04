@@ -60,11 +60,11 @@
 
   - name: copy snap packages to /usr/share
     copy:
-     remote_src: /var/lib/snapd/desktop/application/*.desktop
+     src: /var/lib/snapd/desktop/application/*.desktop
      dest: /usr/share/applications/
      owner: root
      group: root
-    remote_src: true
+     remote_src: true
 
   - name: install packages
     package:
