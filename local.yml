@@ -11,6 +11,13 @@
       owner: filip
       group: filip
 
+  - name: copy bashrc keybindings
+    copy:
+      src: files/inputrc
+      dest: etc/inputrc
+      owner: root
+      group: root 
+
   - name: copy sources.list
     copy:
       src: files/sources.list
