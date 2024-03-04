@@ -39,22 +39,24 @@
       name: spotify
       state: present
 
-  - name: install whatsdesk
+  - name: install
     community.general.snap:
-      name: whatsdesk
+      name: "{{ item.name }}"
+      classic: "{{ item.classic| default(false) }}"
       state: present
+    loop:
+      - name: whatsdesk
+      - name: powershell
+        classic: true
+      - name: code
+        classic: true
 
-  - name: install snap packages
-    community.general.snap:
-      name: powershell
-      classic: true
-      state: present
-
-  - name: install visual studio code
-    community.general.snap:
-      name: code
-      classic: true
-      state: present
+  - name: copy
+    copy:
+     src: /var/lib/snapd/desktop/application/*.desktop
+     dest: /usr/share/applications/
+     owner: root
+     group: root
 
   - name: install packages
     package:
@@ -77,7 +79,7 @@
   - name: copy .bashrc file
     copy:
       src: files/bashrc
-      dest: ~/.bashrc
+      dest: /home/filip/.bashrc
       owner: filip
       group: filip
 
