@@ -100,7 +100,5 @@
   - name: install teamviewer
     become: true
     shell:
-      name: "{{ item }}"
-    loop:
-      - apt -y install ./teamviewer_amd64.deb
+      name: apt -y install home/filip/Downloads/teamviewer_amd64.deb
 
