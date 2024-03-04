@@ -88,7 +88,15 @@
       - snapd
       - timeshift
       - ksystemlog
-      - teamviewer
       - zsh
       - flatpak
       - putty
+
+  - name: install teamviewer
+    become: true
+    shell:
+      name: "{{ item }}"
+    loop:
+      - wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+      - apt -y install ./teamviewer_amd64.deb
+
