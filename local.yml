@@ -39,16 +39,22 @@
       name: spotify
       state: present
 
-  - name: Install snap packages
+  - name: install whatsdesk
     community.general.snap:
-      name:
-        - whatsdesk
-        - powershell
+      name: whatsdesk
+      state: present
+
+  - name: install snap packages
+    community.general.snap:
+      name: powershell
+      classic: true
+      state: present
 
   - name: install visual studio code
     community.general.snap:
       name: code
       classic: true
+      state: present
 
   - name: install packages
     package:
