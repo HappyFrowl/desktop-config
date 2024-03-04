@@ -4,6 +4,24 @@
   become: true
 
   tasks:
+
+  - name: install packages
+    package:
+      name: "{{ item }}"
+      state: present
+    loop:
+      - htop
+      - curl
+      - python3-psutil
+      - qbittorrent
+      - nvidia-driver
+      - snapd
+      - timeshift
+      - ksystemlog
+      - zsh
+      - flatpak
+      - putty
+
   - name: copy .bashrc file
     copy:
       src: files/bashrc
@@ -75,23 +93,6 @@
 #      group: root
 #    loop: "{{ snap_files.files }}"
 
-  - name: install packages
-    package:
-      name: "{{ item }}"
-      state: present
-    loop:
-      - htop
-      - curl
-      - python3-psutil
-      - qbittorrent
-      - nvidia-driver
-      - snapd
-      - timeshift
-      - ksystemlog
-      - zsh
-      - flatpak
-      - putty
-
 #  - name: install vlc
 #    become_user: filip
 #    flatpak:
@@ -109,7 +110,6 @@
     become_user: filip
     community.general.flatpak:
       name: org.mozilla.firefox
-      method: user
       state: present
 
   - name: download teamviewer
