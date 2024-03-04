@@ -58,9 +58,9 @@
       - name: code
         classic: true
 
-  - name: copy
+  - name: copy snap packages to /usr/share
     copy:
-     src: /var/lib/snapd/desktop/application/*.desktop
+     remote_src: /var/lib/snapd/desktop/application/*.desktop
      dest: /usr/share/applications/
      owner: root
      group: root
