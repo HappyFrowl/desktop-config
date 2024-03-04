@@ -92,11 +92,15 @@
       - flatpak
       - putty
 
+  - name: download teamviewer
+    ansible.builtin.get_url:
+      url: https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+      dest: /home/filip/Downloads
+
   - name: install teamviewer
     become: true
     shell:
       name: "{{ item }}"
     loop:
-      - wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
       - apt -y install ./teamviewer_amd64.deb
 
