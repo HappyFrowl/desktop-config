@@ -101,15 +101,17 @@
 
   - name: remove firefox esr
     become: true
-    package:
+    ansible.builtin.package:
       name: firefox-esr
+      method: system
       state: absent
 
   - name: install firefox from flatpak
     become_user: filip
     flatpak:
       name: org.mozilla.firefox
-    state: present
+      method: user
+      state: present
 
   - name: download teamviewer
     ansible.builtin.get_url:
