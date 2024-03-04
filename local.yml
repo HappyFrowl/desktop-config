@@ -101,7 +101,7 @@
 
   - name: remove firefox esr
     become: true
-    ansible.builtin.package:
+    package:
       name: firefox-esr
       state: absent
 
