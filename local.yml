@@ -22,23 +22,23 @@
       owner: filip
       group: filip
 
-  - name: Update apt cache
+  - name: update apt cache
     become: true
     apt:
       update_cache: yes
 
-  - name: Install brave browser
+  - name: install brave browser
     become: true
     apt:
       name: brave-browser
       state: present
 
-  - name: Install spotify
+  - name: install spotify
     community.general.plugins.module_utils.cmd_runner.CmdRunner:
-    become: true
     snap:
       name: spotify
       state: present
+    become: true
 
   - name: install packages
     package:
