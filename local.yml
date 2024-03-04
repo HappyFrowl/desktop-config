@@ -138,3 +138,35 @@
       dest: /home/filip/.config/xsettingsd/xsettingsd.conf
       owner: filip
       group: filip
+
+  - name: add update script
+    copy:
+      src: files/update.sh
+      dest: /home/filip/bin/update.sh
+      owner: filip
+      group: filip
+
+  - name: add nano config
+    become: true
+    copy:
+      src: files/nanorc
+      dest: /etc/nanorc
+      owner: root
+      group: root
+
+  - name: add kwinrc - night colour
+    become_user: true
+    copy:
+      src: files/kwinrc
+      dest: /home/filip/.config/kwinrc
+      owner: filip
+      group: filip
+
+  - name: add konsolerc
+    become_user: true
+    copy:
+      src: files/konsolerc
+      dest: /home/filip/.config/konsolerc
+      owner: filip
+      group: filip
+
