@@ -99,6 +99,7 @@
 
   - name: install teamviewer
     become: true
-    shell:
-      name: apt -y install home/filip/Downloads/teamviewer_amd64.deb
+    delegate_to: teamviewer
+    apt:
+      deb: home/filip/Downloads/teamviewer_amd64.deb
 
