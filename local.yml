@@ -175,9 +175,9 @@
       owner: filip
       group: filip
 
-  - name: copy mimelist
+  - name: copy mimeapps.list
     copy:
-      src: files/mimelist
-      dest: /home/filip/.config/mimelist
+      src: files/mimeapps.list
+      dest: /home/filip/.config/mimeapps.list
       owner: filip
       group: filip
