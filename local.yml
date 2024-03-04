@@ -135,6 +135,6 @@
     become: true
     copy:
       src: files/xsettingsd.conf
-      dest: /home/filip/.config/xsettingsd/xsettings.conf
+      dest: /home/filip/.config/xsettingsd/xsettingsd.conf
       owner: root
       group: root
