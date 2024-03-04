@@ -64,6 +64,7 @@
      dest: /usr/share/applications/
      owner: root
      group: root
+    remote_src: true
 
   - name: install packages
     package:
