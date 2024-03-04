@@ -46,19 +46,14 @@
       name: brave-browser
       state: present
 
-  - name: install spotify
-    become: true
-    community.general.snap:
-      name: spotify
-      state: present
-
-  - name: install
+  - name: install snap packages
     community.general.snap:
       name: "{{ item.name }}"
       classic: "{{ item.classic| default(false) }}"
       state: present
     loop:
       - name: whatsdesk
+      - name: spotify
       - name: powershell
         classic: true
       - name: code
@@ -103,6 +98,17 @@
 #      name: org.videolan.VLC
 #      method: user
 #      state: present
+
+  - name: remove firefox esr
+    package:
+      name: firefox-esr
+    state: absent
+
+  - name: install firefox from flatpak
+    become_user: filip
+    flatpak:
+      name: org.mozilla.firefox
+    state: present
 
   - name: download teamviewer
     ansible.builtin.get_url:
