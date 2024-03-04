@@ -97,12 +97,12 @@
       - flatpak
       - putty
 
-  - name: install vlc
-    become_user: filip
-    flatpak:
-      name: org.videolan.VLC
-      method: user
-      state: present
+#  - name: install vlc
+#    become_user: filip
+#    flatpak:
+#      name: org.videolan.VLC
+#      method: user
+#      state: present
 
   - name: download teamviewer
     ansible.builtin.get_url:
