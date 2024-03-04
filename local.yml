@@ -103,7 +103,7 @@
     become: true
     ansible.builtin.package:
       name: firefox-esr
-    state: absent
+      state: absent
 
   - name: install firefox from flatpak
     become_user: filip
