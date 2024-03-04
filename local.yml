@@ -108,7 +108,7 @@
   - name: install firefox from flatpak
     become_user: filip
     flatpak:
-      name: org.mozilla.firefox
+      name: flathub org.mozilla.firefox
       method: user
       state: present
 
