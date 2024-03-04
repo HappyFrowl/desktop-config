@@ -175,3 +175,9 @@
       owner: filip
       group: filip
 
+  - name: copy mimelist
+    copy:
+      src: files/mimelist
+      dest: /home/filip/.config/mimelist
+      owner: filip
+      group: filip
