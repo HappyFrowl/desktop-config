@@ -139,6 +139,11 @@
       owner: filip
       group: filip
 
+  - name: create directory /home/filip/bin
+    ansible.builtin.file:
+      path: /home/filip/bin
+      state: directory
+
   - name: add update script
     copy:
       src: files/update.sh
