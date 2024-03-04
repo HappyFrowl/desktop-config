@@ -74,14 +74,6 @@
       group: root
     loop: "{{ snap_files.files }}"
 
-  - name: copy snap packages to /usr/share
-    copy:
-     src: /var/lib/snapd/desktop/application/*.desktop
-     dest: /usr/share/applications/
-     owner: root
-     group: root
-     remote_src: true
-
   - name: install packages
     package:
       name: "{{ item }}"
