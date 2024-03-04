@@ -14,9 +14,9 @@
   - name: copy bashrc keybindings
     copy:
       src: files/inputrc
-      dest: etc/inputrc
+      dest: /etc/inputrc
       owner: root
-      group: root 
+      group: root
 
   - name: copy sources.list
     copy:
@@ -108,5 +108,5 @@
     become: true
     delegate_to: teamviewer
     apt:
-      deb: home/filip/Downloads/teamviewer_15.51.5_amd64.deb
+      deb: /home/filip/Downloads/teamviewer_15.51.5_amd64.deb
 
