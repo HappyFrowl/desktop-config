@@ -20,7 +20,6 @@
       - ksystemlog
       - zsh
       - flatpak
-      - putty
 
   - name: copy .bashrc file
     copy:
@@ -100,17 +99,17 @@
 #      method: user
 #      state: present
 
-  - name: remove kalendarac # Cause of Kalendar Reminder process
+  - name: remove pacages kalendarac # Cause of Kalendar Reminder process
     become: true
     ansible.builtin.package:
-      name: kalendarac
+      loop: {{ item  }}
       state: absent
-
-  - name: remove libreoffice # Remove LibreOffice before installing flatpak
-    become: true
-    ansible.builtin.package:
-      name: libreoffice
-      state: absent
+    loop:
+      - kalendarac
+      - kmail
+      - korganizer
+      - knotes
+      - libreoffice
 
   - name: install libreoffice from flatpak
     become: true
