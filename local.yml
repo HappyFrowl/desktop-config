@@ -12,17 +12,6 @@
       owner: root
       group: root
 
-  - name: Add brave browser repository key
-    become: true
-    shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-
-  - name: copy brave repo file
-    ansible.builtin.copy:
-      src: files/brave-browser-release.list
-      dest: /etc/apt/sources.list.d/brave-browser-release.list
-      owner: filip
-      group: filip
-
   - name: update system
     ansible.builtin.apt:
       update_cache: yes
@@ -40,6 +29,21 @@
       - zsh
       - flatpak
       - nvidia-driver
+
+  - name: Add brave browser repository key
+    become: true
+    shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+  - name: copy brave repo file
+    ansible.builtin.copy:
+      src: files/brave-browser-release.list
+      dest: /etc/apt/sources.list.d/brave-browser-release.list
+      owner: filip
+      group: filip
+
+  - name: update system
+    ansible.builtin.apt:
+      update_cache: yes
 
   - name: copy .bashrc file
     ansible.builtin.copy:
