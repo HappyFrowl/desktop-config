@@ -14,7 +14,6 @@
       - curl
       - python3-psutil
       - qbittorrent
-      - nvidia-driver
       - snapd
       - timeshift
       - ksystemlog
