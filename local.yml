@@ -42,7 +42,7 @@
       - nvidia-driver
 
   - name: copy .bashrc file
-   ansible.builtin.copy:
+    ansible.builtin.copy:
       src: files/bashrc
       dest: /home/filip/.bashrc
       owner: filip
