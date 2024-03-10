@@ -5,37 +5,8 @@
 
   tasks:
 
-  - name: install packages
-    package:
-      name: "{{ item }}"
-      state: present
-    loop:
-      - htop
-      - curl
-      - python3-psutil
-      - qbittorrent
-      - snapd
-      - timeshift
-      - ksystemlog
-      - zsh
-      - flatpak
-
-  - name: copy .bashrc file
-    copy:
-      src: files/bashrc
-      dest: /home/filip/.bashrc
-      owner: filip
-      group: filip
-
-  - name: copy bashrc keybindings
-    copy:
-      src: files/inputrc
-      dest: /etc/inputrc
-      owner: root
-      group: root
-
   - name: copy sources.list
-    copy:
+    ansible.builtin.copy:
       src: files/sources.list
       dest: /etc/apt/sources.list
       owner: root
@@ -46,19 +17,51 @@
     shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 
   - name: copy brave repo file
-    copy:
+    ansible.builtin.copy:
       src: files/brave-browser-release.list
       dest: /etc/apt/sources.list.d/brave-browser-release.list
       owner: filip
       group: filip
 
+  - name: update system
+    ansible.builtin.apt:
+      update_cache: yes
+
+  - name: install packages
+    ansible.builtin.apt:
+      pkg:
+      - htop
+      - curl
+      - python3-psutil
+      - qbittorrent
+      - snapd
+      - timeshift
+      - ksystemlog
+      - zsh
+      - flatpak
+      - nvidia-driver
+
+  - name: copy .bashrc file
+   ansible.builtin.copy:
+      src: files/bashrc
+      dest: /home/filip/.bashrc
+      owner: filip
+      group: filip
+
+  - name: copy bashrc keybindings
+    ansible.builtin.copy:
+      src: files/inputrc
+      dest: /etc/inputrc
+      owner: root
+      group: root
+
   - name: update apt cache
-    become: true
-    apt: update_cache=yes
+    ansible.builtin.apt:
+      update_cache: yes
 
   - name: install brave browser
     become: true
-    apt:
+    ansible.builtin.apt:
       name: brave-browser
       state: present
 
@@ -112,6 +115,11 @@
       - kdepim-themeeditors
       - libreoffice
 
+  - name: Remove dependencies that are no longer required and purge their configuration files
+    ansible.builtin.apt:
+      autoremove: yes
+      purge: true
+
   - name: install libreoffice from flatpak
     become: true
     ansible.builtin.flatpak:
@@ -151,7 +159,7 @@
 
   - name: configure plasma
     become: true
-    copy:
+    ansible.builtin.copy:
       src: files/kdeglobals
       dest: /home/filip/.config/kdeglobals
       owner: filip
@@ -159,7 +167,7 @@
 
   - name: configure plasma
     become: true
-    copy:
+    ansible.builtin.copy:
       src: files/xsettingsd.conf
       dest: /home/filip/.config/xsettingsd/xsettingsd.conf
       owner: filip
@@ -171,7 +179,7 @@
       state: directory
 
   - name: add update script
-    copy:
+    ansible.builtin.copy:
       src: files/update.sh
       dest: /home/filip/bin/update.sh
       owner: filip
@@ -179,7 +187,7 @@
 
   - name: add nano config
     become: true
-    copy:
+    ansible.builtin.copy:
       src: files/nanorc
       dest: /etc/nanorc
       owner: root
@@ -187,7 +195,7 @@
 
   - name: add kwinrc - night colour
     become: true
-    copy:
+    ansible.builtin.copy:
       src: files/kwinrc
       dest: /home/filip/.config/kwinrc
       owner: filip
@@ -195,14 +203,14 @@
 
   - name: add konsolerc
     become_user: filip
-    copy:
+    ansible.builtin.copy:
       src: files/konsolerc
       dest: /home/filip/.config/konsolerc
       owner: filip
       group: filip
 
   - name: copy mimeapps.list
-    copy:
+    ansible.builtin.copy:
       src: files/mimeapps.list
       dest: /home/filip/.config/mimeapps.list
       owner: filip
