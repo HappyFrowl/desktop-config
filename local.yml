@@ -107,8 +107,10 @@
     loop:
       - kalendarac
       - kmail
+      - kmailtransport-akonadi
       - korganizer
       - knotes
+      - kdepim-themeeditors
       - libreoffice
 
   - name: install libreoffice from flatpak
