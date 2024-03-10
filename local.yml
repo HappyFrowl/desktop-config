@@ -93,14 +93,32 @@
 #      group: root
 #    loop: "{{ snap_files.files }}"
 
-#  - name: install vlc
+#  - name: install vlc from flatpak
 #    become_user: filip
 #    flatpak:
 #      name: org.videolan.VLC
 #      method: user
 #      state: present
 
-  - name: remove firefox esr
+  - name: remove kalendarac # Cause of Kalendar Reminder process
+    become: true
+    ansible.builtin.package:
+      name: kalendarac
+      state: absent
+
+  - name: remove libreoffice # Remove LibreOffice before installing flatpak
+    become: true
+    ansible.builtin.package:
+      name: libreoffice
+      state: absent
+
+  - name: install libreoffice from flatpak
+    become: true
+    ansible.builtin.flatpak:
+      name: libreoffice
+      state: present
+
+  - name: remove firefox esr # Remove ESR before installing flatpak version
     become: true
     ansible.builtin.package:
       name: firefox-esr
@@ -147,7 +165,7 @@
       owner: filip
       group: filip
 
-  - name: create directory /home/filip/bin
+  - name: create directory /home/filip/bin # Will be dest path for scripts
     ansible.builtin.file:
       path: /home/filip/bin
       state: directory
