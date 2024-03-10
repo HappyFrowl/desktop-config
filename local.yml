@@ -102,7 +102,7 @@
   - name: remove pacages kalendarac # Cause of Kalendar Reminder process
     become: true
     ansible.builtin.package:
-      loop: {{ item  }}
+      loop: "{{ item  }}"
       state: absent
     loop:
       - kalendarac
