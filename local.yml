@@ -5,18 +5,18 @@
 
   tasks:
 
-  - name: copy sources.list
+  - name: Copy sources.list
     ansible.builtin.copy:
-      src: .dotfiles/sources.list
+      src: etc/apt/sources.list
       dest: /etc/apt/sources.list
       owner: root
       group: root
 
-  - name: update system
+  - name: Update system
     ansible.builtin.apt:
       update_cache: yes
 
-  - name: install packages
+  - name: Install packages
     ansible.builtin.apt:
       pkg:
       - htop
@@ -29,43 +29,45 @@
       - zsh
       - flatpak
       - nvidia-driver
+      - webcamoid
 
-  - name: Add brave browser repository key
+
+  - name: Add Brave Browser repo key
     become: true
     shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 
-  - name: copy brave source list file
+  - name: Copy Brave Browser GPG file
     shell: echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" > /etc/apt/sources.list.d/brave-browser-release.list   
 
-  - name: update system
+  - name: Update system
     ansible.builtin.apt:
       update_cache: yes
 
-  - name: copy .bashrc file
+  - name: Copy .bashrc config file
     ansible.builtin.copy:
       src: .dotfiles/bashrc
       dest: /home/filip/.bashrc
       owner: filip
       group: filip
 
-  - name: copy bashrc keybindings
+  - name: Copy bashrc keybindings file
     ansible.builtin.copy:
       src: .dotfiles/inputrc
       dest: /etc/inputrc
       owner: root
       group: root
 
-  - name: update apt cache
+  - name: Update apt cache
     ansible.builtin.apt:
       update_cache: yes
 
-  - name: install brave browser
+  - name: Install Brave Browser
     become: true
     ansible.builtin.apt:
       name: brave-browser
       state: present
 
-  - name: install snap packages
+  - name: Install snap packages
     community.general.snap:
       name: "{{ item.name }}"
       classic: "{{ item.classic| default(false) }}"
@@ -78,23 +80,23 @@
       - name: code
         classic: true
 
-  - name: find all snap package desktop file
+  - name: Fetch snap package desktop files
     become: true
     find:
       paths: /var/lib/snapd/desktop/applications/
       patterns: "*.desktop"
     register: snap_files
 
-#  - name: copy snap package desktop files
-#    become: true
-#    fetch:
-#      src: "{{ item.path }}"
-#      dest: /usr/share/applications
-#      owner: root
-#      group: root
-#    loop: "{{ snap_files.files }}"
+  - name: Copy snap packages to show in app launcher
+    become: true
+    fetch:
+      src: "{{ item.path }}"
+      dest: /usr/share/applications
+      owner: root
+      group: root
+    loop: "{{ snap_files.files }}"
 
-  - name: remove packages kalendarac # Cause of Kalendar Reminder process
+  - name: Remove packages
     ansible.builtin.package:
       name:
         - kalendarac
@@ -124,7 +126,7 @@
   - name: Add flathub remote if not exists
     ansible.builtin.command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-  - name: install libreoffice & firefox from flatpak
+  - name: Install FlatPak packages
     become: true
     community.general.flatpak:
       name:
@@ -132,18 +134,18 @@
         - org.mozilla.firefox
         - org.videolan.VLC
 
-  - name: download teamviewer
+  - name: Download TeamViewer
     ansible.builtin.get_url:
       url: https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
       dest: /home/filip/Downloads
 
-  - name: install teamviewer
+  - name: Install TeamViewer
     become: true
     delegate_to: teamviewer
     ansible.builtin.apt:
       deb: /home/filip/Downloads/teamviewer_15.51.5_amd64.deb
 
-  - name: configure plasma
+  - name: Configure plasma 1
     become: true
     ansible.builtin.copy:
       src: .dotfiles/plasma-org.kde.plasma.desktop-appletsrc
@@ -151,7 +153,7 @@
       owner: filip
       group: filip
 
-  - name: configure plasma
+  - name: configure Plasma 2
     become: true
     ansible.builtin.copy:
       src: .dotfiles/kdeglobals
@@ -159,35 +161,15 @@
       owner: filip
       group: filip
 
-  - name: configure plasma
+  - name: Configure Plasma 3
     become: true
     ansible.builtin.copy:
-      src: .dotfiles/xsettingsd.conf
+      src: .dotfiles/xsettingsd/xsettingsd.conf
       dest: /home/filip/.config/xsettingsd/xsettingsd.conf
       owner: filip
       group: filip
 
-  - name: create directory /home/filip/bin # Will be dest path for scripts
-    ansible.builtin.file:
-      path: /home/filip/bin
-      state: directory
-
-  - name: add update script
-    ansible.builtin.copy:
-      src: .dotfiles/update.sh
-      dest: /home/filip/bin/update.sh
-      owner: filip
-      group: filip
-
-  - name: add nano config
-    become: true
-    ansible.builtin.copy:
-      src: .dotfiles/nanorc
-      dest: /etc/nanorc
-      owner: root
-      group: root
-
-  - name: add kwinrc - night colour
+  - name: Copy kwinrc - night colour
     become: true
     ansible.builtin.copy:
       src: .dotfiles/kwinrc
@@ -195,7 +177,7 @@
       owner: filip
       group: filip
 
-  - name: add konsolerc
+  - name: Copy konsolerc
     become_user: filip
     ansible.builtin.copy:
       src: .dotfiles/konsolerc
@@ -203,23 +185,43 @@
       owner: filip
       group: filip
 
-  - name: copy mimeapps.list
+  - name: Copy mimeapps.list
     ansible.builtin.copy:
       src: .dotfiles/mimeapps.list
       dest: /home/filip/.config/mimeapps.list
       owner: filip
       group: filip
 
-  - name: copy lock screen duration settings
+  - name: Copy lock screen duration settings
     ansible.builtin.copy:
       src: .dotfiles/kscreenlockerrc
       dest: /home/filip/.config/kscreenlockerrc
       owner: filip
       group: filip
 
-  - name: copy bluetooth config #enable auto enable
+  - name: Create script directory /home/filip/bin
+    ansible.builtin.file:
+      path: /home/filip/bin
+      state: directory
+
+  - name: Copy update script
     ansible.builtin.copy:
-      src: .dotfiles/main.config
-      dest: /etc/bluetooth/main.config
+      src: .dotfiles/update.sh
+      dest: /home/filip/bin/update.sh
+      owner: filip
+      group: filip
+
+  - name: Copy nano config
+    become: true
+    ansible.builtin.copy:
+      src: .dotfiles/nanorc
+      dest: /etc/nanorc
+      owner: root
+      group: root
+
+  - name: Copy spectacle config
+    ansible.builtin.copy:
+      src: etc/nanorc
+      dest: /etc/nanorc
       owner: root
       group: root
