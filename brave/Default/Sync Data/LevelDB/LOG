@@ -1,0 +1,39 @@
+2024/03/01-21:45:06.833 8ed9 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
+2024/03/01-21:45:06.834 8ed9 Recovering log #4348
+2024/03/01-21:45:06.835 8ed9 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/004348.log 
+2024/03/01-22:25:56.464 8ed7 Level-0 table #4352: started
+2024/03/01-22:25:56.468 8ed7 Level-0 table #4352: 91586 bytes OK
+2024/03/01-22:25:56.470 8ed7 Delete type=0 #4348
+2024/03/01-23:34:23.958 8ed7 Level-0 table #4354: started
+2024/03/01-23:34:23.966 8ed7 Level-0 table #4354: 84991 bytes OK
+2024/03/01-23:34:23.967 8ed7 Delete type=0 #4351
+2024/03/01-23:34:23.967 8ed7 Compacting 4@0 + 1@1 files
+2024/03/01-23:34:23.971 8ed7 Generated table #4355@0: 1052 keys, 85600 bytes
+2024/03/01-23:34:23.971 8ed7 Compacted 4@0 + 1@1 files => 85600 bytes
+2024/03/01-23:34:23.972 8ed7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/03/01-23:34:23.972 8ed7 Delete type=2 #4352
+2024/03/01-23:34:23.972 8ed7 Delete type=2 #4349
+2024/03/01-23:34:23.972 8ed7 Delete type=2 #4354
+2024/03/01-23:34:23.972 8ed7 Delete type=2 #4344
+2024/03/01-23:34:23.972 8ed7 Delete type=2 #4346
+2024/03/02-03:50:27.249 8ed6 Level-0 table #4357: started
+2024/03/02-03:50:27.252 8ed6 Level-0 table #4357: 85740 bytes OK
+2024/03/02-03:50:27.253 8ed6 Delete type=0 #4353
+2024/03/02-04:45:30.063 8ed9 Level-0 table #4359: started
+2024/03/02-04:45:30.071 8ed9 Level-0 table #4359: 81539 bytes OK
+2024/03/02-04:45:30.073 8ed9 Delete type=0 #4356
+2024/03/02-13:23:41.923 8ed9 Level-0 table #4361: started
+2024/03/02-13:23:41.929 8ed9 Level-0 table #4361: 92897 bytes OK
+2024/03/02-13:23:41.930 8ed9 Delete type=0 #4358
+2024/03/02-14:57:59.629 8ed7 Level-0 table #4363: started
+2024/03/02-14:57:59.638 8ed7 Level-0 table #4363: 83834 bytes OK
+2024/03/02-14:57:59.639 8ed7 Delete type=0 #4360
+2024/03/02-14:57:59.640 8ed7 Compacting 4@0 + 1@1 files
+2024/03/02-14:57:59.644 8ed7 Generated table #4364@0: 1054 keys, 89542 bytes
+2024/03/02-14:57:59.644 8ed7 Compacted 4@0 + 1@1 files => 89542 bytes
+2024/03/02-14:57:59.645 8ed7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/03/02-14:57:59.645 8ed7 Delete type=2 #4357
+2024/03/02-14:57:59.645 8ed7 Delete type=2 #4363
+2024/03/02-14:57:59.645 8ed7 Delete type=2 #4361
+2024/03/02-14:57:59.645 8ed7 Delete type=2 #4359
+2024/03/02-14:57:59.645 8ed7 Delete type=2 #4355

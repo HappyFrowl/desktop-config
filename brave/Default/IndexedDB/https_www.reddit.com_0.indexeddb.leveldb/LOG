@@ -1,0 +1,6 @@
+2023/11/28-22:58:37.001 5e8f Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb since it was missing.
+2023/11/28-22:58:37.009 5e8f Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/28-23:00:22.341 5e90 Level-0 table #5: started
+2023/11/28-23:00:22.343 5e90 Level-0 table #5: 1654 bytes OK
+2023/11/28-23:00:22.344 5e90 Delete type=0 #3
+2023/11/28-23:00:22.345 5e90 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

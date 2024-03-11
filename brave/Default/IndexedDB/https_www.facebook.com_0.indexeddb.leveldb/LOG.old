@@ -1,0 +1,10 @@
+2024/02/13-23:04:37.104 157d Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/13-23:04:37.104 157d Recovering log #7
+2024/02/13-23:04:37.104 157d Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/000007.log 
+2024/02/13-23:10:08.612 157e Level-0 table #12: started
+2024/02/13-23:10:08.644 157e Level-0 table #12: 1486257 bytes OK
+2024/02/13-23:10:08.645 157e Delete type=0 #7
+2024/02/13-23:10:34.602 157e Compacting 1@1 + 1@2 files
+2024/02/13-23:10:34.620 157e Generated table #13@1: 3250 keys, 197072 bytes
+2024/02/13-23:10:34.620 157e Compacted 1@1 + 1@2 files => 197072 bytes
+2024/02/13-23:10:34.621 157e compacted to: files[ 0 0 1 0 0 0 0 ]

@@ -1,0 +1,7 @@
+2024/02/27-21:38:23.744 1b57 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_discuss.zerotier.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/27-21:38:23.744 1b57 Recovering log #3
+2024/02/27-21:38:23.745 1b57 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_discuss.zerotier.com_0.indexeddb.leveldb/000003.log 
+2024/02/27-21:41:07.752 1b58 Level-0 table #5: started
+2024/02/27-21:41:07.758 1b58 Level-0 table #5: 158442 bytes OK
+2024/02/27-21:41:07.760 1b58 Delete type=0 #3
+2024/02/27-21:41:07.761 1b58 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

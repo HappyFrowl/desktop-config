@@ -1,0 +1,764 @@
+{
+   "AbortError": {
+      "message": "Giriş isteği, tarayıcı tarafından sonlandırıldı. Lütfen tekrar deneyin."
+   },
+   "AccountSettingsText": {
+      "message": "Hesap Ayarları"
+   },
+   "AddSmartLocation": {
+      "message": "Akıllı konum ekle"
+   },
+   "AddToBypassRules": {
+      "message": "ATLAMA KURALLARINA EKLE"
+   },
+   "AdobeFlashTooltip": {
+      "message": "%{browser} tarayıcısının Adobe Flash'ı çalıştırmasına engel olun. Adobe Flash ile gerçek IP adresi açığa çıkarılabilir. Bunu kapatmamanızı öneririz."
+   },
+   "AllowExtensionNotifications": {
+      "message": "Masaüstü bildirimlere izin ver"
+   },
+   "AllowExtensionNotificationsTooltip": {
+      "message": "Önemli bir şey olduğunda uzantının bir masaüstü bildirim oluşturmasına izin verin. Devre dışı bırakılması önerilmez."
+   },
+   "AlwaysActive": {
+      "message": "Ayarlar daima etkin"
+   },
+   "AlwaysActiveTooltip": {
+      "message": "Vekil sunucu bağlı olsun ya da olmasın, ayarların daima etkin kalmasını sağlayın"
+   },
+   "AuthFailMessage": {
+      "message": "Private Internet Access web sitesinde parolanızı yakın zamanda değiştirdiyseniz, uzantı ile yeniden kimlik doğrulayarak giriş yapmak bu hatayı düzeltebilir. \u003Cbr />\u003Cbr />Yardım ve destek almak için, \u003Ca href=\"https://privateinternetaccess.com/helpdesk\">destek ekibimizle\u003C/a> iletişime geçin."
+   },
+   "AuthFailMessageSupportEnd": {
+      "message": "destek ekibimiz"
+   },
+   "AuthFailMessageSupportLead": {
+      "message": "Yardım ve destek için başvuracağınız yer,"
+   },
+   "AuthFailPageTitle": {
+      "message": "Kimlik doğrulama hatası | Private Internet Access"
+   },
+   "AuthFailTitle": {
+      "message": "Kimlik doğrulama hatası"
+   },
+   "Auto": {
+      "message": "Otomatik"
+   },
+   "BLOCKCAMERA": {
+      "message": "KAMERA ERİŞİMİNİ ENGELLE"
+   },
+   "BLOCKMICROPHONE": {
+      "message": "MİKROFON ERİŞİMİNİ ENGELLE"
+   },
+   "BlockAdobeFlash": {
+      "message": "Adobe Flash'ı engelleyin"
+   },
+   "BlockAutofill": {
+      "message": "Otomatik doldurmayı kapat"
+   },
+   "BlockAutofillAddress": {
+      "message": "Otomatik adres bilgisini kapat"
+   },
+   "BlockAutofillAddressTooltip": {
+      "message": "%{browser} tarayıcısının adres bilgisini ve diğer bilgileri otomatik doldurma işlevini devre dışı bırakın. Gizli form alanlarıyla kişisel verilerin sızmasına neden olabilir."
+   },
+   "BlockAutofillCreditCard": {
+      "message": "Otomatik kredi kartı bilgisini kapat"
+   },
+   "BlockAutofillCreditCardTooltip": {
+      "message": "%{browser} tarayıcısının kredi kartı bilgilerini otomatik doldurma işlevini devre dışı bırakın. Gizli form alanlarıyla kişisel verilerin sızmasına neden olabilir."
+   },
+   "BlockAutofillTooltip": {
+      "message": "%{browser} tarayıcısının formları otomatik doldurma işlevini devre dışı bırakın. Gizli form alanlarıyla kişisel verilerin sızmasına neden olabilir."
+   },
+   "BlockCameraAccess": {
+      "message": "Kameraya erişimi engelleyin"
+   },
+   "BlockCameraAccessTooltip": {
+      "message": "Web sitelerinin bilgisayarınızın kamerasına erişmesine engel olun."
+   },
+   "BlockFBCLID": {
+      "message": "FBCLID parametrelerini kaldır"
+   },
+   "BlockFBCLIDTooltip": {
+      "message": "Facebook'tan dışarı yönlendiren linklerdeki Facebook FBCLID parametrelerini kaldırın. FBCLID parametreleri, bir web sitesine yaptığınız ziyaretin bilgilerini takip etmek için kullanılır"
+   },
+   "BlockHTTPReferer": {
+      "message": "Web sitesi önericisini kapat"
+   },
+   "BlockHTTPRefererTooltip": {
+      "message": "Bir bağlantı takip edildiğinde %{browser} tarayıcısının mevcut web sayfasının adresini başka bir web sayfasına göndermesini devre dışı bırakın."
+   },
+   "BlockHyperlinkAuditing": {
+      "message": "Hiperlink denetimini devre dışı bırak"
+   },
+   "BlockHyperlinkAuditingTooltip": {
+      "message": "Hiperlink denetimini devre dışı bırak, bir bağlantıya tıkladığınızda izleyicilerin ve analitik hizmetlerin uyarılması için tasarlanan yeni bir HTML özelliğidir."
+   },
+   "BlockLocationAccess": {
+      "message": "Konuma erişimi engelleyin"
+   },
+   "BlockLocationAccessTooltip": {
+      "message": "İnternet sitelerinin fiziksel konumunuz hakkındaki bilgilere erişmesine engel olun."
+   },
+   "BlockMicrophoneAccess": {
+      "message": "Mikrofona erişimi engelleyin"
+   },
+   "BlockMicrophoneAccessTooltip": {
+      "message": "Web sitelerinin bilgisayarınızın mikrofonuna erişmesine engel olun."
+   },
+   "BlockNetworkPrediction": {
+      "message": "Ağ tahminini kapat"
+   },
+   "BlockNetworkPredictionTooltip": {
+      "message": "%{browser} tarayıcısının DNS sorgulamalarını önceden çözümleyen ve ziyaret ettiğiniz bir sayfada bulunan içerikteki web sayfalarını önceden alan ağ tahmin hizmetini kullanmasını devre dışı bırakın."
+   },
+   "BlockSafeBrowsing": {
+      "message": "Güvenli Taramayı Kapat"
+   },
+   "BlockSafeBrowsingTooltip": {
+      "message": "%{browser} tarayıcısının doğrudan günlük tutmayla ilgili gizlilik hususları içeren bir ağa bağlanmasına engel olun. PIA Mace™, bu hizmetin kapatılmasındaki riski düşürür."
+   },
+   "BlockThirdpartycookies": {
+      "message": "Üçüncü kısım çerezlerini kapat"
+   },
+   "BlockThirdpartycookiesTooltip": {
+      "message": "%{browser} tarayıcısının üçüncü kısım web sitelerinden çerez kabul etmesini devre dışı bırakın. Üçüncü kısım çerezleri, bir üçüncü kısım web sitesi veya bir web hizmeti tarafından sizin bir web sitesine yapmış olduğunuz ziyaretin izlenmesi için kullanılabilir."
+   },
+   "BlockUTM": {
+      "message": "UTM parametrelerini kaldır"
+   },
+   "BlockUTMTooltip": {
+      "message": "Tıkladığınız URL adreslerinden Urchin Tracking Model(UTM) parametrelerini kaldırın. UTM parametreleri bir web sitesini ziyaretinizle ilgili bilgileri izlemek için kullanılır."
+   },
+   "BrowserMessage": {
+      "message": "Tarayıcı Uzantısı"
+   },
+   "BuyAccount": {
+      "message": "Hesap Satın Al"
+   },
+   "BypassInstructions": {
+      "message": "bir web sitesinin tüm alt alanlarını atlamak için."
+   },
+   "BypassInstructionsBold": {
+      "message": "* ön ek gerekli;"
+   },
+   "BypassWarningBold": {
+      "message": "doğrudan bağlantı kullanır ve Private Internet Access™ tarafından korunmaz."
+   },
+   "BypassWarningLead": {
+      "message": "Atlama Listesi'nde sıralanan web sitesi istekleri"
+   },
+   "CalculatingLatency": {
+      "message": "Gecikme Hesaplanıyor"
+   },
+   "CannotUsePIAMessage": {
+      "message": "Başka bir uzantı tarayıcınızın vekil sunucu ayarlarını kontrol ettiği için Private Internet Access kullanılamıyor."
+   },
+   "ChangeExtensionSettings": {
+      "message": "Uzantı Ayarları"
+   },
+   "ChangeExtraFeaturesSettings": {
+      "message": "Ek Özellikler"
+   },
+   "ChangelogTitle": {
+      "message": "Değişim Günlüğü"
+   },
+   "ChooseAutomatically": {
+      "message": "Otomatik Seç"
+   },
+   "ChooseTheme": {
+      "message": "Temanızı seçin"
+   },
+   "CloseText": {
+      "message": "Kapat"
+   },
+   "Connected": {
+      "message": "bağlandı"
+   },
+   "Connecting": {
+      "message": "bağlanıyor"
+   },
+   "ConnectionFailMessage": {
+      "message": "İnternet bağlantınız kesilmiş, bağlantınız geçici olarak kesintiye uğramış ya da bağlanmaya çalıştığınız Private Internet Access sunucusunda bağlantı problemleri yaşanıyor olabilir."
+   },
+   "ConnectionFailPageTitle": {
+      "message": "Bağlantı hatası | Private Internet Access"
+   },
+   "ConnectionFailTitle": {
+      "message": "Bağlantı hatası"
+   },
+   "CopiedToClipboard": {
+      "message": "Hata ayıklama günlüğü kopyalandı"
+   },
+   "CopyToClipboard": {
+      "message": "Hata Ayıklama Günlüğünü Kopyala"
+   },
+   "CurrentRegionText": {
+      "message": "Mevcut Bölge"
+   },
+   "DEBUGLOGGING": {
+      "message": "HATA AYIKLAMA GÜNLÜĞÜ"
+   },
+   "DarkTheme": {
+      "message": "Koyu Tema"
+   },
+   "DarkThemeTooltip": {
+      "message": "Düşük ışık koşullarında kullanmak üzere uzantı için daha koyu bir temayı etkinleştirin"
+   },
+   "DebugLog": {
+      "message": "Hata Ayıklama Günlüğü"
+   },
+   "DebugLogIsEmpty": {
+      "message": "Hata ayıklama günlüğü boş."
+   },
+   "DebugMode": {
+      "message": "Hata ayıklama modu"
+   },
+   "DebugModeTooltip": {
+      "message": "Mesajları hata ayıklama günlüğüne yazın. Hata ayıklama günlüğünü açmak önce 'ctrl' tuşuna ve ardından 'd' tuşuna basın."
+   },
+   "DefaultDisplay": {
+      "message": "VARSAYILAN EKRAN"
+   },
+   "DeleteDebugLog": {
+      "message": "Günlük Kaydını Temizle"
+   },
+   "Disconnecting": {
+      "message": "bağlantı kesiliyor"
+   },
+   "EnableSetings": {
+      "message": "Ek Özellikleri Etkinleştirin"
+   },
+   "ExportLabel": {
+      "message": "Dışa Aktar"
+   },
+   "Extension": {
+      "message": "Uzantı"
+   },
+   "ExtensionUpdated": {
+      "message": "Uzantı güncellendi"
+   },
+   "FPPROTECTION": {
+      "message": "PARMAK İZİ KORUMASI"
+   },
+   "FingerprintProtection": {
+      "message": "Parmak izi koruması"
+   },
+   "FingerprintProtectionAfterword": {
+      "message": "Bu ayar, uzantıda oturum açtıktan sonra \"Uzantı Ayarları\" panelinden de değiştirilebilir."
+   },
+   "FingerprintProtectionDisable": {
+      "message": "Kapat"
+   },
+   "FingerprintProtectionDisclaimer": {
+      "message": "Bu ayar, ekstra gizlilik ve koruma sağlayabilir ancak bazı web sitelerini bozabilir ve tarayıcının beklenenden farklı davranmasına neden olabilir. Değişikliklerin tam listesini buradan bulabilirsiniz:"
+   },
+   "FingerprintProtectionEnable": {
+      "message": "Aç"
+   },
+   "FingerprintProtectionHeader": {
+      "message": "Parmak İzi Koruması Ayarı"
+   },
+   "FingerprintProtectionInstructions": {
+      "message": "Bu özellik tavsiye edilmektedir ama bazı kullanıcılar onu uygunsuz bulabilir. Lütfen Parmak İzi Korumasını ya açın ya da kapatın:"
+   },
+   "FingerprintProtectionTooltip": {
+      "message": "Bilgisayarınız hakkında özel olmayan bilgiler sağlayarak ve belirli tarayıcı API'lerine erişilmesini engelleyerek tarayıcı parmak izi çıkarılmasına karşı korunun."
+   },
+   "FirstSlideInstallThanks": {
+      "message": "Teşekkürler! Şunu yüklediniz:"
+   },
+   "ForgotPassword": {
+      "message": "Şifremi Unuttum"
+   },
+   "GatheringRegions": {
+      "message": "Bölgeler Alınıyor"
+   },
+   "HTTPREFERRER": {
+      "message": "HTTP ÖNERİCİSİNİ KAPAT"
+   },
+   "HttpsUpgrade": {
+      "message": "Web sitelerini HTTPS ile ziyaret edin"
+   },
+   "HttpsUpgradeTooltip": {
+      "message": "Şifreli bir bağlantı (HTTP) kullanarak, desteklenen web sitelerini ya da linkleri, siz tarayıcınızdan ayrılmadan önce daha güvenli olan HTTPS bağlantısına dönüştürür. Bu, HTTPS Everywhere ve EFF sayesinde gerçekleştiriliyor."
+   },
+   "ImportExportHeader": {
+      "message": "Kuralları İçe/Dışa Aktar"
+   },
+   "ImportFileMessage": {
+      "message": "Lütfen dışarı aktarılmış olan bir Atlama Kuralları dosyası seçin (örn. bypass-rules.json)"
+   },
+   "ImportLabel": {
+      "message": "İçe Aktar"
+   },
+   "InvalidImportFileStructure": {
+      "message": "Dosya okunamıyor, lütfen geçerli bir dosya seçin"
+   },
+   "IpProxy": {
+      "message": "VPN IP"
+   },
+   "IpReal": {
+      "message": "IP"
+   },
+   "JoinURL": {
+      "message": "https://tur.privateinternetaccess.com/pages/buy-vpn/"
+   },
+   "JustInTimeDisclaimer": {
+      "message": "PIA ile yaşadığınız deneyimi değerlendirin"
+   },
+   "LIGHTTHEME": {
+      "message": "AÇIK TEMA"
+   },
+   "LightAndDarkDisclaimer": {
+      "message": "görünüm ve hissiyatına uyacak "
+   },
+   "LoginText": {
+      "message": "Oturum aç"
+   },
+   "LogoutText": {
+      "message": "Oturumu kapat"
+   },
+   "LookOfBrowserDisclaimer": {
+      "message": "açık ve koyu temalar içerir"
+   },
+   "MACE": {
+      "message": "MACE"
+   },
+   "MaceProtection": {
+      "message": "PIA MACE™"
+   },
+   "MaceTooltip": {
+      "message": "PIA MACE™ zararlı içerikleri, izleyici unsurları ve reklamları engelleyerek gizliliğinizin ve güvenliğinizin korunmasına yardımcı olur. Sadece bir bölgeye bağlıyken aktiftir"
+   },
+   "ManageExtensions": {
+      "message": "Uzantıları Yönet"
+   },
+   "MultipleLocations": {
+      "message": "konum"
+   },
+   "MultipleRulesAdded": {
+      "message": "%{count} kural eklendi"
+   },
+   "Next": {
+      "message": "İLERİ"
+   },
+   "NoLocation": {
+      "message": "Hiç konum eklenmedi"
+   },
+   "NoNetworkConnection": {
+      "message": "Ağ Bağlantısı Yok"
+   },
+   "NoRegionSelected": {
+      "message": "Bölge Seçilmedi"
+   },
+   "NoRegionsFound": {
+      "message": "Hiç Bölge Bulunamadı"
+   },
+   "NoRulesAdded": {
+      "message": "Hiç kural eklenmedi"
+   },
+   "NoSubscriptionData": {
+      "message": "Hiçbir Kullanıcı Bilgisi Bulunamadı"
+   },
+   "OfflineError": {
+      "message": "İnternet bağlantınız olmadığı için giriş isteğiniz gerçekleştirilemedi. Lütfen İnternet'e bağlı olup olmadığınızı kontrol edin."
+   },
+   "OfflineText": {
+      "message": "ÇEVRİM DIŞI"
+   },
+   "OnBoardingStart": {
+      "message": "KULLANIMA BAŞLAYIN"
+   },
+   "OneLocation": {
+      "message": "konum eklendi"
+   },
+   "OneRuleAdded": {
+      "message": "1 kural eklendi"
+   },
+   "OtherWebsites": {
+      "message": "Diğer web siteleri"
+   },
+   "PasswordPlaceholder": {
+      "message": "Şifre"
+   },
+   "PersistentIncognitoDisclaimer": {
+      "message": "Tarayıcının chrome://extensions kısmındaki uzantı ayarlarından bu seçeneği belirleyerek uzantıyı gizli modda etkinleştirin."
+   },
+   "PersistentSettingsDisclaimer": {
+      "message": "Artık bir bölgeye bağlı olsanız da olmasanız da etkinleştirilmiş olan ayarlar daima aktif olacak; PIA MACE™ ise yalnızca bir bölgeye bağlı olduğunuzda aktif olacak."
+   },
+   "PopularWebsites": {
+      "message": "Popüler web siteleri"
+   },
+   "Privacy": {
+      "message": "Gizlilik"
+   },
+   "PrivateBrowsingChangeDirections": {
+      "message": "Eklentiler sayfanızı görüntülemek için lütfen aşağıdaki URL'yi ziyaret edin. Ardından \"Private Internet Access\" eklentisine tıklayarak ayarlarını değiştirin. Buradan \"Run in Private Windows\" ayarını \"İzin Ver\" olarak belirleyin."
+   },
+   "PrivateBrowsingChangeLead": {
+      "message": "Firefox, kısa süre önce eklentilerin vekil sunucu bağlantılarını idare ediş şeklini değiştirdi. Şu anda eklentinin Özel Pencerelerde çalışmasına izin verebilmeniz için vekil sunucu ayarlarının güncellenmesi gerekiyor."
+   },
+   "PrivateInternetAccess": {
+      "message": "Private Internet Access"
+   },
+   "PrivateInternetComesWith": {
+      "message": "Private Internet Access, tarayıcınızın "
+   },
+   "ProxyBypassList": {
+      "message": "Atlama Listesi"
+   },
+   "QuickConnect": {
+      "message": "HIZLI BAĞLAN"
+   },
+   "QuickSettings": {
+      "message": "HIZLI AYARLARI"
+   },
+   "ReadMore": {
+      "message": "Devamını Oku"
+   },
+   "RefreshRegions": {
+      "message": "Bölgeleri Yenile"
+   },
+   "RegionLatency": {
+      "message": "Gecikme"
+   },
+   "RegionName": {
+      "message": "İsim"
+   },
+   "RegionSearch": {
+      "message": "Ara..."
+   },
+   "ReloadPage": {
+      "message": "Sayfayı Yeniden Yükle"
+   },
+   "RememberMe": {
+      "message": "Beni hatırla"
+   },
+   "RememberMeTooltip": {
+      "message": "Tarayıcının kapatılıp yeniden açıldığı aralarda kullanıcı adını kayıtlı tutar"
+   },
+   "RemoveRule": {
+      "message": "kaldır"
+   },
+   "RuleAlreadyIncluded": {
+      "message": "Kural Zaten Dâhil Edilmiş"
+   },
+   "Security": {
+      "message": "Güvenlik"
+   },
+   "SelectRegionText": {
+      "message": "Bir bölge seçin"
+   },
+   "SettingControlledByOther": {
+      "message": "Bu ayar başka bir uzantı tarafından kontrol ediliyor."
+   },
+   "SettingNotControllable": {
+      "message": "Uzantı bu ayarı kontrol edemiyor."
+   },
+   "Skip": {
+      "message": "ATLA"
+   },
+   "SmartLocation": {
+      "message": "Akıllı Konum"
+   },
+   "StartSlide": {
+      "message": "Başlamanıza yardımcı olalım"
+   },
+   "Step1": {
+      "message": "Adım 1/2"
+   },
+   "Step2": {
+      "message": "Adım 2/2"
+   },
+   "Subscription": {
+      "message": "ABONELİK"
+   },
+   "SupportText": {
+      "message": "Yardım ve Destek"
+   },
+   "TheExtensionIsStillLoading": {
+      "message": "Genişletme hâlâ yüklendiği için Hata Ayıklama Günlüğü henüz yüklenemiyor."
+   },
+   "TimeoutError": {
+      "message": "Giriş isteğinin süresi %{seconds} saniye sonra doldu. Lütfen tekrar deneyin."
+   },
+   "TooManyRequestsError": {
+      "message": "Çok sayıda başarısız oturum açma girişiminde bulunuldu. Daha sonra tekrar deneyin."
+   },
+   "Tracking": {
+      "message": "İzleme"
+   },
+   "TrackingProtection": {
+      "message": "İzlenme koruması"
+   },
+   "TrackingProtectionTooltip": {
+      "message": "Kullanıcıların hangi sitelere gittiğini izledikleri bilinen etki alanlarına (domain) gönderilen istekleri engelleyin."
+   },
+   "TryAgain": {
+      "message": "Tekrar dene"
+   },
+   "UILanguage": {
+      "message": "Arayüz Dili"
+   },
+   "UILanguageTooltip": {
+      "message": "Uzantının metin görüntülerken kullandığı dil."
+   },
+   "UnexpectedServerResponse": {
+      "message": "Giriş isteği, beklenmedik bir sunucu yanıtıyla karşılaştı (%{statusLine})"
+   },
+   "UnknownError": {
+      "message": "Bilinmeyen bir hata oluştu."
+   },
+   "UnknownProxyError": {
+      "message": "Bilinmeyen Vekil Sunucu Hatası Oluştu"
+   },
+   "UpgradeBrowserMessage": {
+      "message": "%{browser} tarayıcısı güncel olmadığı için Private Internet Access kullanılamıyor. Lütfen %{browser} adlı tarayıcıyı son sürüme yükseltin."
+   },
+   "UsernamePlaceholder": {
+      "message": "Kullanıcı Adı"
+   },
+   "VIEWALL": {
+      "message": "TÜM AYARLARI GÖSTER..."
+   },
+   "ViewChangelog": {
+      "message": "değişim günlüğünü aç"
+   },
+   "ViewDebugLog": {
+      "message": "Hata Ayıklama Günlüğünü Göster"
+   },
+   "WebAlreadyAdded": {
+      "message": "Web siteleri zaten eklenmiş"
+   },
+   "WebRTCLeakProtection": {
+      "message": "WebRTC IP tespitini engelle"
+   },
+   "WebRTCTooltip": {
+      "message": "WebRTC kullanılırken %{browser} tarayıcısının gerçek ve özel IP adreslerinizi açığa çıkarmasına engel olun. Bunu kapatmamanızı öneririz."
+   },
+   "WelcomeToNewVersion": {
+      "message": "%{appVersion}'e Hoş Geldiniz"
+   },
+   "WhatIsMace": {
+      "message": "MACE™ nedir?"
+   },
+   "WhiteTheme": {
+      "message": "Açık Tema"
+   },
+   "WrongUsernameAndPassword": {
+      "message": "Kullanıcı adı ve/veya şifre hatalı."
+   },
+   "YouAreConnectedTo": {
+      "message": "%{region}'e bağlandınız"
+   },
+   "YouAreNotConnected": {
+      "message": "Bağlı değilsiniz"
+   },
+   "ae": {
+      "message": "Birleşik Arap Emirlikleri"
+   },
+   "au": {
+      "message": "Avustralya"
+   },
+   "aus": {
+      "message": "Avustralya Sidney"
+   },
+   "aus_melbourne": {
+      "message": "Avustralya Melbourne"
+   },
+   "aus_perth": {
+      "message": " Avustralya, Perth"
+   },
+   "austria": {
+      "message": "Avusturya"
+   },
+   "belgium": {
+      "message": "Belçika"
+   },
+   "brazil": {
+      "message": "Brezilya"
+   },
+   "ca": {
+      "message": "Kanada Montreal"
+   },
+   "ca_toronto": {
+      "message": "Kanada Toronto"
+   },
+   "ca_vancouver": {
+      "message": "CA Vancouver"
+   },
+   "canada": {
+      "message": "Kanada"
+   },
+   "czech": {
+      "message": "Çek Cumhuriyeti"
+   },
+   "days_left": {
+      "message": "gün kaldı"
+   },
+   "de": {
+      "message": "Almanya"
+   },
+   "de_berlin": {
+      "message": "DE Berlin"
+   },
+   "denmark": {
+      "message": "Danimarka"
+   },
+   "enabled": {
+      "message": "etkin"
+   },
+   "encounterMessage_2": {
+      "message": "destek birimiyle iletişime geçin "
+   },
+   "encountermessage_1": {
+      "message": "Geri bildiriminiz için teşekkürler! Herhangi teknik bir sorunla karşılaşırsanız lütfen "
+   },
+   "feedbackMessage_1": {
+      "message": "Geri bildiriminiz için teşekkürler! Bizi şurada değerlendirirseniz seviniriz: "
+   },
+   "feedbackMessage_2": {
+      "message": "Chrome Web Mağazası"
+   },
+   "fi": {
+      "message": "Finlandiya"
+   },
+   "france": {
+      "message": "Fransa"
+   },
+   "gb": {
+      "message": "Birleşik Krallık"
+   },
+   "germany": {
+      "message": "DE Frankfurt"
+   },
+   "hk": {
+      "message": "Hong Kong"
+   },
+   "hungary": {
+      "message": "Macaristan"
+   },
+   "in": {
+      "message": "Hindistan"
+   },
+   "ireland": {
+      "message": "İrlanda"
+   },
+   "israel": {
+      "message": "İsrail"
+   },
+   "italy": {
+      "message": "İtalya"
+   },
+   "japan": {
+      "message": "Japonya"
+   },
+   "kr": {
+      "message": "Güney Kore"
+   },
+   "lu": {
+      "message": "Lüksemburg"
+   },
+   "mexico": {
+      "message": "Meksika"
+   },
+   "nl": {
+      "message": "Hollanda"
+   },
+   "no": {
+      "message": "Norveç"
+   },
+   "nz": {
+      "message": "Yeni Zelanda"
+   },
+   "poland": {
+      "message": "Polonya"
+   },
+   "ro": {
+      "message": "Romanya"
+   },
+   "sg": {
+      "message": "Singapur"
+   },
+   "spain": {
+      "message": "İspanya"
+   },
+   "sweden": {
+      "message": "İsveç"
+   },
+   "swiss": {
+      "message": "İsviçre"
+   },
+   "trial": {
+      "message": "Deneme"
+   },
+   "turkey": {
+      "message": "Türkiye"
+   },
+   "uk": {
+      "message": "Birleşik Krallık Londra"
+   },
+   "uk_manchester": {
+      "message": "Birleşik Kralllık Manchester"
+   },
+   "uk_southampton": {
+      "message": "Birleşik Kralllık Southampton"
+   },
+   "us": {
+      "message": "Amerika Birleşik Devletleri"
+   },
+   "us1": {
+      "message": "ABD Orta Batı"
+   },
+   "us2": {
+      "message": "ABD Doğu"
+   },
+   "us3": {
+      "message": "ABD Batı"
+   },
+   "us_atlanta": {
+      "message": "ABD Atlanta"
+   },
+   "us_california": {
+      "message": "ABD Kaliforniya"
+   },
+   "us_chicago": {
+      "message": "ABD Şikago"
+   },
+   "us_denver": {
+      "message": "ABD Denver"
+   },
+   "us_florida": {
+      "message": "ABD Florida"
+   },
+   "us_houston": {
+      "message": "ABD Houston"
+   },
+   "us_las_vegas": {
+      "message": "ABD Las Vegas"
+   },
+   "us_new_york_city": {
+      "message": "ABD New York City"
+   },
+   "us_seattle": {
+      "message": "ABD Seattle"
+   },
+   "us_silicon_valley": {
+      "message": "ABD Silikon Vadisi"
+   },
+   "us_south_west": {
+      "message": "ABD Teksas"
+   },
+   "us_washington_dc": {
+      "message": "ABD Washington DC"
+   },
+   "us_wdc": {
+      "message": "ABD Washington DC"
+   },
+   "za": {
+      "message": "Güney Afrika"
+   }
+}

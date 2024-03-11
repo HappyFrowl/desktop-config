@@ -1,0 +1,6 @@
+2024/02/16-20:18:55.463 75df Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.mobigyaan.com_0.indexeddb.leveldb since it was missing.
+2024/02/16-20:18:55.465 75df Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.mobigyaan.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/16-20:18:56.442 75e3 Level-0 table #5: started
+2024/02/16-20:18:56.443 75e3 Level-0 table #5: 589 bytes OK
+2024/02/16-20:18:56.444 75e3 Delete type=0 #3
+2024/02/16-20:18:56.444 75df Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

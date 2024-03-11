@@ -1,0 +1,6 @@
+2024/01/04-23:15:25.783 466d Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_docs.portainer.io_0.indexeddb.leveldb since it was missing.
+2024/01/04-23:15:25.785 466d Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_docs.portainer.io_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/04-23:15:26.168 467b Level-0 table #5: started
+2024/01/04-23:15:26.169 467b Level-0 table #5: 2182 bytes OK
+2024/01/04-23:15:26.171 467b Delete type=0 #3
+2024/01/04-23:15:26.171 467b Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

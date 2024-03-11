@@ -1,0 +1,32 @@
+{
+   "author": "John Navas",
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "images/Share2Archive-16.png",
+         "24": "images/Share2Archive-24.png",
+         "32": "images/Share2Archive-32.png"
+      },
+      "default_title": "Archive Page"
+   },
+   "description": "Archive webpage with archive.today",
+   "icons": {
+      "128": "images/Share2Archive-128.png",
+      "16": "images/Share2Archive-16.png",
+      "24": "images/Share2Archive-24.png",
+      "32": "images/Share2Archive-32.png",
+      "48": "images/Share2Archive-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjPhXRfaBXO1VU0UaYGKGNvjIx7FdjZUKGxfWEZKFCGvnp4Uq21ULdJozVbePpVXp03uLnBHiE2OyMYXBMDR56f4yeFv88v8yEpCqdNbyZo5V+/kSR5g5/Fgkyx+S2arZ5fy6MXjV67GwBMk6DxWsfm44VcbGseLSqXJ0Ldl66FvnIXfs1vcuDdHLvZgwMSytBwxygdoEIijohr+IMVzYcl0D+c6QuJ5620awCu6GgD2Nboa2RG+tN0dSviJHdhhJEm+QLhjB88REsH3GB39Ytak3AFbiSL2ry2aEi0G7Zs6lZ/NbXf6ziZTbtlZoT4HHtMzfLlJYwiYOT/1FZT5ZswIDAQAB",
+   "manifest_version": 2,
+   "name": "Archive Page",
+   "options_ui": {
+      "open_in_tab": false,
+      "page": "options.html"
+   },
+   "permissions": [ "contextMenus", "storage", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.6.0"
+}
