@@ -1,0 +1,17 @@
+[$Version]
+update_info=spectacle_clipboard.upd:clipboard-settings-change,spectacle_rememberregion.upd:spectacle-migrate-rememberregion
+
+[General]
+autoSaveImage=true
+clipboardGroup=PostScreenshotCopyImage
+onLaunchAction=UseLastUsedCapturemode
+useReleaseToCapture=true
+
+[GuiConfig]
+cropRegion=851,504,827,732
+quitAfterSaveCopyExport=true
+window-position=0,0
+
+[Save]
+defaultSaveLocation=file:///home/filip/Pictures/Screenshots
+lastSaveLocation=file:///home/filip/Pictures/Screenshots/Screenshot_20240311_154116.png

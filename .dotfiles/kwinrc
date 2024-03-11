@@ -14,8 +14,8 @@ Active=true
 EveningBeginFixed=2300
 Mode=Times
 MorningBeginFixed=0730
-NightTemperature=2800
-TransitionTime=15
+NightTemperature=2500
+TransitionTime=25
 
 [Tiling]
 padding=4
@@ -43,4 +43,3 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Xwayland]
 Scale=1.25
-
