@@ -107,6 +107,9 @@
         - korganizer
         - knotes
         - kdepim-themeeditors
+        - konqueror
+        - juk
+        - dragonplayer
         - libreoffice
         - firefox-esr
       state: absent
@@ -116,8 +119,11 @@
       autoremove: yes
       purge: true
 
+  - name: Install ZeroTier
+    ansible.builtin.command: curl -s https://install.zerotier.com | sudo bash
+
   - name: Add flathub remote if not exists
-    command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    ansible.builtin.command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
   - name: install libreoffice & firefox from flatpak
     become: true
@@ -202,5 +208,12 @@
     ansible.builtin.copy:
       src: files/mimeapps.list
       dest: /home/filip/.config/mimeapps.list
+      owner: filip
+      group: filip
+
+  - name: copy lock screen duration settings
+    ansible.builtin.copy:
+      src: files/kscreenlockerrc
+      dest: /home/filip/.config/kscreenlockerrc
       owner: filip
       group: filip
