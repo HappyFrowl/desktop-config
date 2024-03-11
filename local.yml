@@ -217,3 +217,10 @@
       dest: /home/filip/.config/kscreenlockerrc
       owner: filip
       group: filip
+
+  - name: copy bluetooth config #enable auto enable
+    ansible.builtin.copy:
+      src: files/main.config
+      dest: /etc/bluetooth/main.config
+      owner: root
+      group: root
