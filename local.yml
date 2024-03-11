@@ -105,42 +105,30 @@
 #      method: user
 #      state: present
 
-  - name: remove pacages kalendarac # Cause of Kalendar Reminder process
-    become: true
+  - name: remove packages kalendarac # Cause of Kalendar Reminder process
     ansible.builtin.package:
-      loop: "{{ item  }}"
+      name:
+        - kalendarac
+        - kmail
+        - kmailtransport-akonadi
+        - korganizer
+        - knotes
+        - kdepim-themeeditors
+        - libreoffice
+        - firefox-esr
       state: absent
-    loop:
-      - kalendarac
-      - kmail
-      - kmailtransport-akonadi
-      - korganizer
-      - knotes
-      - kdepim-themeeditors
-      - libreoffice
 
   - name: Remove dependencies that are no longer required and purge their configuration files
     ansible.builtin.apt:
       autoremove: yes
       purge: true
 
-  - name: install libreoffice from flatpak
+  - name: install libreoffice & firefox from flatpak
     become: true
-    ansible.builtin.flatpak:
-      name: libreoffice
-      state: present
-
-  - name: remove firefox esr # Remove ESR before installing flatpak version
-    become: true
-    ansible.builtin.package:
-      name: firefox-esr
-      state: absent
-
-  - name: install firefox from flatpak
-    become_user: filip
     community.general.flatpak:
-      name: org.mozilla.firefox
-      state: present
+      name:
+        - org.libreoffice.LibreOffice
+        - org.mozilla.firefox
 
   - name: download teamviewer
     ansible.builtin.get_url:
@@ -150,12 +138,12 @@
   - name: install teamviewer
     become: true
     delegate_to: teamviewer
-    apt:
+    ansible.builtin.apt:
       deb: /home/filip/Downloads/teamviewer_15.51.5_amd64.deb
 
   - name: configure plasma
     become: true
-    copy:
+    ansible.builtin.copy:
       src: files/plasma-org.kde.plasma.desktop-appletsrc
       dest: /home/filip/.config/plasma-org.kde.plasma.desktop-appletsrc
       owner: filip
