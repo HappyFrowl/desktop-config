@@ -98,13 +98,6 @@
 #      group: root
 #    loop: "{{ snap_files.files }}"
 
-#  - name: install vlc from flatpak
-#    become_user: filip
-#    flatpak:
-#      name: org.videolan.VLC
-#      method: user
-#      state: present
-
   - name: remove packages kalendarac # Cause of Kalendar Reminder process
     ansible.builtin.package:
       name:
@@ -123,12 +116,16 @@
       autoremove: yes
       purge: true
 
+  - name: Add flathub remote if not exists
+    command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
   - name: install libreoffice & firefox from flatpak
     become: true
     community.general.flatpak:
       name:
         - org.libreoffice.LibreOffice
         - org.mozilla.firefox
+        - org.videolan.VLC
 
   - name: download teamviewer
     ansible.builtin.get_url:
