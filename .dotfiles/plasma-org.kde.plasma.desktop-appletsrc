@@ -73,6 +73,7 @@ DialogWidth=880
 
 [Containments][111][Applets][112][Configuration][General]
 favoritesPortedToKAstats=true
+pin=true
 
 [Containments][111][Applets][112][Configuration][Shortcuts]
 global=Alt+F1
