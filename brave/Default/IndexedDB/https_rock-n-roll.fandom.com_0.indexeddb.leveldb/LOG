@@ -1,6 +1,0 @@
-2023/11/17-00:08:37.482 ca9f Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_rock-n-roll.fandom.com_0.indexeddb.leveldb since it was missing.
-2023/11/17-00:08:37.484 ca9f Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_rock-n-roll.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/11/17-00:09:46.203 caa0 Level-0 table #5: started
-2023/11/17-00:09:46.204 caa0 Level-0 table #5: 11378 bytes OK
-2023/11/17-00:09:46.205 caa0 Delete type=0 #3
-2023/11/17-00:09:46.205 caa0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

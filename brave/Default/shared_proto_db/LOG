@@ -1,9 +1,0 @@
-2024/03/01-21:45:06.869 8ee4 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/shared_proto_db/MANIFEST-000001
-2024/03/01-21:45:06.869 8ee4 Recovering log #26
-2024/03/01-21:45:06.871 8ee4 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/shared_proto_db/000026.log 
-2024/03/02-15:04:34.768 8ed7 Level-0 table #32: started
-2024/03/02-15:04:34.776 8ed7 Level-0 table #32: 485985 bytes OK
-2024/03/02-15:04:34.778 8ed7 Delete type=0 #26
-2024/03/02-15:04:43.876 8ed6 Level-0 table #34: started
-2024/03/02-15:04:43.879 8ed6 Level-0 table #34: 848887 bytes OK
-2024/03/02-15:04:43.880 8ed6 Delete type=0 #31

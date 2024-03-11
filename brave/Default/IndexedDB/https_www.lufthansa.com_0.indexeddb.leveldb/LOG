@@ -1,6 +1,0 @@
-2023/12/18-21:03:01.447 70c55 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.lufthansa.com_0.indexeddb.leveldb since it was missing.
-2023/12/18-21:03:01.450 70c55 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.lufthansa.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/12/18-21:05:08.345 70c56 Level-0 table #5: started
-2023/12/18-21:05:08.347 70c56 Level-0 table #5: 2169 bytes OK
-2023/12/18-21:05:08.348 70c56 Delete type=0 #3
-2023/12/18-21:05:08.348 70c56 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
