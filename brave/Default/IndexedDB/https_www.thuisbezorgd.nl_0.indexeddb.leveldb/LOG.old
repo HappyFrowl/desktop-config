@@ -1,6 +1,0 @@
-2023/12/15-18:19:32.999 4f06a Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.thuisbezorgd.nl_0.indexeddb.leveldb since it was missing.
-2023/12/15-18:19:33.002 4f06a Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.thuisbezorgd.nl_0.indexeddb.leveldb/MANIFEST-000001
-2023/12/15-18:19:35.008 4f06d Level-0 table #5: started
-2023/12/15-18:19:35.009 4f06d Level-0 table #5: 3542 bytes OK
-2023/12/15-18:19:35.010 4f06d Delete type=0 #3
-2023/12/15-18:19:35.010 4f06d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

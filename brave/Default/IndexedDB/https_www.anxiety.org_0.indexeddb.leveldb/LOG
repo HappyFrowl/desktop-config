@@ -1,6 +1,0 @@
-2023/12/07-23:33:18.966 2a2d8 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.anxiety.org_0.indexeddb.leveldb since it was missing.
-2023/12/07-23:33:18.968 2a2d8 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.anxiety.org_0.indexeddb.leveldb/MANIFEST-000001
-2023/12/07-23:34:15.243 2a2d8 Level-0 table #5: started
-2023/12/07-23:34:15.246 2a2d8 Level-0 table #5: 823 bytes OK
-2023/12/07-23:34:15.249 2a2d8 Delete type=0 #3
-2023/12/07-23:34:15.249 2a2d8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

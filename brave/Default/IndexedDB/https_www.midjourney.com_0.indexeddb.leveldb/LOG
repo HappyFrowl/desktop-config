@@ -1,7 +1,0 @@
-2024/01/11-22:15:59.207 15364 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.midjourney.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/01/11-22:15:59.207 15364 Recovering log #6
-2024/01/11-22:15:59.207 15364 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.midjourney.com_0.indexeddb.leveldb/000006.log 
-2024/01/11-22:15:59.239 15368 Level-0 table #11: started
-2024/01/11-22:15:59.240 15368 Level-0 table #11: 813 bytes OK
-2024/01/11-22:15:59.241 15368 Delete type=0 #6
-2024/01/11-22:15:59.241 15368 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

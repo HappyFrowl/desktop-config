@@ -1,6 +1,0 @@
-2024/01/22-18:07:10.084 2fdf2 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_examregistration.microsoft.com_0.indexeddb.leveldb since it was missing.
-2024/01/22-18:07:10.086 2fdf2 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_examregistration.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/01/22-18:07:12.097 2fdf2 Level-0 table #5: started
-2024/01/22-18:07:12.099 2fdf2 Level-0 table #5: 236 bytes OK
-2024/01/22-18:07:12.101 2fdf2 Delete type=0 #3
-2024/01/22-18:07:12.102 2fdf2 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
