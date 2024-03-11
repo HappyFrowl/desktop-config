@@ -7,7 +7,7 @@
 
   - name: copy sources.list
     ansible.builtin.copy:
-      src: files/sources.list
+      src: .dotfiles/sources.list
       dest: /etc/apt/sources.list
       owner: root
       group: root
@@ -36,7 +36,7 @@
 
   - name: copy brave repo file
     ansible.builtin.copy:
-      src: files/brave-browser-release.list
+      src: .dotfiles/brave-browser-release.list
       dest: /etc/apt/sources.list.d/brave-browser-release.list
       owner: filip
       group: filip
@@ -47,14 +47,14 @@
 
   - name: copy .bashrc file
     ansible.builtin.copy:
-      src: files/bashrc
+      src: .dotfiles/bashrc
       dest: /home/filip/.bashrc
       owner: filip
       group: filip
 
   - name: copy bashrc keybindings
     ansible.builtin.copy:
-      src: files/inputrc
+      src: .dotfiles/inputrc
       dest: /etc/inputrc
       owner: root
       group: root
@@ -147,7 +147,7 @@
   - name: configure plasma
     become: true
     ansible.builtin.copy:
-      src: files/plasma-org.kde.plasma.desktop-appletsrc
+      src: .dotfiles/plasma-org.kde.plasma.desktop-appletsrc
       dest: /home/filip/.config/plasma-org.kde.plasma.desktop-appletsrc
       owner: filip
       group: filip
@@ -155,7 +155,7 @@
   - name: configure plasma
     become: true
     ansible.builtin.copy:
-      src: files/kdeglobals
+      src: .dotfiles/kdeglobals
       dest: /home/filip/.config/kdeglobals
       owner: filip
       group: filip
@@ -163,7 +163,7 @@
   - name: configure plasma
     become: true
     ansible.builtin.copy:
-      src: files/xsettingsd.conf
+      src: .dotfiles/xsettingsd.conf
       dest: /home/filip/.config/xsettingsd/xsettingsd.conf
       owner: filip
       group: filip
@@ -175,7 +175,7 @@
 
   - name: add update script
     ansible.builtin.copy:
-      src: files/update.sh
+      src: .dotfiles/update.sh
       dest: /home/filip/bin/update.sh
       owner: filip
       group: filip
@@ -183,7 +183,7 @@
   - name: add nano config
     become: true
     ansible.builtin.copy:
-      src: files/nanorc
+      src: .dotfiles/nanorc
       dest: /etc/nanorc
       owner: root
       group: root
@@ -191,7 +191,7 @@
   - name: add kwinrc - night colour
     become: true
     ansible.builtin.copy:
-      src: files/kwinrc
+      src: .dotfiles/kwinrc
       dest: /home/filip/.config/kwinrc
       owner: filip
       group: filip
@@ -199,28 +199,28 @@
   - name: add konsolerc
     become_user: filip
     ansible.builtin.copy:
-      src: files/konsolerc
+      src: .dotfiles/konsolerc
       dest: /home/filip/.config/konsolerc
       owner: filip
       group: filip
 
   - name: copy mimeapps.list
     ansible.builtin.copy:
-      src: files/mimeapps.list
+      src: .dotfiles/mimeapps.list
       dest: /home/filip/.config/mimeapps.list
       owner: filip
       group: filip
 
   - name: copy lock screen duration settings
     ansible.builtin.copy:
-      src: files/kscreenlockerrc
+      src: .dotfiles/kscreenlockerrc
       dest: /home/filip/.config/kscreenlockerrc
       owner: filip
       group: filip
 
   - name: copy bluetooth config #enable auto enable
     ansible.builtin.copy:
-      src: files/main.config
+      src: .dotfiles/main.config
       dest: /etc/bluetooth/main.config
       owner: root
       group: root

@@ -1,0 +1,764 @@
+{
+   "AbortError": {
+      "message": "Anmodning om logon blev afbrudt af browseren. Prøv igen."
+   },
+   "AccountSettingsText": {
+      "message": "Kontoindstillinger"
+   },
+   "AddSmartLocation": {
+      "message": "Tilføj smart-placering"
+   },
+   "AddToBypassRules": {
+      "message": "TILFØJ TIL BYPASS-REGLER"
+   },
+   "AdobeFlashTooltip": {
+      "message": "Bloker %{browser} fra at køre Adobe Flash. Adobe Flash kan bruges til at afsløre din offentlige IP-adresse. Anbefales ikke at deaktivere."
+   },
+   "AllowExtensionNotifications": {
+      "message": "Tillad desktopnotifikationer"
+   },
+   "AllowExtensionNotificationsTooltip": {
+      "message": "Tillad forlængelsen at oprette en desktopnotifikation, når der sker noget vigtigt. Anbefales ikke at deaktivere."
+   },
+   "AlwaysActive": {
+      "message": "Altid aktive indstillinger"
+   },
+   "AlwaysActiveTooltip": {
+      "message": "Gør, at disse indstillinger altid forbliver aktive, uanset om proxy er tilsluttet eller ej"
+   },
+   "AuthFailMessage": {
+      "message": "Hvis du for nylig har ændret din adgangskode på webstedet Private Internet Access, kan genautentifikation med forlængelsen rette op på denne fejl. \u003Cbr />\u003Cbr />For hjælp og support, kan du kontakte vores \u003Ca href=\"https://privateinternetaccess.com/helpdesk\">supportteam\u003C/a>."
+   },
+   "AuthFailMessageSupportEnd": {
+      "message": "supportteam"
+   },
+   "AuthFailMessageSupportLead": {
+      "message": "For hjælp og support kontakt vores"
+   },
+   "AuthFailPageTitle": {
+      "message": "Autentifikationsfejl | Private Internet Access"
+   },
+   "AuthFailTitle": {
+      "message": "Autentifikationsfejl"
+   },
+   "Auto": {
+      "message": "Auto"
+   },
+   "BLOCKCAMERA": {
+      "message": "BLOKER KAMERAADGANG"
+   },
+   "BLOCKMICROPHONE": {
+      "message": "BLOKER MIKROFONADGANG"
+   },
+   "BlockAdobeFlash": {
+      "message": "Bloker Adobe Flash"
+   },
+   "BlockAutofill": {
+      "message": "Deaktiver autoudfyld"
+   },
+   "BlockAutofillAddress": {
+      "message": "Deaktiver autoudfyld af adresser"
+   },
+   "BlockAutofillAddressTooltip": {
+      "message": "Deaktiver %{browser} fra automatisk udfyldning af adresser og andre formularfelter. Dette kan lække personlige data via skjulte formularfelter."
+   },
+   "BlockAutofillCreditCard": {
+      "message": "Deaktiver autoudfyld af kreditkort"
+   },
+   "BlockAutofillCreditCardTooltip": {
+      "message": "Deaktiver %{browser} fra automatisk udfyldning af kreditkortoplysninger. Dette kan lække personlige data via skjulte formularfelter."
+   },
+   "BlockAutofillTooltip": {
+      "message": "Deaktiver %{browser} fra automatisk udfyldning af formularer. Dette kan lække personlige data via skjulte formularfelter."
+   },
+   "BlockCameraAccess": {
+      "message": "Bloker adgang til kamera"
+   },
+   "BlockCameraAccessTooltip": {
+      "message": "Bloker websider fra at få adgang til din computers kamera."
+   },
+   "BlockFBCLID": {
+      "message": "Fjern FBCLID-parametre"
+   },
+   "BlockFBCLIDTooltip": {
+      "message": "Fjern Facebook FBCLID-parametre fra udgående links i Facebook. FBCLID-parametre bruges til at spore oplysninger om dit besøg på et websted"
+   },
+   "BlockHTTPReferer": {
+      "message": "Deaktiver websidehenviser"
+   },
+   "BlockHTTPRefererTooltip": {
+      "message": "Deaktiver %{browser} fra at sende adressen på den aktuelle webside til en anden webside, når du følger et link."
+   },
+   "BlockHyperlinkAuditing": {
+      "message": "Deaktiver hyperlinkrevision"
+   },
+   "BlockHyperlinkAuditingTooltip": {
+      "message": "Deaktiver hyperlinkrevision, en ny HTML-funktion, der er designet til at underrette sporere og analytiske tjenester, når du klikker på et link."
+   },
+   "BlockLocationAccess": {
+      "message": "Bloker adgang til placering"
+   },
+   "BlockLocationAccessTooltip": {
+      "message": "Bloker websider fra at få adgang til oplysninger om din fysiske placering."
+   },
+   "BlockMicrophoneAccess": {
+      "message": "Bloker adgang til mikrofon"
+   },
+   "BlockMicrophoneAccessTooltip": {
+      "message": "Bloker websider fra at få adgang til din computers mikrofon."
+   },
+   "BlockNetworkPrediction": {
+      "message": "Deaktiver netværksforudsigelse"
+   },
+   "BlockNetworkPredictionTooltip": {
+      "message": "Deaktiver %{browser} fra at bruge en netværksforudsigelsestjeneste, der forudfortolker DNS-forespørgsler og forudindlæser websider fra det indhold, der findes på en webside, du besøger."
+   },
+   "BlockSafeBrowsing": {
+      "message": "Deaktiver SafeBrowsing"
+   },
+   "BlockSafeBrowsingTooltip": {
+      "message": "Deaktiver %{browser} fra at oprette direkte forbindelser til en netværkstjeneste, der har fortrolighedsproblemer angående logføring. PIA Mace™ mindsker risikoen ved at deaktivere denne service."
+   },
+   "BlockThirdpartycookies": {
+      "message": "Deaktiver cookies fra tredjepart"
+   },
+   "BlockThirdpartycookiesTooltip": {
+      "message": "Deaktiver %{browser} i at acceptere cookies fra tredjepartswebsider. Cookies fra tredjepart kan bruges til at spore dit besøg på en webside af en tredjepart (webside eller webtjeneste)."
+   },
+   "BlockUTM": {
+      "message": "Fjern UTM-parametre"
+   },
+   "BlockUTMTooltip": {
+      "message": "Fjern parametre for Urchin Tracking Model (UTM) fra de webadresser, du klikker på. UTM-parametre bruges til at spore oplysninger om dit besøg på en webside."
+   },
+   "BrowserMessage": {
+      "message": "Browserforlængelse"
+   },
+   "BuyAccount": {
+      "message": "Køb konto"
+   },
+   "BypassInstructions": {
+      "message": "for at omgå alle underdomæner på et websted."
+   },
+   "BypassInstructionsBold": {
+      "message": "* præfiks er påkrævet"
+   },
+   "BypassWarningBold": {
+      "message": "direkte forbindelser og er ikke beskyttet af Private Internet Access™."
+   },
+   "BypassWarningLead": {
+      "message": "Anmodninger foretaget til websider, der er anført i bypass-listen, bruger"
+   },
+   "CalculatingLatency": {
+      "message": "Beregning af latens"
+   },
+   "CannotUsePIAMessage": {
+      "message": "Private Internet Access kan ikke bruges, fordi en anden udvidelse styrer din browsers proxyindstillinger."
+   },
+   "ChangeExtensionSettings": {
+      "message": "Udvidelsesindstillinger"
+   },
+   "ChangeExtraFeaturesSettings": {
+      "message": "Ekstra funktioner"
+   },
+   "ChangelogTitle": {
+      "message": "Changelog"
+   },
+   "ChooseAutomatically": {
+      "message": "Vælg automatisk"
+   },
+   "ChooseTheme": {
+      "message": "Vælg dit tema"
+   },
+   "CloseText": {
+      "message": "Luk"
+   },
+   "Connected": {
+      "message": "forbundet"
+   },
+   "Connecting": {
+      "message": "forbinder"
+   },
+   "ConnectionFailMessage": {
+      "message": "Du har måske mistet forbindelse til internettet, din forbindelse kan være blevet midlertidigt afbrudt, eller Private Internet Access-serveren du forbinder med, kan have forbindelsesproblemer."
+   },
+   "ConnectionFailPageTitle": {
+      "message": "Forbindelsesfejl | Private Internet Access"
+   },
+   "ConnectionFailTitle": {
+      "message": "Forbindelsesfejl"
+   },
+   "CopiedToClipboard": {
+      "message": "Fejlretningslogfil kopieret"
+   },
+   "CopyToClipboard": {
+      "message": "Kopier fejlretningslogfil"
+   },
+   "CurrentRegionText": {
+      "message": "Aktuelle region"
+   },
+   "DEBUGLOGGING": {
+      "message": "FEJLRETNINGSLOGFIL"
+   },
+   "DarkTheme": {
+      "message": "Mørkt tema"
+   },
+   "DarkThemeTooltip": {
+      "message": "Aktiver et mørkere tema for udvidelsen til brug under svagt lys"
+   },
+   "DebugLog": {
+      "message": "Fejlretningslogfil"
+   },
+   "DebugLogIsEmpty": {
+      "message": "Denne fejlretningslogfil er tom."
+   },
+   "DebugMode": {
+      "message": "Fejlretningstilstand"
+   },
+   "DebugModeTooltip": {
+      "message": "Skriv beskeder til fejlretningslogfilen. Tryk på tasten 'ctrl', og derefter tasten 'd', for at vise fejlretningslogfilen."
+   },
+   "DefaultDisplay": {
+      "message": "STANDARDVISNING"
+   },
+   "DeleteDebugLog": {
+      "message": "Ryd logfil"
+   },
+   "Disconnecting": {
+      "message": "afbryder forbindelse"
+   },
+   "EnableSetings": {
+      "message": "Aktiver ekstra funktioner"
+   },
+   "ExportLabel": {
+      "message": "Eksporter"
+   },
+   "Extension": {
+      "message": "Forlængelse"
+   },
+   "ExtensionUpdated": {
+      "message": "Forlængelse opdateret"
+   },
+   "FPPROTECTION": {
+      "message": "FINGERAFTRYKBESKYTTELSE"
+   },
+   "FingerprintProtection": {
+      "message": "Fingeraftrykbeskyttelse"
+   },
+   "FingerprintProtectionAfterword": {
+      "message": "Denne indstilling kan også ændres fra panelet \"Udvidelsesindstillinger\" efter at have logget ind i udvidelsen."
+   },
+   "FingerprintProtectionDisable": {
+      "message": "Deaktiver"
+   },
+   "FingerprintProtectionDisclaimer": {
+      "message": "Denne indstilling kan give ekstra beskyttelse af personlige oplysninger og sikkerhed, men kan bryde visse websteder og få browseren til at opføre sig anderledes end forventet. En komplet liste over ændringer findes her:"
+   },
+   "FingerprintProtectionEnable": {
+      "message": "Aktiver"
+   },
+   "FingerprintProtectionHeader": {
+      "message": "Indstillinger for fingeraftrykbeskyttelse"
+   },
+   "FingerprintProtectionInstructions": {
+      "message": "Denne funktion anbefales, men nogle brugere kan finde den ubelejlig. Vælg venligst at aktivere eller deaktivere fingeraftrykbeskyttelse:"
+   },
+   "FingerprintProtectionTooltip": {
+      "message": "Beskyt mod browser-fingeraftryk ved at give generisk information om din computer og forhindre adgang til visse browser-API'er."
+   },
+   "FirstSlideInstallThanks": {
+      "message": "Tak fordi du installerede"
+   },
+   "ForgotPassword": {
+      "message": "Glemt adgangskode"
+   },
+   "GatheringRegions": {
+      "message": "Indhenter regioner"
+   },
+   "HTTPREFERRER": {
+      "message": "DEAKTIVER HTTP-HENVISER"
+   },
+   "HttpsUpgrade": {
+      "message": "Gennemse hjemmesider ved hjælp af HTTPS"
+   },
+   "HttpsUpgradeTooltip": {
+      "message": "Konverterer automatisk understøttede websider eller links ved hjælp af en ukrypteret forbindelse (HTTP) til en mere sikker HTTPS-forbindelse, inden du forlader din browser. Muliggjort på grund af HTTPS Everywhere og EFF."
+   },
+   "ImportExportHeader": {
+      "message": "Importer/Eksporter regler"
+   },
+   "ImportFileMessage": {
+      "message": "Vælg venligst en eksporteret Bypass Rules-fil (f.eks bypass-rules.json)"
+   },
+   "ImportLabel": {
+      "message": "Importer"
+   },
+   "InvalidImportFileStructure": {
+      "message": "Filen kan ikke læses, vælg venligst en gyldig fil"
+   },
+   "IpProxy": {
+      "message": "VPN-IP"
+   },
+   "IpReal": {
+      "message": "IP"
+   },
+   "JoinURL": {
+      "message": "https://dnk.privateinternetaccess.com/pages/buy-vpn/"
+   },
+   "JustInTimeDisclaimer": {
+      "message": "Bedøm din oplevelse med PIA"
+   },
+   "LIGHTTHEME": {
+      "message": "LYST TEMA"
+   },
+   "LightAndDarkDisclaimer": {
+      "message": "lyse og mørke temaer, der passer til udseendet "
+   },
+   "LoginText": {
+      "message": "Log ind"
+   },
+   "LogoutText": {
+      "message": "Log ud"
+   },
+   "LookOfBrowserDisclaimer": {
+      "message": "og fornemmelsen af din browser"
+   },
+   "MACE": {
+      "message": "MACE"
+   },
+   "MaceProtection": {
+      "message": "PIA MACE™"
+   },
+   "MaceTooltip": {
+      "message": "PIA MACE™ hjælper med at beskytte dit privatliv og din sikkerhed ved at blokere ondsindet indhold, trackers og annoncer. Kun aktiv når forbundet til en region."
+   },
+   "ManageExtensions": {
+      "message": "Håndter udvidelser"
+   },
+   "MultipleLocations": {
+      "message": "placeringer"
+   },
+   "MultipleRulesAdded": {
+      "message": "%{count} regler tilføjet"
+   },
+   "Next": {
+      "message": "NÆSTE"
+   },
+   "NoLocation": {
+      "message": "Ingen placering tilføjet"
+   },
+   "NoNetworkConnection": {
+      "message": "Ingen netværksforbindelse"
+   },
+   "NoRegionSelected": {
+      "message": "Ingen region valgt"
+   },
+   "NoRegionsFound": {
+      "message": "Ingen regioner fundet"
+   },
+   "NoRulesAdded": {
+      "message": "Ingen regler tilføjet"
+   },
+   "NoSubscriptionData": {
+      "message": "Ingen brugerinformation fundet"
+   },
+   "OfflineError": {
+      "message": "Anmodning om logon mislykkedes, fordi du tilsyneladende er offline. Tjek, om du har forbindelse til internettet."
+   },
+   "OfflineText": {
+      "message": "OFFLINE"
+   },
+   "OnBoardingStart": {
+      "message": "KOM I GANG"
+   },
+   "OneLocation": {
+      "message": "placering tilføjet"
+   },
+   "OneRuleAdded": {
+      "message": "1 regel tilføjet"
+   },
+   "OtherWebsites": {
+      "message": "Andre hjemmesider"
+   },
+   "PasswordPlaceholder": {
+      "message": "Adgangskode"
+   },
+   "PersistentIncognitoDisclaimer": {
+      "message": "Aktivér udvidelse i inkognitotilstand ved at vælge denne indstilling fra udvidelsesindstillinger i chrome://extensions ."
+   },
+   "PersistentSettingsDisclaimer": {
+      "message": "Aktiverede indstillinger er nu altid aktive, uanset om du er tilsluttet en region eller ej, med undtagelse af PIA MACE™, som kun er aktiv, når du er tilsluttet en region."
+   },
+   "PopularWebsites": {
+      "message": "Populære hjemmesider"
+   },
+   "Privacy": {
+      "message": "Fortrolighed"
+   },
+   "PrivateBrowsingChangeDirections": {
+      "message": "Besøg webadressen nedenfor, for at se din addons-side. Klik derefter på \"Private Internet Access\"-addon for at ændre dens indstillinger. Herfra ændrer du indstillingen \"Kør i Private Windows\" til \"Tillad\"."
+   },
+   "PrivateBrowsingChangeLead": {
+      "message": "Firefox har for nylig ændret måden addons håndterer proxy-forbindelser. Tilladelse af addon til at køre i Private Windows er nu påkrævet for at proxyindstillinger kan opdateres."
+   },
+   "PrivateInternetAccess": {
+      "message": "Private Internet Access"
+   },
+   "PrivateInternetComesWith": {
+      "message": "Private Internet Access kommer med "
+   },
+   "ProxyBypassList": {
+      "message": "Bypass-liste"
+   },
+   "QuickConnect": {
+      "message": "HURTIGFORBINDELSE"
+   },
+   "QuickSettings": {
+      "message": "HURTIGINDSTILLINGER"
+   },
+   "ReadMore": {
+      "message": "Læs mere"
+   },
+   "RefreshRegions": {
+      "message": "Opdater regioner"
+   },
+   "RegionLatency": {
+      "message": "Latenstid"
+   },
+   "RegionName": {
+      "message": "Navn"
+   },
+   "RegionSearch": {
+      "message": "Søg..."
+   },
+   "ReloadPage": {
+      "message": "Genindlæs side"
+   },
+   "RememberMe": {
+      "message": "Husk mig"
+   },
+   "RememberMeTooltip": {
+      "message": "Gemmer brugernavn mellem genstart af browseren"
+   },
+   "RemoveRule": {
+      "message": "fjern"
+   },
+   "RuleAlreadyIncluded": {
+      "message": "Regel allerede inkluderet"
+   },
+   "Security": {
+      "message": "Sikkerhed"
+   },
+   "SelectRegionText": {
+      "message": "Vælg en region"
+   },
+   "SettingControlledByOther": {
+      "message": "Denne indstilling styres af en anden forlængelse."
+   },
+   "SettingNotControllable": {
+      "message": "Forlængelsen kan ikke styre denne indstilling."
+   },
+   "Skip": {
+      "message": "SPRING OVER"
+   },
+   "SmartLocation": {
+      "message": "Smart-placering"
+   },
+   "StartSlide": {
+      "message": "Lad os få dig i gang"
+   },
+   "Step1": {
+      "message": "TRIN 1 AF 2"
+   },
+   "Step2": {
+      "message": "TRIN 2 AF 2"
+   },
+   "Subscription": {
+      "message": "ABONNEMENT"
+   },
+   "SupportText": {
+      "message": "Hjælp og support"
+   },
+   "TheExtensionIsStillLoading": {
+      "message": "Udvidelsen opdateres stadig og kan ikke indlæse fejlfindingsloggen endnu."
+   },
+   "TimeoutError": {
+      "message": "Anmodning om logon fik timeout efter %{seconds} sekunder. Prøv igen."
+   },
+   "TooManyRequestsError": {
+      "message": "For mange mislykkede forsøg på at logge på. Prøv igen senere."
+   },
+   "Tracking": {
+      "message": "Sporing"
+   },
+   "TrackingProtection": {
+      "message": "Sporingsbeskyttelse"
+   },
+   "TrackingProtectionTooltip": {
+      "message": "Blokerer forespørgsler til domæner, der vides at deltage i sporing af brugere på tværs af websteder."
+   },
+   "TryAgain": {
+      "message": "Prøv igen"
+   },
+   "UILanguage": {
+      "message": "Grænsefladesprog"
+   },
+   "UILanguageTooltip": {
+      "message": "Sproget, der bruges af udvidelsen, når der vises tekst."
+   },
+   "UnexpectedServerResponse": {
+      "message": "Anmodning om logon gav et uventet serversvar (%{statusLine})"
+   },
+   "UnknownError": {
+      "message": "Der er opstået en ukendt fejl."
+   },
+   "UnknownProxyError": {
+      "message": "Ukendt proxyfejl opstået"
+   },
+   "UpgradeBrowserMessage": {
+      "message": "Private Internet Access kan ikke bruges, fordi din version af %{browser} er forældet. Opgrader venligst %{browser} til den nyeste version."
+   },
+   "UsernamePlaceholder": {
+      "message": "Brugernavn"
+   },
+   "VIEWALL": {
+      "message": "SE ALLE INDSTILLINGER..."
+   },
+   "ViewChangelog": {
+      "message": "se changelog"
+   },
+   "ViewDebugLog": {
+      "message": "Se fejlfindingslogfil"
+   },
+   "WebAlreadyAdded": {
+      "message": "Websider allerede tilføjet"
+   },
+   "WebRTCLeakProtection": {
+      "message": "Bloker WebRTC IP-detektion"
+   },
+   "WebRTCTooltip": {
+      "message": "Bloker %{browser} fra at afsløre dine offentlige og private IP-adresser, når WebRTC bruges. Anbefales ikke at deaktivere."
+   },
+   "WelcomeToNewVersion": {
+      "message": "Velkommen til %{appVersion}"
+   },
+   "WhatIsMace": {
+      "message": "Hvad er MACE™?"
+   },
+   "WhiteTheme": {
+      "message": "Lyst tema"
+   },
+   "WrongUsernameAndPassword": {
+      "message": "Brugernavn og/eller adgangskode er forkert."
+   },
+   "YouAreConnectedTo": {
+      "message": "Du er forbundet til %{region}"
+   },
+   "YouAreNotConnected": {
+      "message": "Du er ikke forbundet"
+   },
+   "ae": {
+      "message": "De Forenede Arabiske Emirater"
+   },
+   "au": {
+      "message": "Australien"
+   },
+   "aus": {
+      "message": "AU, Sydney"
+   },
+   "aus_melbourne": {
+      "message": "AU, Melbourne"
+   },
+   "aus_perth": {
+      "message": " AU Perth"
+   },
+   "austria": {
+      "message": "Østrig"
+   },
+   "belgium": {
+      "message": "Belgien"
+   },
+   "brazil": {
+      "message": "Brasilien"
+   },
+   "ca": {
+      "message": "CA, Montreal"
+   },
+   "ca_toronto": {
+      "message": "CA, Toronto"
+   },
+   "ca_vancouver": {
+      "message": "CA, Vancouver"
+   },
+   "canada": {
+      "message": "Canada"
+   },
+   "czech": {
+      "message": "Tjekkiet"
+   },
+   "days_left": {
+      "message": "dage tilbage"
+   },
+   "de": {
+      "message": "Tyskland"
+   },
+   "de_berlin": {
+      "message": "Tyskland, Berlin"
+   },
+   "denmark": {
+      "message": "Denmark"
+   },
+   "enabled": {
+      "message": "aktiveret"
+   },
+   "encounterMessage_2": {
+      "message": "kontakte supportafdelingen "
+   },
+   "encountermessage_1": {
+      "message": "Tak for din feedback! Hvis du støder på tekniske problemer, bedes du "
+   },
+   "feedbackMessage_1": {
+      "message": "Tak for din feedback! Vi ville sætte pris på det, hvis du bedømte os på "
+   },
+   "feedbackMessage_2": {
+      "message": "Chrome Web Store"
+   },
+   "fi": {
+      "message": "Finland"
+   },
+   "france": {
+      "message": "Frankrig"
+   },
+   "gb": {
+      "message": "England"
+   },
+   "germany": {
+      "message": "Tyskland, Frankfurt"
+   },
+   "hk": {
+      "message": "Hong Kong"
+   },
+   "hungary": {
+      "message": "Ungarn"
+   },
+   "in": {
+      "message": "Indien"
+   },
+   "ireland": {
+      "message": "Irland"
+   },
+   "israel": {
+      "message": "Israel"
+   },
+   "italy": {
+      "message": "Italien"
+   },
+   "japan": {
+      "message": "Japan"
+   },
+   "kr": {
+      "message": "Sydkorea"
+   },
+   "lu": {
+      "message": "Luxembourg"
+   },
+   "mexico": {
+      "message": "Mexico"
+   },
+   "nl": {
+      "message": "Holland"
+   },
+   "no": {
+      "message": "Norge"
+   },
+   "nz": {
+      "message": "New Zealand"
+   },
+   "poland": {
+      "message": "Polen"
+   },
+   "ro": {
+      "message": "Rumænien"
+   },
+   "sg": {
+      "message": "Singapore"
+   },
+   "spain": {
+      "message": "Spanien"
+   },
+   "sweden": {
+      "message": "Sverige"
+   },
+   "swiss": {
+      "message": "Schweiz"
+   },
+   "trial": {
+      "message": "Prøve"
+   },
+   "turkey": {
+      "message": "Tyrkiet"
+   },
+   "uk": {
+      "message": "England, London"
+   },
+   "uk_manchester": {
+      "message": "UK Manchester"
+   },
+   "uk_southampton": {
+      "message": "England, Southampton"
+   },
+   "us": {
+      "message": "USA"
+   },
+   "us1": {
+      "message": "USA, midtvest"
+   },
+   "us2": {
+      "message": "USA, østkyst"
+   },
+   "us3": {
+      "message": "USA, vestkyst"
+   },
+   "us_atlanta": {
+      "message": "USA, Atlanta"
+   },
+   "us_california": {
+      "message": "USA, Californien"
+   },
+   "us_chicago": {
+      "message": "USA, Chicago"
+   },
+   "us_denver": {
+      "message": "USA, Denver"
+   },
+   "us_florida": {
+      "message": "USA, Florida"
+   },
+   "us_houston": {
+      "message": "USA, Houston"
+   },
+   "us_las_vegas": {
+      "message": "USA, Las Vegas"
+   },
+   "us_new_york_city": {
+      "message": "USA, New York"
+   },
+   "us_seattle": {
+      "message": "USA, Seattle"
+   },
+   "us_silicon_valley": {
+      "message": "USA, Silicon Valley"
+   },
+   "us_south_west": {
+      "message": "USA, Texas"
+   },
+   "us_washington_dc": {
+      "message": "USA, Washington DC"
+   },
+   "us_wdc": {
+      "message": "USA, Washington DC"
+   },
+   "za": {
+      "message": "Sydafrika"
+   }
+}

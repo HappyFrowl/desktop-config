@@ -1,0 +1,6 @@
+2023/12/16-23:51:24.502 4f06b Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.vichy.nl_0.indexeddb.leveldb since it was missing.
+2023/12/16-23:51:24.504 4f06b Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.vichy.nl_0.indexeddb.leveldb/MANIFEST-000001
+2023/12/16-23:51:58.642 4f06b Level-0 table #5: started
+2023/12/16-23:51:58.644 4f06b Level-0 table #5: 5542 bytes OK
+2023/12/16-23:51:58.645 4f06b Delete type=0 #3
+2023/12/16-23:51:58.645 4f06b Manual compaction at level-0 from (begin) .. (end); will stop at (end)

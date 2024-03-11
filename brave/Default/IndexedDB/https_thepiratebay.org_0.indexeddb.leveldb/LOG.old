@@ -1,0 +1,6 @@
+2024/02/04-21:00:54.963 171eb Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_thepiratebay.org_0.indexeddb.leveldb since it was missing.
+2024/02/04-21:00:54.965 171eb Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_thepiratebay.org_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/04-21:01:13.738 171ec Level-0 table #5: started
+2024/02/04-21:01:13.739 171ec Level-0 table #5: 843 bytes OK
+2024/02/04-21:01:13.740 171ec Delete type=0 #3
+2024/02/04-21:01:13.740 171ec Manual compaction at level-0 from (begin) .. (end); will stop at (end)

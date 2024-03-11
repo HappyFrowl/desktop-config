@@ -1,0 +1,10 @@
+2024/01/05-19:35:00.128 5532 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_workflowy.com_0.indexeddb.leveldb since it was missing.
+2024/01/05-19:35:00.137 5532 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_workflowy.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/05-19:35:00.143 5536 Level-0 table #5: started
+2024/01/05-19:35:00.144 5536 Level-0 table #5: 666 bytes OK
+2024/01/05-19:35:00.145 5536 Delete type=0 #3
+2024/01/05-19:35:00.146 5536 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/01/05-19:35:00.146 5532 Level-0 table #7: started
+2024/01/05-19:35:00.148 5532 Level-0 table #7: 654 bytes OK
+2024/01/05-19:35:00.149 5532 Delete type=0 #4
+2024/01/05-19:35:00.149 5532 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

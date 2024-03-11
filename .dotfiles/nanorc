@@ -313,7 +313,7 @@ bind ^K "{mark}{end}{zap}" main
 bind ^U "{mark}{home}{zap}" main
 bind ^Y redo main
 bind ^N findnext all
-
+bind ^R replace main
 
 #set multibuffer
 #bind ^H help all
@@ -321,7 +321,6 @@ bind ^N findnext all
 #bind ^F whereis all
 #bind ^B wherewas all
 #bind ^D findprevious all
-#bind ^R replace main
 #unbind ^U all
 #unbind ^N main
 #unbind ^Y all

@@ -1,0 +1,29 @@
+2024/01/29-22:37:52.445 15c9 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.office.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/29-22:37:52.446 15c9 Recovering log #12
+2024/01/29-22:37:52.452 15c9 Reusing old log /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.office.com_0.indexeddb.leveldb/000012.log 
+2024/01/29-22:38:29.149 15ca Level-0 table #18: started
+2024/01/29-22:38:29.163 15ca Level-0 table #18: 3011922 bytes OK
+2024/01/29-22:38:29.164 15ca Delete type=0 #12
+2024/01/29-22:38:29.172 15ca Compacting 1@0 + 2@1 files
+2024/01/29-22:38:29.184 15ca Generated table #19@0: 6339 keys, 2147699 bytes
+2024/01/29-22:38:29.199 15ca Generated table #20@0: 2745 keys, 2104286 bytes
+2024/01/29-22:38:29.199 15ca Compacted 1@0 + 2@1 files => 4251985 bytes
+2024/01/29-22:38:29.200 15ca compacted to: files[ 0 2 1 0 0 0 0 ]
+2024/01/29-22:38:29.200 15ca Delete type=2 #14
+2024/01/29-22:38:29.200 15ca Delete type=2 #18
+2024/01/29-22:38:29.200 15ca Delete type=2 #15
+2024/01/29-22:38:29.210 15ce Level-0 table #22: started
+2024/01/29-22:38:29.223 15ce Level-0 table #22: 2970563 bytes OK
+2024/01/29-22:38:29.224 15ce Delete type=0 #17
+2024/01/29-22:38:29.230 15ce Compacting 1@0 + 2@1 files
+2024/01/29-22:38:29.245 15ce Generated table #23@0: 7852 keys, 2150647 bytes
+2024/01/29-22:38:29.262 15ce Generated table #24@0: 2797 keys, 2185812 bytes
+2024/01/29-22:38:29.264 15ce Generated table #25@0: 101 keys, 112053 bytes
+2024/01/29-22:38:29.264 15ce Compacted 1@0 + 2@1 files => 4448512 bytes
+2024/01/29-22:38:29.265 15ce compacted to: files[ 0 3 1 0 0 0 0 ]
+2024/01/29-22:38:29.269 15ca Level-0 table #27: started
+2024/01/29-22:38:29.282 15ca Level-0 table #27: 3104583 bytes OK
+2024/01/29-22:38:29.283 15ca Delete type=2 #20
+2024/01/29-22:38:29.283 15ca Delete type=2 #19
+2024/01/29-22:38:29.283 15ca Delete type=2 #22
+2024/01/29-22:38:29.283 15ca Delete type=0 #21

@@ -1,0 +1,64 @@
+2023/11/24-13:47:15.402 15109 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_learningnetwork.cisco.com_0.indexeddb.leveldb since it was missing.
+2023/11/24-13:47:15.404 15109 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_learningnetwork.cisco.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/24-13:47:16.925 1510d Level-0 table #5: started
+2023/11/24-13:47:16.928 1510d Level-0 table #5: 354581 bytes OK
+2023/11/24-13:47:16.929 1510d Delete type=0 #3
+2023/11/24-13:47:16.929 1510a Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/11/24-13:47:16.969 1510a Level-0 table #7: started
+2023/11/24-13:47:16.982 1510a Level-0 table #7: 1335531 bytes OK
+2023/11/24-13:47:16.984 1510a Delete type=0 #4
+2023/11/24-13:47:16.989 1510a Compacting 1@1 + 1@2 files
+2023/11/24-13:47:17.007 1510a Generated table #8@1: 2763 keys, 1407120 bytes
+2023/11/24-13:47:17.008 1510a Compacted 1@1 + 1@2 files => 1407120 bytes
+2023/11/24-13:47:17.009 1510a compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/11/24-13:47:17.015 1510a Level-0 table #10: started
+2023/11/24-13:47:17.030 1510a Level-0 table #10: 1391976 bytes OK
+2023/11/24-13:47:17.031 1510a Delete type=0 #6
+2023/11/24-13:47:17.031 1510a Delete type=2 #5
+2023/11/24-13:47:17.031 1510a Delete type=2 #7
+2023/11/24-13:47:17.033 1510a Compacting 1@1 + 1@2 files
+2023/11/24-13:47:17.060 1510a Generated table #11@1: 4540 keys, 2135400 bytes
+2023/11/24-13:47:17.070 1510a Generated table #12@1: 2269 keys, 650957 bytes
+2023/11/24-13:47:17.070 1510a Compacted 1@1 + 1@2 files => 2786357 bytes
+2023/11/24-13:47:17.071 1510a compacted to: files[ 0 0 2 0 0 0 0 ]
+2023/11/24-13:47:17.071 1510a Delete type=2 #10
+2023/11/24-13:47:17.071 1510a Delete type=2 #8
+2023/11/24-13:47:19.240 1510a Level-0 table #14: started
+2023/11/24-13:47:19.257 1510a Level-0 table #14: 1462577 bytes OK
+2023/11/24-13:47:19.258 1510a Delete type=0 #9
+2023/11/24-13:47:19.265 1510a Compacting 1@1 + 2@2 files
+2023/11/24-13:47:19.278 1510a Level-0 table #17: started
+2023/11/24-13:47:19.291 1510a Level-0 table #17: 1467348 bytes OK
+2023/11/24-13:47:19.292 1510a Delete type=0 #13
+2023/11/24-13:47:19.306 1510a Generated table #15@1: 1181 keys, 2137116 bytes
+2023/11/24-13:47:19.326 1510a Generated table #18@1: 3231 keys, 1489155 bytes
+2023/11/24-13:47:19.326 1510a Compacted 1@1 + 2@2 files => 3626271 bytes
+2023/11/24-13:47:19.328 1510a compacted to: files[ 1 0 2 0 0 0 0 ]
+2023/11/24-13:47:19.328 1510a Delete type=2 #14
+2023/11/24-13:47:19.328 1510a Delete type=2 #12
+2023/11/24-13:47:19.328 1510a Delete type=2 #11
+2023/11/24-13:47:20.406 1510a Level-0 table #20: started
+2023/11/24-13:47:20.421 1510a Level-0 table #20: 1735355 bytes OK
+2023/11/24-13:47:20.423 1510a Delete type=0 #16
+2023/11/24-13:47:28.797 1510a Level-0 table #22: started
+2023/11/24-13:47:28.798 1510a Level-0 table #22: 7508 bytes OK
+2023/11/24-13:47:28.799 1510a Delete type=0 #19
+2023/11/24-13:47:28.799 1510a Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x02\x01\x1f\x03\x00\xd0\x85\xc8\x16\xc0xB\x00\x01\x8d\x01\x000\x000\x00D\x003\x00i\x000\x000\x000\x000\x000\x000\x00u\x00d\x00D\x00n\x000\x00D\x00B\x003\x00i\x000\x000\x000\x000\x000\x000\x004\x00D\x00j\x00p\x000\x000\x005\x003\x00i\x000\x000\x000\x000\x000\x001\x00y\x005\x00r\x00C\x00e\x00n\x00_\x00U\x00S\x006\x00c\x00c\x00c\x003\x003\x004\x008\x00-\x00b\x002\x000\x00f\x00-\x004\x00d\x00a\x00f\x00-\x00b\x004\x000\x009\x00-\x009\x001\x002\x005\x001\x00f\x000\x008\x002\x004\x008\x00c\x00B\x00L\x00M\x001\x006\x002\x003\x006\x008\x004\x004\x008\x004\x000\x000\x000\x000\x000\x000\x000\x000\x000\x000\x001\x009\x002\x006\x005\x009\x00.\x000\x00:\x00m\x00a\x00r\x00k\x00u\x00p\x00:\x00/\x00/\x00u\x00i\x00:\x00v\x00i\x00r\x00t\x00u\x00a\x00l\x00L\x00i\x00s\x00t' @ 18216 : 1
+2023/11/24-13:47:28.799 1510a Compacting 3@0 + 0@1 files
+2023/11/24-13:47:28.822 1510a Generated table #23@0: 4345 keys, 1643833 bytes
+2023/11/24-13:47:28.822 1510a Compacted 3@0 + 0@1 files => 1643833 bytes
+2023/11/24-13:47:28.823 1510a compacted to: files[ 0 1 2 0 0 0 0 ]
+2023/11/24-13:47:28.823 1510a Delete type=2 #20
+2023/11/24-13:47:28.823 1510a Delete type=2 #22
+2023/11/24-13:47:28.823 1510a Delete type=2 #17
+2023/11/24-13:47:28.824 1510a Manual compaction at level-0 from '\x00\x02\x01\x1f\x03\x00\xd0\x85\xc8\x16\xc0xB\x00\x01\x8d\x01\x000\x000\x00D\x003\x00i\x000\x000\x000\x000\x000\x000\x00u\x00d\x00D\x00n\x000\x00D\x00B\x003\x00i\x000\x000\x000\x000\x000\x000\x004\x00D\x00j\x00p\x000\x000\x005\x003\x00i\x000\x000\x000\x000\x000\x001\x00y\x005\x00r\x00C\x00e\x00n\x00_\x00U\x00S\x006\x00c\x00c\x00c\x003\x003\x004\x008\x00-\x00b\x002\x000\x00f\x00-\x004\x00d\x00a\x00f\x00-\x00b\x004\x000\x009\x00-\x009\x001\x002\x005\x001\x00f\x000\x008\x002\x004\x008\x00c\x00B\x00L\x00M\x001\x006\x002\x003\x006\x008\x004\x004\x008\x004\x000\x000\x000\x000\x000\x000\x000\x000\x000\x000\x001\x009\x002\x006\x005\x009\x00.\x000\x00:\x00m\x00a\x00r\x00k\x00u\x00p\x00:\x00/\x00/\x00u\x00i\x00:\x00v\x00i\x00r\x00t\x00u\x00a\x00l\x00L\x00i\x00s\x00t' @ 18216 : 1 .. (end); will stop at (end)
+2023/11/24-13:47:28.824 1510a Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x08\x01\x1f\x03\x00@\x95C\xaa\xfaxB\x00\x01~\x000\x000\x00D\x003\x00i\x000\x000\x000\x000\x000\x000\x00u\x00d\x00D\x00n\x000\x00D\x00B\x003\x00i\x000\x000\x000\x000\x000\x000\x004\x00D\x00j\x00p\x000\x000\x005\x003\x00i\x000\x000\x000\x000\x000\x001\x00y\x005\x00r\x00C\x00e\x00n\x00_\x00U\x00S\x006\x00c\x00c\x00c\x003\x003\x004\x008\x00-\x00b\x002\x000\x00f\x00-\x004\x00d\x00a\x00f\x00-\x00b\x004\x000\x009\x00-\x009\x001\x002\x005\x001\x00f\x000\x008\x002\x004\x008\x00c\x00B\x00L\x00M\x001\x006\x002\x003\x006\x008\x004\x004\x008\x004\x000\x000\x000\x000\x000\x000\x000\x000\x000\x000\x001\x009\x002\x006\x005\x009\x00.\x000\x00:\x00_\x00r\x00e\x00c\x00o\x00r\x00d\x00s' @ 24340 : 1
+2023/11/24-13:47:28.824 1510a Compacting 1@1 + 2@2 files
+2023/11/24-13:47:28.852 1510a Generated table #24@1: 924 keys, 2131796 bytes
+2023/11/24-13:47:28.872 1510a Generated table #25@1: 3793 keys, 1464835 bytes
+2023/11/24-13:47:28.872 1510a Compacted 1@1 + 2@2 files => 3596631 bytes
+2023/11/24-13:47:28.872 1510a compacted to: files[ 0 0 2 0 0 0 0 ]
+2023/11/24-13:47:28.873 1510a Delete type=2 #23
+2023/11/24-13:47:28.873 1510a Delete type=2 #18
+2023/11/24-13:47:28.873 1510a Delete type=2 #15
+2023/11/24-13:47:28.873 1510a Manual compaction at level-1 from '\x00\x08\x01\x1f\x03\x00@\x95C\xaa\xfaxB\x00\x01~\x000\x000\x00D\x003\x00i\x000\x000\x000\x000\x000\x000\x00u\x00d\x00D\x00n\x000\x00D\x00B\x003\x00i\x000\x000\x000\x000\x000\x000\x004\x00D\x00j\x00p\x000\x000\x005\x003\x00i\x000\x000\x000\x000\x000\x001\x00y\x005\x00r\x00C\x00e\x00n\x00_\x00U\x00S\x006\x00c\x00c\x00c\x003\x003\x004\x008\x00-\x00b\x002\x000\x00f\x00-\x004\x00d\x00a\x00f\x00-\x00b\x004\x000\x009\x00-\x009\x001\x002\x005\x001\x00f\x000\x008\x002\x004\x008\x00c\x00B\x00L\x00M\x001\x006\x002\x003\x006\x008\x004\x004\x008\x004\x000\x000\x000\x000\x000\x000\x000\x000\x000\x000\x001\x009\x002\x006\x005\x009\x00.\x000\x00:\x00_\x00r\x00e\x00c\x00o\x00r\x00d\x00s' @ 24340 : 1 .. (end); will stop at (end)

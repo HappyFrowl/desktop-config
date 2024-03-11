@@ -1,0 +1,6 @@
+2024/01/10-18:49:17.596 13827 Creating DB /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_best.aliexpress.com_0.indexeddb.leveldb since it was missing.
+2024/01/10-18:49:17.604 13827 Reusing MANIFEST /home/filip/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_best.aliexpress.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/10-18:49:49.613 13802 Level-0 table #5: started
+2024/01/10-18:49:49.615 13802 Level-0 table #5: 818 bytes OK
+2024/01/10-18:49:49.616 13802 Delete type=0 #3
+2024/01/10-18:49:49.617 13802 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
