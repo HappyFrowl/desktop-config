@@ -34,12 +34,8 @@
     become: true
     shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 
-  - name: copy brave repo file
-    ansible.builtin.copy:
-      src: .dotfiles/brave-browser-release.list
-      dest: /etc/apt/sources.list.d/brave-browser-release.list
-      owner: filip
-      group: filip
+  - name: copy brave source list file
+    shell: echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" > /etc/apt/sources.list.d/brave-browser-release.list   
 
   - name: update system
     ansible.builtin.apt:
@@ -118,6 +114,9 @@
     ansible.builtin.apt:
       autoremove: yes
       purge: true
+
+  - name: Configure nvidia power management
+    shell: echo "options nvidia NVreg_PreserveVideoMemoryAllocations=1 NVreg_TemporaryFilePath=/var/tmp" > /etc/modprobe.d/nvidia-power-management.conf
 
   - name: Install ZeroTier
     ansible.builtin.command: curl -s https://install.zerotier.com | sudo bash
