@@ -70,7 +70,7 @@
   - name: Install snap packages
     community.general.snap:
       name: "{{ item.name }}"
-      classic: "{{ item.classic| default(false) }}"
+      classic: "{{ item.classic | default(false) }}"
       state: present
     loop:
       - name: whatsdesk
@@ -148,7 +148,7 @@
   - name: Configure plasma 1
     become: true
     ansible.builtin.copy:
-      src: .dotfiles/plasma-org.kde.plasma.desktop-appletsrc
+      src: .dotfiles/.config/plasma-org.kde.plasma.desktop-appletsrc
       dest: /home/filip/.config/plasma-org.kde.plasma.desktop-appletsrc
       owner: filip
       group: filip
@@ -156,7 +156,7 @@
   - name: configure Plasma 2
     become: true
     ansible.builtin.copy:
-      src: .dotfiles/kdeglobals
+      src: .dotfiles/.config/kdeglobals
       dest: /home/filip/.config/kdeglobals
       owner: filip
       group: filip
@@ -164,7 +164,7 @@
   - name: Configure Plasma 3
     become: true
     ansible.builtin.copy:
-      src: .dotfiles/xsettingsd/xsettingsd.conf
+      src: .dotfiles/.config/xsettingsd/xsettingsd.conf
       dest: /home/filip/.config/xsettingsd/xsettingsd.conf
       owner: filip
       group: filip
@@ -172,7 +172,7 @@
   - name: Copy kwinrc - night colour
     become: true
     ansible.builtin.copy:
-      src: .dotfiles/kwinrc
+      src: .dotfiles/.config/kwinrc
       dest: /home/filip/.config/kwinrc
       owner: filip
       group: filip
@@ -180,48 +180,48 @@
   - name: Copy konsolerc
     become_user: filip
     ansible.builtin.copy:
-      src: .dotfiles/konsolerc
+      src: .dotfiles/.config/konsolerc
       dest: /home/filip/.config/konsolerc
       owner: filip
       group: filip
 
   - name: Copy mimeapps.list
     ansible.builtin.copy:
-      src: .dotfiles/mimeapps.list
+      src: .dotfiles/.config/mimeapps.list
       dest: /home/filip/.config/mimeapps.list
       owner: filip
       group: filip
 
   - name: Copy lock screen duration settings
     ansible.builtin.copy:
-      src: .dotfiles/kscreenlockerrc
-      dest: /home/filip/.config/kscreenlockerrc
+      src: .dotfiles/.config/kdedefaults/kscreenlockerrc
+      dest: /home/filip/.config/kdedefaults/kscreenlockerrc
       owner: filip
       group: filip
 
+  - name: Copy spectacle config
+    become: true
+    ansible.builtin.copy:
+      src: .dotfiles/spectacle
+      dest: /home/filip/s
+      owner: root
+      group: root
+
+  - name: Copy nanorc config
+    ansible.builtin.copy:
+      src: .dotfiles/nanorc
+      dest: /home/filip/.nanorc
+      owner: root
+      group: root
+
   - name: Create script directory /home/filip/bin
-    ansible.builtin.file:
-      path: /home/filip/bin
-      state: directory
+  ansible.builtin.file:
+    path: /home/filip/bin
+    state: directory
 
   - name: Copy update script
     ansible.builtin.copy:
       src: .dotfiles/update.sh
-      dest: /home/filip/bin/update.sh
-      owner: filip
-      group: filip
-
-  - name: Copy nano config
-    become: true
-    ansible.builtin.copy:
-      src: .dotfiles/nanorc
-      dest: /etc/nanorc
-      owner: root
-      group: root
-
-  - name: Copy spectacle config
-    ansible.builtin.copy:
-      src: etc/nanorc
-      dest: /etc/nanorc
-      owner: root
-      group: root
+      dest: /home/filip/bin/update.s  h
+    owner: fili p
+    group: fili p
