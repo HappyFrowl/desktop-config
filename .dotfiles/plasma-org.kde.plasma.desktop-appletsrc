@@ -25,7 +25,7 @@ DialogWidth=880
 [Containments][109][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=697
-positions={"2560x1440":["1"\\,"21"\\,"desktop:/config device names"\\,"0"\\,"5"\\,"desktop:/commands"\\,"0"\\,"4"\\,"desktop:/bladeel2"\\,"0"\\,"3"\\,"desktop:/bla"\\,"0"\\,"2"\\,"desktop:/Study Materials"\\,"0"\\,"1"\\,"desktop:/practicefolder"\\,"0"\\,"0"\\,"desktop:/stappenplan.txt"\\,"0"\\,"7"\\,"desktop:/config script.sh"\\,"0"\\,"6"]\\,"1920x1080":["1"\\,"16"\\,"desktop:/config device names"\\,"0"\\,"5"\\,"desktop:/commands"\\,"0"\\,"4"\\,"desktop:/bladeel2"\\,"0"\\,"3"\\,"desktop:/bla"\\,"0"\\,"2"\\,"desktop:/Study Materials"\\,"0"\\,"1"\\,"desktop:/practicefolder"\\,"0"\\,"0"\\,"desktop:/stappenplan.txt"\\,"0"\\,"7"\\,"desktop:/config script.sh"\\,"0"\\,"6"]\\,"0x0":[]}
+positions={"2560x1440":["1"\\,"21"\\,"desktop:/config device names"\\,"0"\\,"4"\\,"desktop:/config script.sh"\\,"0"\\,"5"\\,"desktop:/stappenplan.txt"\\,"0"\\,"6"\\,"desktop:/ticket system"\\,"0"\\,"7"\\,"desktop:/Study Materials"\\,"0"\\,"0"\\,"desktop:/bla"\\,"0"\\,"1"\\,"desktop:/bladeel2"\\,"0"\\,"2"\\,"desktop:/commands"\\,"0"\\,"3"]\\,"1920x1080":["1"\\,"16"\\,"desktop:/commands"\\,"0"\\,"4"\\,"desktop:/config device names"\\,"0"\\,"5"\\,"desktop:/config script.sh"\\,"0"\\,"6"\\,"desktop:/stappenplan.txt"\\,"0"\\,"7"\\,"desktop:/ticket system"\\,"0"\\,"0"\\,"desktop:/Study Materials"\\,"0"\\,"1"\\,"desktop:/bla"\\,"0"\\,"2"\\,"desktop:/bladeel2"\\,"0"\\,"3"]\\,"0x0":[]}
 sortMode=-1
 
 [Containments][109][Wallpaper][org.kde.image][General]
@@ -73,7 +73,6 @@ DialogWidth=880
 
 [Containments][111][Applets][112][Configuration][General]
 favoritesPortedToKAstats=true
-pin=true
 
 [Containments][111][Applets][112][Configuration][Shortcuts]
 global=Alt+F1
@@ -453,7 +452,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][142][Applets][167][Configuration]
-PreloadWeight=60
+PreloadWeight=65
 configMigrated=true
 
 [Containments][142][Applets][167][Configuration][ConfigDialog]
@@ -490,4 +489,4 @@ wallpaperplugin=org.kde.image
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/config script.sh,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,trash:/0-progressz,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/config device names,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/practicefolder,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,trash:/0-MD-101 Managing Modern Desktops (Video) Warren,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,trash:/0-MD-101 Pluralsight - Managing Microsoft Desktops series Glenn Weadock,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/stappenplan.txt,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/commands,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,trash:/0-Sander - Linux Foundation Certified System Administrator (LFCS)\\, 3rd Edition,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/bladeel2,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/Study Materials,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/bla,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,trash:/0-.b4c02c4a26003e5c197f07aea6135ff07de93f1e.parts,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7
+screenMapping=trash:/0-MD-101 Managing Modern Desktops (Video) Warren,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/commands,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/bla,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/bladeel2,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/Study Materials,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,trash:/0-Sander - Linux Foundation Certified System Administrator (LFCS)\\, 3rd Edition,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/ticket system,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/config device names,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/config script.sh,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,trash:/0-.b4c02c4a26003e5c197f07aea6135ff07de93f1e.parts,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,trash:/0-MD-101 Pluralsight - Managing Microsoft Desktops series Glenn Weadock,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,trash:/0-progressz,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,desktop:/stappenplan.txt,0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7
