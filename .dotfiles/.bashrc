@@ -115,6 +115,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# aliases
-
+# Aliases
 alias upd="update.sh"
