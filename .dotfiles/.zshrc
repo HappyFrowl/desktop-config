@@ -125,3 +125,7 @@ unsetopt auto_cd
 
 # Aliases
 alias upd="update.sh"
+alias ll='ls -l'
+alias la='ls -A'
+alias lla='ls -Al'
+

@@ -261,6 +261,7 @@ include "/usr/share/nano/*.nanorc"
 ## For all details, see 'man nanorc', section REBINDING KEYS.
 
 bind ^Z undo main
+bind ^Y redo main
 bind ^X cut main
 bind ^C copy main
 bind ^V paste all
@@ -269,8 +270,6 @@ bind ^S savefile main
 bind ^W writeout main
 bind ^O insert main
 bind ^F whereis all
-bind ^H chopwordleft main
-bind ^Y redo main
 bind ^N findnext all
 bind ^R replace main
 
@@ -278,7 +277,6 @@ bind ^R replace main
 #set multibuffer
 #bind ^H help all
 #bind ^H exit help
-#bind ^F whereis all
 #bind ^B wherewas all
 #bind ^D findprevious all
 #unbind ^U all
