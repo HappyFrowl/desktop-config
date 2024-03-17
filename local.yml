@@ -23,14 +23,12 @@
       - curl
       - python3-psutil
       - qbittorrent
-      - snapd
       - timeshift
       - ksystemlog
       - zsh
       - flatpak
       - nvidia-driver
       - webcamoid
-
 
   - name: Add Brave Browser repo key
     become: true
@@ -67,38 +65,10 @@
       name: brave-browser
       state: present
 
-  - name: Install snap packages
-    community.general.snap:
-      name: "{{ item.name }}"
-      classic: "{{ item.classic | default(false) }}"
-      state: present
-    loop:
-      - name: whatsdesk
-      - name: spotify
-      - name: powershell
-        classic: true
-      - name: code
-        classic: true
-
-  - name: Fetch snap package desktop files
-    become: true
-    find:
-      paths: /var/lib/snapd/desktop/applications/
-      patterns: "*.desktop"
-    register: snap_files
-
-  - name: Copy snap packages to show in app launcher
-    become: true
-    fetch:
-      src: "{{ item.path }}"
-      dest: /usr/share/applications
-      owner: root
-      group: root
-    loop: "{{ snap_files.files }}"
-
   - name: Remove packages
     ansible.builtin.package:
       name:
+        - kcalc
         - kalendarac
         - kmail
         - kmailtransport-akonadi
@@ -133,6 +103,10 @@
         - org.libreoffice.LibreOffice
         - org.mozilla.firefox
         - org.videolan.VLC
+        - uk.org.greenend.chiark.sgtatham.putty
+        - org.kde.kcalc
+        - io.github.mimbrero.WhatsAppDesktop
+        - org.freedesktop.Platform.GL.nvidia-525-147-05
 
   - name: Download TeamViewer
     ansible.builtin.get_url:
@@ -144,6 +118,14 @@
     delegate_to: teamviewer
     ansible.builtin.apt:
       deb: /home/filip/Downloads/teamviewer_15.51.5_amd64.deb
+
+  - name: Download Visual Studio Code
+      become: true
+      shell: curl -LO "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" --output /home/filip/Downloads/code.deb
+
+  - name: Install Visual Studio Code
+    shell:
+      command: dpkg -i /home/filip/Downloads/code.deb
 
   - name: Configure plasma 1
     become: true
@@ -215,13 +197,13 @@
       group: root
 
   - name: Create script directory /home/filip/bin
-  ansible.builtin.file:
-    path: /home/filip/bin
-    state: directory
+    ansible.builtin.file:
+      path: /home/filip/bin
+      state: directory
 
   - name: Copy update script
     ansible.builtin.copy:
       src: .dotfiles/update.sh
       dest: /home/filip/bin/update.s  h
-    owner: fili p
-    group: fili p
+      owner: filip
+      group: filip
