@@ -48,7 +48,7 @@ DialogWidth=880
 
 [Containments][111][Applets][114][Configuration][General]
 groupedTaskVisualization=1
-launchers=preferred://filemanager,applications:org.kde.konsole.desktop,preferred://browser,applications:firefox-esr.desktop,applications:io.github.mimbrero.WhatsAppDesktop.desktop,applications:spotify.desktop,applications:code.desktop,applications:org.kde.kate.desktop,applications:org.kde.kcalc.desktop,file:///usr/share/applications/com.teamviewer.TeamViewer.desktop,applications:virtualbox.desktop,applications:uk.org.greenend.chiark.sgtatham.putty.desktop
+launchers=preferred://filemanager,applications:org.kde.konsole.desktop,preferred://browser,applications:firefox-esr.desktop,applications:io.github.mimbrero.WhatsAppDesktop.desktop,applications:spotify.desktop,applications:code.desktop,applications:org.kde.kate.desktop,applications:org.kde.kcalc.desktop,file:///usr/share/applications/com.teamviewer.TeamViewer.desktop,applications:uk.org.greenend.chiark.sgtatham.putty.desktop,applications:virtualbox.desktop
 wheelEnabled=false
 
 [Containments][111][Applets][115]
@@ -358,9 +358,8 @@ plugin=org.kde.plasma.bluetooth
 [Containments][142][Applets][160][Configuration]
 PreloadWeight=14
 
-[Containments][142][Applets][161]
-immutability=1
-plugin=touchpad
+[Containments][142][Applets][161][Configuration]
+PreloadWeight=42
 
 [Containments][142][Applets][162]
 immutability=1
@@ -371,8 +370,8 @@ DialogHeight=660
 DialogWidth=880
 
 [Containments][142][General]
-extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.diskquota,org.kde.plasma.networkmanagement,touchpad,org.kde.plasma.notifications
-hiddenItems=Discover Notifier_org.kde.DiscoverNotifier,whatsdesk1,org.kde.plasma.bluetooth,org.kde.plasma.diskquota,org.kde.plasma.nightcolorcontrol,chrome_status_icon_1,privateinternetaccess,blueman,chrome_status_icon_2,touchpad,org.kde.plasma.notifications
+extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.diskquota,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,whatsapp-desktop-linux1
+hiddenItems=Discover Notifier_org.kde.DiscoverNotifier,whatsdesk1,org.kde.plasma.bluetooth,org.kde.plasma.diskquota,org.kde.plasma.nightcolorcontrol,chrome_status_icon_1,privateinternetaccess,blueman,chrome_status_icon_2,org.kde.plasma.notifications,whatsapp-desktop-linux1
 knownItems=org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.kdeconnect,org.kde.plasma.volume
 shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement
 
@@ -401,4 +400,4 @@ wallpaperplugin=org.kde.image
 
 [ScreenMapping]
 itemsOnDisabledScreens=0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,13,trash:/0-MD-101 Managing Modern Desktops (Video) Warren,desktop:/commands,desktop:/bla,desktop:/bladeel2,desktop:/Study Materials,trash:/0-Sander - Linux Foundation Certified System Administrator (LFCS)\\, 3rd Edition,desktop:/ticket system,desktop:/config device names,desktop:/config script.sh,trash:/0-.b4c02c4a26003e5c197f07aea6135ff07de93f1e.parts,trash:/0-MD-101 Pluralsight - Managing Microsoft Desktops series Glenn Weadock,trash:/0-progressz,desktop:/stappenplan.txt
-screenMapping=desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config device names,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/stappenplan.txt,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/commands,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bla,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bladeel2,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
+screenMapping=desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bladeel2,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bla,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/stappenplan.txt,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/commands,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config device names,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9

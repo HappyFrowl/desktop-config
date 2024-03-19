@@ -20,9 +20,9 @@
     ansible.builtin.apt:
       pkg:
       - htop
+      - neofetch
       - curl
       - python3-psutil
-      - qbittorrent
       - timeshift
       - ksystemlog
       - zsh
@@ -107,6 +107,7 @@
         - org.kde.kcalc
         - io.github.mimbrero.WhatsAppDesktop
         - org.freedesktop.Platform.GL.nvidia-525-147-05
+        - org.qbittorrent.qBittorrent
 
   - name: Download TeamViewer
     ansible.builtin.get_url:

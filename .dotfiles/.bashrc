@@ -96,7 +96,7 @@ alias la='ls -A'
 alias lla='ls -Al'
 #alias l='ls -CF'
 
-alias upd="update.sh"
+alias upd="bash ~/bin/update.sh"
 
 
 # Alias definitions.

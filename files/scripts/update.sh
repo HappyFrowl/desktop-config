@@ -11,6 +11,4 @@ sudo apt autoremove -y
 
 sudo flatpak update
 
-sudo snap refresh
-
 exit
