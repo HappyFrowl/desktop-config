@@ -1,5 +1,4 @@
 #!/bin/bash
-export PS1="\[\e[31m\]\u\[\e[m\] \t \[\e[35m\]\w\[\e[m\] "
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -60,7 +59,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='\[\e[38;5;225m\][\[\e[38;5;159m\]\u\[\e[0m\] \[\e[38;5;191m\]----------- \[\e[38;5;147m\]\t\[\e[38;5;225m\]]\[\e[0m\] \[\e[38;5;165m\]\w\[\e[0m\] \n\[\e[91m\]>\[\e[0m\]'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
