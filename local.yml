@@ -43,7 +43,7 @@
 
   - name: Copy .bashrc config file
     ansible.builtin.copy:
-      src: .dotfiles/bashrc
+      remote_src: .dotfiles/bashrc
       dest: /home/filip/.bashrc
       owner: filip
       group: filip
