@@ -122,9 +122,7 @@
     ansible.builtin.shell: curl -LO "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" --output /home/filip/Downloads/code.deb
 
   - name: Install Visual Studio Code
-    ansible.builtin.deb: 
-      name: /home/filip/Downloads/code.deb
-      state: present
+    ansible.builtin.shell: dpkg -i /home/filip/Downloads/code.deb
 
   - name: Configure plasma 1
     become: true
