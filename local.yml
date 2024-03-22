@@ -119,7 +119,11 @@
     ansible.builtin.shell: dpkg -i /home/filip/Downloads/teamviewer_15.51.5_amd64.deb
   
   - name: Download Visual Studio Code
-    ansible.builtin.shell: curl -LO "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" --output /home/filip/Downloads/code.deb
+    ansible.builtin.get_url:
+      url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+      dest: /home/filip/Downloads/code.deb
+    
+    #ansible.builtin.shell: curl -LO "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" --output /home/filip/Downloads/code.deb
 
   - name: Install Visual Studio Code
     ansible.builtin.shell: dpkg -i /home/filip/Downloads/code.deb present
