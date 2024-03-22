@@ -91,7 +91,7 @@
     shell: echo "options nvidia NVreg_PreserveVideoMemoryAllocations=1 NVreg_TemporaryFilePath=/var/tmp" > /etc/modprobe.d/nvidia-power-management.conf
 
   - name: Install ZeroTier
-    ansible.builtin.command: curl -s https://install.zerotier.com | sudo bash
+    shell: curl -s https://install.zerotier.com | sudo bash
 
   - name: Add flathub remote if not exists
     ansible.builtin.command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -185,8 +185,8 @@
   - name: Copy spectacle config
     become: true
     ansible.builtin.copy:
-      src: .dotfiles/spectacle
-      dest: /home/filip/s
+      src: .dotfiles/.config/spectaclerc
+      dest: /home/filip/.config/spectaclerc
       owner: root
       group: root
 
