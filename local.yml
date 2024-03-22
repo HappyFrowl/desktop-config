@@ -202,7 +202,7 @@
 
   - name: Copy update script
     ansible.builtin.copy:
-      src: .dotfiles/update.sh
+      src: files/scripts/update.sh
       dest: /home/filip/bin/update.sh
       owner: filip
       group: filip
