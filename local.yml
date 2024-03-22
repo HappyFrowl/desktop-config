@@ -116,7 +116,7 @@
       dest: /home/filip/Downloads
 
   - name: Install TeamViewer
-    ansible.builtin.deb: 
+    ansible.builtin.package: 
       name: /home/filip/Downloads/teamviewer_15.51.5_amd64.deb
       state: present
 
@@ -124,7 +124,7 @@
     ansible.builtin.shell: curl -LO "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" --output /home/filip/Downloads/code.deb
 
   - name: Install Visual Studio Code
-    ansible.builtin.deb: 
+    ansible.builtin.package: 
       name: /home/filip/Downloads/code.deb
       state: present
 
