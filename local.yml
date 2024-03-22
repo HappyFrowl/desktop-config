@@ -50,8 +50,8 @@
 
   - name: Copy bashrc keybindings file
     ansible.builtin.copy:
-      src: .dotfiles/inputrc
-      dest: /etc/inputrc
+      src: .dotfiles/.inputrc
+      dest: /home/filip/.inputrc
       owner: root
       group: root
 
