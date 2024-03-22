@@ -159,7 +159,6 @@
       group: filip
 
   - name: Copy konsolerc
-    become_user: filip
     ansible.builtin.copy:
       src: .dotfiles/.config/konsolerc
       dest: /home/filip/.config/konsolerc
@@ -181,7 +180,6 @@
       group: filip
 
   - name: Copy spectacle config
-    become: true
     ansible.builtin.copy:
       src: .dotfiles/.config/spectaclerc
       dest: /home/filip/.config/spectaclerc
@@ -206,3 +204,7 @@
       dest: /home/filip/bin/update.sh
       owner: filip
       group: filip
+
+  
+  - name: Clean up
+    shell: rm -f /home/filip/Downloads/*
