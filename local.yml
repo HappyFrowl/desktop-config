@@ -121,8 +121,8 @@
       deb: /home/filip/Downloads/teamviewer_15.51.5_amd64.deb
 
   - name: Download Visual Studio Code
-      become: true
-      shell: curl -LO "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" --output /home/filip/Downloads/code.deb
+    shell:
+      command: curl -LO "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" --output /home/filip/Downloads/code.deb
 
   - name: Install Visual Studio Code
     shell:
