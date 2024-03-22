@@ -5,6 +5,28 @@
 
   tasks:
 
+  - name: Remove packages
+    ansible.builtin.package:
+      name:
+        - kcalc
+        - kalendarac
+        - kmail
+        - kmailtransport-akonadi
+        - korganizer
+        - knotes
+        - kdepim-themeeditors
+        - konqueror
+        - juk
+        - dragonplayer
+        - libreoffice
+        - firefox-esr
+      state: absent
+
+  - name: Remove dependencies that are no longer required and purge their configuration files
+    ansible.builtin.apt:
+      autoremove: yes
+      purge: true
+
   - name: Copy sources.list
     ansible.builtin.copy:
       src: etc/apt/sources.list
@@ -65,28 +87,6 @@
       name: brave-browser
       state: present
 
-  - name: Remove packages
-    ansible.builtin.package:
-      name:
-        - kcalc
-        - kalendarac
-        - kmail
-        - kmailtransport-akonadi
-        - korganizer
-        - knotes
-        - kdepim-themeeditors
-        - konqueror
-        - juk
-        - dragonplayer
-        - libreoffice
-        - firefox-esr
-      state: absent
-
-  - name: Remove dependencies that are no longer required and purge their configuration files
-    ansible.builtin.apt:
-      autoremove: yes
-      purge: true
-
   - name: Configure nvidia power management
     shell: echo "options nvidia NVreg_PreserveVideoMemoryAllocations=1 NVreg_TemporaryFilePath=/var/tmp" > /etc/modprobe.d/nvidia-power-management.conf
 
@@ -124,8 +124,7 @@
     shell: curl -LO "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" --output /home/filip/Downloads/code.deb
 
   - name: Install Visual Studio Code
-    shell:
-      command: dpkg -i /home/filip/Downloads/code.deb
+    shell: dpkg -i /home/filip/Downloads/code.deb
 
   - name: Configure plasma 1
     become: true
