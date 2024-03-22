@@ -100,7 +100,7 @@
     become: true
     community.general.flatpak:
       name:
-        - org.libreoffice.LibreOffice
+        - org.onlyoffice.desktopeditors
         - org.mozilla.firefox
         - org.videolan.VLC
         - uk.org.greenend.chiark.sgtatham.putty
@@ -205,6 +205,6 @@
   - name: Copy update script
     ansible.builtin.copy:
       src: .dotfiles/update.sh
-      dest: /home/filip/bin/update.s  h
+      dest: /home/filip/bin/update.sh
       owner: filip
       group: filip
