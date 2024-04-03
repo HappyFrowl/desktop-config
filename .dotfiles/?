@@ -1,0 +1,3 @@
+find: ‘/proc/29103/task/29103/net’: Invalid argument
+find: ‘/proc/29103/net’: Invalid argument
+find: ‘/run/user/1000/doc’: Permission denied
