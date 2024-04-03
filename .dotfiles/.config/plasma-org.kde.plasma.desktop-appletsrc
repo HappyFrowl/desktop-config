@@ -189,7 +189,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][117][Applets][166][Configuration]
-PreloadWeight=47
+PreloadWeight=57
 
 [Containments][117][Applets][167][Configuration]
 PreloadWeight=42
@@ -200,7 +200,7 @@ DialogWidth=880
 
 [Containments][117][General]
 extraItems=org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.clipboard
-hiddenItems=whatsdesk1,org.kde.plasma.nightcolorcontrol,org.kde.plasma.bluetooth,org.kde.plasma.battery,chrome_status_icon_1,blueman,chrome_status_icon_2,Plasma_microphone,org.kde.plasma.notifications,org.kde.plasma.clipboard,whatsapp-desktop-linux1
+hiddenItems=whatsdesk1,org.kde.plasma.nightcolorcontrol,org.kde.plasma.bluetooth,chrome_status_icon_1,blueman,chrome_status_icon_2,Plasma_microphone,org.kde.plasma.notifications,org.kde.plasma.clipboard,whatsapp-desktop-linux1,org.kde.plasma.battery
 iconSpacing=1
 knownItems=org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.kdeconnect,org.kde.plasma.volume
 shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement,privateinternetaccess
@@ -257,7 +257,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][136][Applets][154][Configuration]
-PreloadWeight=90
+PreloadWeight=95
 popupHeight=550
 popupWidth=484
 
@@ -389,6 +389,10 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][168][General]
+positions={"2560x1440":["1"\\,"21"\\,"desktop:/config device names"\\,"0"\\,"6"\\,"desktop:/ticket system"\\,"0"\\,"8"\\,"desktop:/testfolder"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/bla"\\,"0"\\,"3"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/commands"\\,"0"\\,"5"\\,"desktop:/bladeel2"\\,"0"\\,"4"\\,"desktop:/config script.sh"\\,"0"\\,"7"]\\,"1920x1080":["1"\\,"16"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/testfolder"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/config script.sh"\\,"0"\\,"7"\\,"desktop:/config device names"\\,"0"\\,"6"\\,"desktop:/commands"\\,"0"\\,"5"\\,"desktop:/bladeel2"\\,"0"\\,"4"\\,"desktop:/ticket system"\\,"0"\\,"9"\\,"desktop:/bla"\\,"0"\\,"3"]\\,"0x0":[]}
+sortMode=-1
+
 [Containments][169]
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
@@ -401,5 +405,5 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,13,trash:/0-MD-101 Managing Modern Desktops (Video) Warren,desktop:/commands,desktop:/bla,desktop:/bladeel2,desktop:/Study Materials,trash:/0-Sander - Linux Foundation Certified System Administrator (LFCS)\\, 3rd Edition,desktop:/ticket system,desktop:/config device names,desktop:/config script.sh,trash:/0-.b4c02c4a26003e5c197f07aea6135ff07de93f1e.parts,trash:/0-MD-101 Pluralsight - Managing Microsoft Desktops series Glenn Weadock,trash:/0-progressz,desktop:/stappenplan.txt
-screenMapping=desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testfolder,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/commands,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/StudyMaterials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/stappenplan.txt,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bla,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config device names,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bladeel2,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
+itemsOnDisabledScreens=0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,5,trash:/0-MD-101 Managing Modern Desktops (Video) Warren,trash:/0-Sander - Linux Foundation Certified System Administrator (LFCS)\\, 3rd Edition,trash:/0-.b4c02c4a26003e5c197f07aea6135ff07de93f1e.parts,trash:/0-MD-101 Pluralsight - Managing Microsoft Desktops series Glenn Weadock,trash:/0-progressz
+screenMapping=desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testfolder,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bladeel2,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/commands,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bla,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy%5C,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config device names,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/StudyMaterials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
