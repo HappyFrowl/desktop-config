@@ -3,7 +3,7 @@
 
 #kernel in use
 CURRENT=$(uname -v | awk '{print $5}')
-echo "Kernel currently in use is $CURRENT"
+echo "Kernel version currently in use is $CURRENT"
 echo ""
 
 #old kernel
@@ -24,9 +24,9 @@ if [ "$1" == "exec" ]; then
 			yes | apt purge "$EACH"
 		done
 	else
-		echo "There are no unused kernels"
+		echo "There are no unused kernels, so nothing has been removed"
 	fi
 else
 	echo ""
-	echo "To remove kernels, run as: sudo remove-unusedkernels.sh exec"
+	echo "To remove kernels, run as: remove-unusedkernels.sh exec OR ruk exec"
 fi
