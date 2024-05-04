@@ -10,6 +10,9 @@ for SOURCE in $SOURCES; do
 	adb pull -a $SOURCE $DESTINATION
 done
 
+# Removed all trashed files
+find $DESTINATION -f -name *trashed* -delete
+
 # Define source and destination directories
 SRC=("$HOME/Pictures/phone/Camera/*")
 DEST="$HOME/Pictures/testphotos/Camera"
