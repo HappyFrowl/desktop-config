@@ -11,20 +11,45 @@ for SOURCE in $SOURCES; do
 done
 
 # Define source and destination directories
-SRC="$HOME/Pictures/phone/Camera"
-FILES="$(ls $SRC)"
-DEST="$HOME/Pictures/phone/here"
+SRC=("$HOME/Pictures/phone/Camera/*")
+DEST="$HOME/Pictures/testphotos/Camera"
 
 # Copy all unique regular files to destination directory
-for FILE in $FILES; do
-	if [ ! -e "$DEST/$FILE" ] && [ -f "$SRC/$FILE" ]; then
+for FILE in $SRC; do
+	BASE=$(basename $FILE)
+	if [ ! -e "$DEST/$BASE" ] && [ -f "$FILE" ]; then
 		cp -n "$FILE" "$DEST"
 		echo "Copied $FILE"
-	elif [ -d "$SRC/$FILE" ]; then
+	elif [ -d "$FILE" ]; then
 		echo "$FILE is a directory, skipping..."
-	elif [ -e "$DEST/$FILE" ]; then
+	elif [ -e "$FILE" ]; then
 		echo "$FILE already exists, skipping..."
 	else
 		echo "$FILE is neither a directory or existing at destination, but still skipping..."
 	fi
 done
+
+
+# Define source and destination directories for WhatsApp files
+SRC=("$HOME/Pictures/phone/here/*")
+DEST="$HOME/Pictures/testphotos/here"
+
+# Copy all unique regular files to destination directory
+for FILE in $SRC; do
+	BASE=$(basename $FILE)
+	if [ ! -e "$DEST/$BASE" ] && [ -f "$FILE" ]; then
+		cp -n "$FILE" "$DEST"
+		echo "Copied $FILE"
+	elif [ -d "$FILE" ]; then
+		echo "$FILE is a directory, skipping..."
+	elif [ -e "$FILE" ]; then
+		echo "$FILE already exists, skipping..."
+	else
+		echo "$FILE is neither a directory or existing at destination, but still skipping..."
+	fi
+done
+
+# Empty adb directories
+find $DESTINATION -mindepth 2 -type f -delete
+
+exit
