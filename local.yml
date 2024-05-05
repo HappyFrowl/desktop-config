@@ -57,6 +57,7 @@
       - zsh
       - flatpak
       - webcamoid
+      - adb
 
   - name: Copy .bashrc config file
     ansible.builtin.copy:
@@ -104,18 +105,18 @@
   - name: Download TeamViewer
     ansible.builtin.get_url:
       url: https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
-      dest: /home/filip/Downloads
+      dest: /home/filip/Downloads/teamviewer.deb
 
   - name: Install TeamViewer
-    ansible.builtin.shell: dpkg -i /home/filip/Downloads/teamviewer_15.51.5_amd64.deb
-  
+    ansible.builtin.shell: dpkg -i /home/filip/Downloads/teamviewer.deb
+
   - name: Download Visual Studio Code
     ansible.builtin.get_url:
       url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
       dest: /home/filip/Downloads/code.deb
 
   - name: Install Visual Studio Code
-    ansible.builtin.shell: dpkg -i /home/filip/Downloads/code.deb 
+    ansible.builtin.shell: dpkg -i /home/filip/Downloads/code.deb
 
   - name: Configure plasma 1
     become: true
@@ -196,6 +197,6 @@
       owner: filip
       group: filip
 
-  
+
   - name: Clean up Downloads folder
     ansible.builtin.shell: rm -f /home/filip/Downloads/*
