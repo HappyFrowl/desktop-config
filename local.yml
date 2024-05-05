@@ -2,8 +2,6 @@
 - hosts: localhost
   connection: local
   become: true
-  vars:
-    ansible_user: filip
 
 
   tasks:
