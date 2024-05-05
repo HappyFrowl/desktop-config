@@ -96,6 +96,7 @@ alias lla='ls -Alh'
 #alias l='ls -CF'
 
 alias upd="bash ~/bin/update.sh"
+alias ruk="bash ~/bin/remove-unusedkernels.sh"
 
 
 # Alias definitions.
