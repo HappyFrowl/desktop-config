@@ -3,7 +3,6 @@
   connection: local
   become: true
 
-
   tasks:
   - name: Remove packages
     ansible.builtin.package:
@@ -21,7 +20,6 @@
         - libreoffice
         - firefox-esr
       state: absent
-      become: yes
 
   - name: Remove dependencies that are no longer required and purge their configuration files
     ansible.builtin.apt:
