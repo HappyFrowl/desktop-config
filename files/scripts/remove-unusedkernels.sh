@@ -3,8 +3,8 @@
 
 #kernel in use
 CURRENT=$(uname -v | awk '{print $5}')
-echo "Kernel version currently in use is $CURRENT"
-echo ""
+echo "Kernel version currently in use: $CURRENT"
+echo "Debian release: "$(uname -a | awk '{print $3}')""
 
 #old kernel
 OLD=$(
@@ -30,3 +30,6 @@ else
 	echo ""
 	echo "To remove kernels, run as: remove-unusedkernels.sh exec OR ruk exec"
 fi
+
+exit
+
