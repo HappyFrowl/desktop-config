@@ -62,14 +62,14 @@
   - name: Copy .bashrc config file
     ansible.builtin.copy:
       src: .dotfiles/.bashrc
-      dest: "{{ ansible_env.HOME }}/.bashrc"
+      dest: "{{ lookup('env', 'HOME') }}/.bashrc"
       owner: filip
       group: filip
 
   - name: Copy bashrc keybindings file
     ansible.builtin.copy:
       src: .dotfiles/.inputrc
-      dest: "{{ ansible_env.HOME }}/.inputrc"
+      dest: "{{ lookup('env', 'HOME') }}/.inputrc"
       owner: filip
       group: filip
 
@@ -114,17 +114,17 @@
   - name: Download Visual Studio Code
     ansible.builtin.get_url:
       url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
-      dest: "{{ ansible_env.HOME }}/Downloads/code.deb"
+      dest: "{{ lookup('env', 'HOME') }}/Downloads/code.deb"
     become: no
 
   - name: Install Visual Studio Code
-    ansible.builtin.shell: dpkg -i "{{ ansible_env.HOME }}/Downloads/code.deb"
+    ansible.builtin.shell: dpkg -i "{{ lookup('env', 'HOME') }}/Downloads/code.deb"
 
   - name: Configure plasma 1
     become: true
     ansible.builtin.copy:
       src: .dotfiles/.config/plasma-org.kde.plasma.desktop-appletsrc
-      dest: "{{ ansible_env.HOME }}/.config/plasma-org.kde.plasma.desktop-appletsrc"
+      dest: "{{ lookup('env', 'HOME') }}/.config/plasma-org.kde.plasma.desktop-appletsrc"
       owner: filip
       group: filip
 
@@ -132,7 +132,7 @@
     become: true
     ansible.builtin.copy:
       src: .dotfiles/.config/kdeglobals
-      dest: "{{ ansible_env.HOME }}/.config/kdeglobals"
+      dest: "{{ lookup('env', 'HOME') }}/.config/kdeglobals"
       owner: filip
       group: filip
 
@@ -140,7 +140,7 @@
     become: true
     ansible.builtin.copy:
       src: .dotfiles/.config/xsettingsd/xsettingsd.conf
-      dest: "{{ ansible_env.HOME }}/.config/xsettingsd/xsettingsd.conf"
+      dest: "{{ lookup('env', 'HOME') }}/.config/xsettingsd/xsettingsd.conf"
       owner: filip
       group: filip
 
@@ -148,63 +148,63 @@
     become: true
     ansible.builtin.copy:
       src: .dotfiles/.config/kwinrc
-      dest: "{{ ansible_env.HOME }}/.config/kwinrc"
+      dest: "{{ lookup('env', 'HOME') }}/.config/kwinrc"
       owner: filip
       group: filip
 
   - name: Copy konsolerc
     ansible.builtin.copy:
       src: .dotfiles/.config/konsolerc
-      dest: "{{ ansible_env.HOME }}/.config/konsolerc"
+      dest: "{{ lookup('env', 'HOME') }}/.config/konsolerc"
       owner: filip
       group: filip
 
   - name: Copy mimeapps.list
     ansible.builtin.copy:
       src: .dotfiles/.config/mimeapps.list
-      dest: "{{ ansible_env.HOME }}/.config/mimeapps.list"
+      dest: "{{ lookup('env', 'HOME') }}/.config/mimeapps.list"
       owner: filip
       group: filip
 
   - name: Copy lock screen duration settings
     ansible.builtin.copy:
       src: .dotfiles/.config/kdedefaults/kscreenlockerrc
-      dest: "{{ ansible_env.HOME }}/.config/kdedefaults/kscreenlockerrc"
+      dest: "{{ lookup('env', 'HOME') }}/.config/kdedefaults/kscreenlockerrc"
       owner: filip
       group: filip
 
   - name: Copy spectacle config
     ansible.builtin.copy:
       src: .dotfiles/.config/spectaclerc
-      dest: "{{ ansible_env.HOME }}/.config/spectaclerc"
+      dest: "{{ lookup('env', 'HOME') }}/.config/spectaclerc"
       owner: filip
       group: filip
 
   - name: Copy nanorc config
     ansible.builtin.copy:
       src: .dotfiles/.nanorc
-      dest: "{{ ansible_env.HOME }}/.nanorc"
+      dest: "{{ lookup('env', 'HOME') }}/.nanorc"
       owner: filip
       group: filip
 
-  - name: Create script directory {{ ansible_env.HOME }}/bin
+  - name: Create script directory {{ lookup('env', 'HOME') }}/bin
     ansible.builtin.file:
-      path: "{{ ansible_env.HOME }}/bin"
+      path: "{{ lookup('env', 'HOME') }}/bin"
       state: directory
 
   - name: Copy scripts
     ansible.builtin.copy:
       src: files/scripts/
-      dest: "{{ ansible_env.HOME }}/bin/"
+      dest: "{{ lookup('env', 'HOME') }}/bin/"
       owner: filip
       group: filip
 
   - name: Set execution permissions for files in scripts folder
     ansible.builtin.file:
-      path: "{{ ansible_env.HOME }}/bin/*"
+      path: "{{ lookup('env', 'HOME') }}/bin/*"
       mode: u+x
       recurse: yes
       type: file
 
   - name: Clean up Downloads folder
-    ansible.builtin.shell: rm -f "{{ ansible_env.HOME }}/Downloads/*"
+    ansible.builtin.shell: rm -f "{{ lookup('env', 'HOME') }}/Downloads/*"
