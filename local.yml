@@ -193,7 +193,7 @@
 
   - name: Copy scripts
     ansible.builtin.copy:
-      src: files/scripts/*
+      src: files/scripts/
       dest: /home/filip/bin/
       owner: filip
       group: filip
