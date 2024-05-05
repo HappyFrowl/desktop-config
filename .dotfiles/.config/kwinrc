@@ -13,9 +13,9 @@ BorderActivateAll=9
 Active=true
 EveningBeginFixed=2300
 Mode=Times
-MorningBeginFixed=0730
-NightTemperature=2500
-TransitionTime=25
+MorningBeginFixed=0700
+NightTemperature=3000
+TransitionTime=20
 
 [Tiling]
 padding=4

@@ -189,7 +189,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][117][Applets][166][Configuration]
-PreloadWeight=57
+PreloadWeight=62
 
 [Containments][117][Applets][167][Configuration]
 PreloadWeight=42
@@ -257,7 +257,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][136][Applets][154][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 popupHeight=550
 popupWidth=484
 
@@ -351,7 +351,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][142][Applets][159][Configuration]
-PreloadWeight=70
+PreloadWeight=80
 
 [Containments][142][Applets][160]
 immutability=1
@@ -363,17 +363,16 @@ PreloadWeight=14
 [Containments][142][Applets][161][Configuration]
 PreloadWeight=42
 
-[Containments][142][Applets][162]
-immutability=1
-plugin=org.kde.plasma.diskquota
+[Containments][142][Applets][162][Configuration]
+PreloadWeight=42
 
 [Containments][142][ConfigDialog]
 DialogHeight=660
 DialogWidth=880
 
 [Containments][142][General]
-extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.diskquota,org.kde.plasma.networkmanagement,org.kde.plasma.notifications
-hiddenItems=Discover Notifier_org.kde.DiscoverNotifier,whatsdesk1,org.kde.plasma.bluetooth,org.kde.plasma.diskquota,org.kde.plasma.nightcolorcontrol,chrome_status_icon_1,privateinternetaccess,blueman,chrome_status_icon_2,org.kde.plasma.notifications,whatsapp-desktop-linux1
+extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.notifications
+hiddenItems=Discover Notifier_org.kde.DiscoverNotifier,whatsdesk1,org.kde.plasma.bluetooth,chrome_status_icon_1,privateinternetaccess,blueman,chrome_status_icon_2,org.kde.plasma.notifications,whatsapp-desktop-linux1,org.kde.plasma.nightcolorcontrol
 knownItems=org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.kdeconnect,org.kde.plasma.volume
 shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement
 
@@ -390,11 +389,12 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][168][General]
-positions={"2560x1440":["1"\\,"21"\\,"desktop:/config device names"\\,"0"\\,"6"\\,"desktop:/ticket system"\\,"0"\\,"8"\\,"desktop:/testfolder"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/bla"\\,"0"\\,"3"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/commands"\\,"0"\\,"5"\\,"desktop:/bladeel2"\\,"0"\\,"4"\\,"desktop:/config script.sh"\\,"0"\\,"7"]\\,"1920x1080":["1"\\,"16"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/testfolder"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/config script.sh"\\,"0"\\,"7"\\,"desktop:/config device names"\\,"0"\\,"6"\\,"desktop:/commands"\\,"0"\\,"5"\\,"desktop:/bladeel2"\\,"0"\\,"4"\\,"desktop:/ticket system"\\,"0"\\,"9"\\,"desktop:/bla"\\,"0"\\,"3"]\\,"0x0":[]}
+positions={"2560x1440":["1"\\,"21"\\,"desktop:/testfolder"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/asdsds"\\,"0"\\,"3"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/ticket system"\\,"0"\\,"8"\\,"desktop:/bladeel2"\\,"0"\\,"5"\\,"desktop:/bla"\\,"0"\\,"4"\\,"desktop:/config script.sh"\\,"0"\\,"7"\\,"desktop:/config device names"\\,"0"\\,"6"]\\,"1920x1080":["1"\\,"16"\\,"desktop:/bladeel2"\\,"0"\\,"5"\\,"desktop:/config device names"\\,"0"\\,"6"\\,"desktop:/config script.sh"\\,"0"\\,"7"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/testfolder"\\,"0"\\,"1"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/asdsds"\\,"0"\\,"3"\\,"desktop:/ticket system"\\,"0"\\,"8"\\,"desktop:/bla"\\,"0"\\,"4"]\\,"0x0":[]}
 sortMode=-1
 
 [Containments][169]
 ItemGeometries-1920x1080=
+ItemGeometries-2560x1440=
 ItemGeometriesHorizontal=
 activityId=9f86f85b-2a62-486b-ad9f-7726d4e367e9
 formfactor=0
@@ -406,4 +406,4 @@ wallpaperplugin=org.kde.image
 
 [ScreenMapping]
 itemsOnDisabledScreens=0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,5,trash:/0-MD-101 Managing Modern Desktops (Video) Warren,trash:/0-Sander - Linux Foundation Certified System Administrator (LFCS)\\, 3rd Edition,trash:/0-.b4c02c4a26003e5c197f07aea6135ff07de93f1e.parts,trash:/0-MD-101 Pluralsight - Managing Microsoft Desktops series Glenn Weadock,trash:/0-progressz
-screenMapping=desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testfolder,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bladeel2,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/commands,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bla,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy%5C,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config device names,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/StudyMaterials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
+screenMapping=desktop:/StudyMaterials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config device names,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bladeel2,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bla,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testfolder,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy%5C,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/asdsds,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
