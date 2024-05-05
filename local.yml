@@ -201,10 +201,12 @@
 
   - name: Set execution permissions for files in scripts folder
     ansible.builtin.file:
-      path: "{{ lookup('env', 'HOME') }}/bin/*"
+      path: "{{ lookup('env', 'HOME') }}/bin"
       mode: u+x
       recurse: yes
       type: file
 
   - name: Clean up Downloads folder
-    ansible.builtin.shell: rm -f "{{ lookup('env', 'HOME') }}/Downloads/*"
+    ansible.builtin.file:
+      path: "{{ lookup('enc', 'HOME') }}/Downloads/*"
+      state: absent
