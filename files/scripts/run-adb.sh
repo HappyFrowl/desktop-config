@@ -7,19 +7,22 @@ DESTINATION="$HOME/Pictures/phone"
 
 # Transfer paths to destination
 for SOURCE in $SOURCES; do
-	adb pull -a $SOURCE $DESTINATION
+	while [ ! -d "$DESTINATION" ]; do
+		mkdir -p "$DESTINATION"
+	done
+	adb pull -a "$SOURCE" "$DESTINATION"
 done
 
 # Removed all trashed files
-find $DESTINATION -f -name *trashed* -delete
+find "$DESTINATION" -type f -name *trashed* -delete
 
-# Define source and destination directories
-SRC=("$HOME/Pictures/phone/Camera/*")
+# Define source and destination directories for photos
+SRC="$HOME/Pictures/phone/Camera/*"
 DEST="$HOME/Pictures/testphotos/Camera"
 
 # Copy all unique regular files to destination directory
 for FILE in $SRC; do
-	BASE=$(basename $FILE)
+	BASE=$(basename "$FILE")
 	if [ ! -e "$DEST/$BASE" ] && [ -f "$FILE" ]; then
 		cp -n "$FILE" "$DEST"
 		echo "Copied $FILE"
