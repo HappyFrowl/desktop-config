@@ -4,6 +4,12 @@
   become: true
 
   tasks:
+  - name: Clean up Downloads folder
+    ansible.builtin.file:
+      path: "{{ lookup('env', 'HOME') }}/Downloads/*"
+      state: absent
+
+
   - name: Remove packages
     ansible.builtin.package:
       name:
