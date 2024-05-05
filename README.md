@@ -7,7 +7,7 @@ Prequisites:
 
 How to use:
 - run sudo apt update && sudo apt upgrade
-- ansible-pull -U https://github.com/HappyFrowl/desktop-config.git
+- sudo ansible-pull -U https://github.com/HappyFrowl/desktop-config.git
 
  
 
