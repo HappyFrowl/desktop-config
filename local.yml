@@ -115,6 +115,7 @@
     ansible.builtin.get_url:
       url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
       dest: "{{ ansible_env.HOME }}/Downloads/code.deb"
+    become: no
 
   - name: Install Visual Studio Code
     ansible.builtin.shell: dpkg -i "{{ ansible_env.HOME }}/Downloads/code.deb"
