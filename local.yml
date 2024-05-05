@@ -107,6 +107,7 @@
     ansible.builtin.get_url:
       url: https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
       dest: "{{ ansible_env.HOME }}/Downloads/teamviewer.deb"
+    become: no
 
   - name: Install TeamViewer
     ansible.builtin.shell: dpkg -i "{{ ansible_env.HOME }}/Downloads/teamviewer.deb"
