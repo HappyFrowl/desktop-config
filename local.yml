@@ -207,5 +207,5 @@
 
   - name: Clean up Downloads folder
     ansible.builtin.file:
-      path: "{{ lookup('env', 'HOME') }}/Downloads/"
+      path: "{{ lookup('env', 'HOME') }}/Downloads/*"
       state: absent
