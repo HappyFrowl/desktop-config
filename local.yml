@@ -7,13 +7,6 @@
 
 
   tasks:
-    - setup:
-        gather_subset: env
-      become: no
-    - debug:
-        msg: "{{ ansible_env.HOME }}"
-
-
   - name: Remove packages
     ansible.builtin.package:
       name:
@@ -116,11 +109,11 @@
   - name: Download TeamViewer
     ansible.builtin.get_url:
       url: https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
-      dest: "{{ ansible_env.HOME }}/Downloads/teamviewer.deb"
+      dest: "{{ lookup('env', 'HOME') }}/Downloads/teamviewer.deb"
     become: no
 
   - name: Install TeamViewer
-    ansible.builtin.shell: dpkg -i "{{ ansible_env.HOME }}/Downloads/teamviewer.deb"
+    ansible.builtin.shell: dpkg -i "{{ lookup('env', 'HOME') }}/Downloads/teamviewer.deb"
 
   - name: Download Visual Studio Code
     ansible.builtin.get_url:
