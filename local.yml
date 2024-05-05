@@ -49,6 +49,7 @@
     ansible.builtin.apt:
       pkg:
       - htop
+      - tmux
       - neofetch
       - curl
       - python3-psutil
@@ -190,10 +191,10 @@
       path: /home/filip/bin
       state: directory
 
-  - name: Copy update script
+  - name: Copy scripts
     ansible.builtin.copy:
-      src: files/scripts/update.sh
-      dest: /home/filip/bin/update.sh
+      src: files/scripts/*
+      dest: /home/filip/bin/
       owner: filip
       group: filip
 
