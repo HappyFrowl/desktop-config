@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#script for removing unused kernels
+#Script for removing unused kernels and associated directories
 set -e
 
 #kernel in use
