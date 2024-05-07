@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/bin/bash/env bash
 # script extracting all photos and videos from Android phone
+set -e
 
 # Define source and destination path
 SOURCES=("/storage/sdcard0/DCIM/Camera/" "/storage/sdcard0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images")

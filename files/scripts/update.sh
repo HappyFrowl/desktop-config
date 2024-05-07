@@ -1,6 +1,8 @@
-#! /bin/bash
-#V2
+#!/usr/bin/env bash
+
 # System update script
+set -e
+
 START_TIME=$SECONDS
 
 set -e
