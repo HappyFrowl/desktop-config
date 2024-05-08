@@ -25,7 +25,6 @@ if [ "$1" == "exec" ]; then
 	if [ -n "$OLD" ]; then
 		for EACH in $OLD; do
 			yes | sudo apt purge "$EACH"
-			sudo rm -rf /lib/modules/
 		done
 	else
 		echo "There are no unused kernels, so nothing has been removed"
