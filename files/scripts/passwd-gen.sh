@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 # Password generator script
 set -e
 
@@ -6,7 +6,7 @@ echo "Enter password length:"
 read length
 
 CHAR="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=''[]{}|;:,.<>?~"
-REQUIRED=(
+REQ=(
 		"!@#$%^&*()_+-=''[]{}|;:,.<>?~"
 		"1234567890"
 		"abcdefghijklmnopqrstuvwxyz"
@@ -20,18 +20,19 @@ elif [ "$length" -lt 4 ]; then
 else
 	while true; do
 		password=$(openssl rand -base64 128 | tr -dc "$CHAR" | head -c "$length")
-		CONTAINS_REQUIRED=false
+		CONTAINS_REQ=false
 		for (( i = 0; i < ${#password}; i++ )); do
-			for EACH in "$REQUIRED"; do
-				if [[ "$EACH" == *"${password:$i:1}"* ]]; then
-					CONTAINS_REQUIRED=true
+			for n in "$REQ"; do
+				if [[ "$n" == *"${password:$i:1}"* ]]; then
+					CONTAINS_REQ=true
 				fi
 			done
 		done
-		if $CONTAINS_REQUIRED; then
+		if $CONTAINS_REQ; then
 			break
 		fi
 	done
 	echo "$password"
 fi
 
+exit 0
