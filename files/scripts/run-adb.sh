@@ -1,5 +1,5 @@
 #!/bin/bash/env bash
-# script extracting all photos and videos from Android phone
+# Script extracting all photos and videos from Android phone
 set -e
 
 # Define source and destination path
