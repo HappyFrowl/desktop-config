@@ -3,27 +3,23 @@
 # System update script
 set -e
 
-START_TIME=$SECONDS
-
-set -e
-
 echo "Welcome to Update Manager"
+
+START_TIME=$SECONDS
 
 update_system() {
 
-	echo "Starting system update"
+	LOGFILE="$HOME/Desktop/testy/outcome"
+	ERRORLOG="$HOME/Desktop/testy/error.log"
+
 	sleep 1
-	echo "Please provide password"
-	echo ""
-
+	echo -e "Please provide password\n"
 	sudo apt update
+	echo $(date) >> $LOGFILE 
+	echo -e "\nApt packages:\n" | tee -a $LOGFILE
+	sudo apt dist-upgrade -y 2>>$ERRORLOG | tee -a  $LOGFILE
 	echo ""
-	echo -e "Apt packages:\n" > ~/Desktop/testy/outcome
-	sudo apt dist-upgrade -y 2>/dev/null | tee -a  ~/Desktop/testy/outcome
-	echo ""
-
-	sudo apt autoremove -y 2>/dev/null | tee -a ~/Desktop/testy/outcome
-	echo ""
+	sudo apt autoremove -y 2>>$ERRORLOG  | tee -a $LOGFILE
 }
 
 error_handling() {
@@ -35,13 +31,11 @@ trap 'error_handling "Line $LINENO: Command failed with exit code $?"' ERR
 
 update_system || error_handling "issues encountered"
 
-echo "Starting with FlatPak updates:"
-echo -e "FlatPak:\n" >> ~/Desktop/testy/outcome
-sudo flatpak update -y | tee -a ~/Desktop/testy/outcome
-sudo flatpak uninstall --unused
+echo -e "\nStarting with FlatPak updates:" | tee -a $LOGFILE
+sudo flatpak update -y | tee -a $LOGFILE
+sudo flatpak uninstall --unused | tee -a $LOGFILE
 
-echo ""
-echo "Time taken to run updates:"
+echo -e "\nTime taken to run updates:"
 ELPASED_TIME=$(($SECONDS - $START_TIME))
 echo $ELPASED_TIME seconds
 
