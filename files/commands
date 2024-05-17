@@ -6,3 +6,22 @@ du . -ah | sort -rh | head -n 10
 #List all available commands 
 compgen -c
 
+# show all options for if statements
+man test
+
+# show the command 
+command -v <input>
+
+ 
+#reset network card
+sudo systemctl restart NetworkManager
+
+#ip address
+ip a
+
+#routing tables
+ip r
+
+# 
+# list all users
+cat /etc/passwd | awk -F: '{print }'
