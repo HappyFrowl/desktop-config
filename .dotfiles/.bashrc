@@ -18,8 +18,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=5000
+HISTFILESIZE=10000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -95,8 +95,9 @@ alias la='ls -A'
 alias lla='ls -Alh'
 #alias l='ls -CF'
 
-alias upd="bash ~/bin/update.sh"
-alias ruk="bash ~/bin/remove-unusedkernels.sh"
+alias upd="bash /usr/local/bin/update.sh"
+alias ruk="bash /usr/local/bin/remove-unusedkernels.sh"
+alias unmount=umount
 
 
 # Alias definitions.
