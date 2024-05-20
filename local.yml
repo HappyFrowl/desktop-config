@@ -58,6 +58,7 @@
       - flatpak
       - webcamoid
       - adb
+      - net-tools
 
   - name: Copy .bashrc config file
     ansible.builtin.copy:
