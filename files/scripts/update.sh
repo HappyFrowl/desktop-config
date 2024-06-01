@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # System update script
 set -e
 
