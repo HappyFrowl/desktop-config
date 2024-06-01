@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# System update script
+# System update script 
 set -e
 
 echo "Welcome to Update Manager"
