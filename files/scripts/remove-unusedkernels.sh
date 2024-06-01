@@ -1,46 +1,47 @@
 #!/usr/bin/env bash
-#Script for removing unused kernels and associated directories
+#Script for removing unused kernels and modules
 set -e
 
-#kernel in use
-CURRENT=$(uname -v | awk '{print $5}')
-DEB=$(uname -a | awk '{print $3}')
-echo "Kernel version currently in use: $CURRENT"
+#Kernel in use
+IN_USE=$(uname -v | awk '{print $5}')
+DEB=$(uname -r)
+echo "In use kernel version: $IN_USE"
 echo "Debian release: $DEB"
 
-#old kernel
-OLD=$(
+#Old kernels
+OLD_KERNELS=$(
 	dpkg --list |
-		grep 'linux-headers-\|linux-image-' |
-		grep -v $CURRENT |
+		grep -Ei 'linux-headers-|linux-image-' |
+		grep -v $IN_USE |
 		awk '{print $2}'
 )
 
-echo ""
-echo "Old kernels on the system:"
-echo $OLD
+echo -e "\nOld kernels present:"
+echo $OLD_KERNELS
 
-#Remove old kernels only when used with exec
+#Old modules
+OLD_MODULES=$(ls /lib/modules |
+	grep -v $DEB || true
+)
+echo "Old modules present:"
+echo "$OLD_MODULES"
+
+#Dry run without exec
 if [ "$1" == "exec" ]; then
-	if [ -n "$OLD" ]; then
-		for EACH in $OLD; do
-			yes | sudo apt purge "$EACH"
+	if [ -n "$OLD_KERNELS" ]; then
+		for each in $OLD_KERNELS; do
+			yes | sudo apt purge "$each"
 		done
 	else
-		echo "There are no unused kernels, so nothing has been removed"
+		echo "There are no unused kernels, skipping..."
 	fi
 
-#Remove unused kernel directory
-	for i in /lib/modules/*; do
-		if [ $i != /lib/modules/$DEB ]; then
-			sudo rm -rf $i
-			echo "Removed $i"
-		else echo "$i is being used and thus not removed"
-		fi
+#Remove unused modules
+	for module in $OLD_MODULES; do
+		sudo rm -rf /lib/modules/$module
+		echo "Removed $module"
 	done
 else
-	echo ""
-	echo "To remove kernels, run as: remove-unusedkernels.sh exec OR ruk exec"
+	echo -e "\nTo remove, run as: $0 exec"
 fi
-
 exit
