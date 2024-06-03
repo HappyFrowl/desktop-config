@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# System update script 
+# System update script
 set -e
 
 echo "Welcome to Update Manager"
@@ -13,8 +13,8 @@ update_system() {
 
 	echo -e "Please provide password\n"
 	sudo apt update
-	echo $(date) >> $LOGFILE 
-	echo -e "\nApt packages:\n" | tee -a $LOGFILE
+	echo $(date) >> $LOGFILE
+	echo -e  "\nApt packages:" | tee -a $LOGFILE
 	sudo apt dist-upgrade -y 2>>$ERRORLOG | tee -a  $LOGFILE
 	echo ""
 	sudo apt autoremove -y 2>>$ERRORLOG  | tee -a $LOGFILE
