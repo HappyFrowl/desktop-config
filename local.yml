@@ -59,6 +59,7 @@
       - webcamoid
       - adb
       - net-tools
+      - locate
 
   - name: Copy .bashrc config file
     ansible.builtin.copy:
