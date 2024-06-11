@@ -6,18 +6,21 @@ echo "Welcome to Update Manager"
 sleep 0.5
 START_TIME=$SECONDS
 
+# Set the environment variable to noninteractive
+#export DEBIAN_FRONTEND=noninteractive
+
 update_system() {
 
-	LOGFILE="$HOME/Desktop/testy/outcome"
-	ERRORLOG="$HOME/Desktop/testy/error.log"
+	LOGFILE="/var/log/update/update.log"
+	ERRORLOG="/var/log/update/error.log"
 
 	echo -e "Please provide password\n"
-	sudo apt update
-	echo $(date) >> $LOGFILE
+	apt update
+	echo -e "\n$(date)" >> $LOGFILE
 	echo -e  "\nApt packages:" | tee -a $LOGFILE
-	sudo apt dist-upgrade -y 2>>$ERRORLOG | tee -a  $LOGFILE
+	apt dist-upgrade -y 2>>$ERRORLOG | tee -a $LOGFILE
 	echo ""
-	sudo apt autoremove -y 2>>$ERRORLOG  | tee -a $LOGFILE
+	apt autoremove -y 2>>$ERRORLOG  | tee -a $LOGFILE
 }
 
 error_handling() {
@@ -30,8 +33,8 @@ trap 'error_handling "Line $LINENO: Command failed with exit code $?"' ERR
 update_system || error_handling "issues encountered"
 
 echo -e "\nFlatPak updates:" | tee -a $LOGFILE
-sudo flatpak update -y # | tee -a $LOGFILE
-sudo flatpak uninstall --unused | tee -a $LOGFILE
+flatpak update -y  | tee -a $LOGFILE
+flatpak uninstall --unused | tee -a $LOGFILE
 
 echo -e "\nTime taken to run updates:"
 ELPASED_TIME=$(($SECONDS - $START_TIME))
