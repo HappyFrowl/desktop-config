@@ -18,6 +18,7 @@ set wordchars "_"	# recognize _ as part of a word
 set tabsize 4		# tab equals 4 spaces
 set smarthome		# Home jumps to line start first
 set scrollercolor yellow,normal
+set titlecolor bold,white,purple
 
 
 #set nohelp 		# don't display the helpful shortcut lists at the bottom of the screen.
