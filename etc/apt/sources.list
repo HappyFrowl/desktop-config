@@ -1,5 +1,4 @@
 #deb cdrom:[Debian GNU/Linux 12.2.0 _Bookworm_ - Official amd64 NETINST with firmware 20231007-10:28]/ bookworm main non-free-firmware
-# from ansible
 
 deb http://deb.debian.org/debian/ bookworm-proposed-updates main contrib non-free non-free-firmware
 

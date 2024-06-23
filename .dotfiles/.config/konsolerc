@@ -15,19 +15,19 @@ ConfigVersion=1
 detailViewIconSize=16
 
 [MainWindow]
-1707x960 screen: Height=565
-1707x960 screen: Width=1466
+1707x960 screen: Height=884
+1707x960 screen: Width=1707
 1707x960 screen: Window-Maximized=true
-1707x960 screen: XPosition=106
-1707x960 screen: YPosition=224
+1707x960 screen: XPosition=0
+1707x960 screen: YPosition=28
 1920x1080 screen: Height=887
 1920x1080 screen: Width=1619
 1920x1080 screen: XPosition=941
 1920x1080 screen: YPosition=193
-2 screens: Height=884
-2 screens: Width=1707
-2 screens: XPosition=284
-2 screens: YPosition=188
+2 screens: Height=870
+2 screens: Width=1478
+2 screens: XPosition=427
+2 screens: YPosition=251
 2276x1280 screen: Height=692
 2276x1280 screen: Width=1689
 2276x1280 screen: Window-Maximized=true

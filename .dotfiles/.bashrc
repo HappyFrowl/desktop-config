@@ -95,12 +95,9 @@ alias la='ls -A'
 alias lla='ls -Alh'
 #alias l='ls -CF'
 
-alias upd="sudo /usr/local/bin/update.sh"
-alias ruk="bash /usr/local/bin/remove-unusedkernels.sh"
+alias upd="sudo bash /usr/local/bin/update.sh"
+alias ruk="sudo bash /usr/local/bin/remove-unusedkernels.sh"
 alias unmount=umount
-upd(){
-	sudo /usr/local/bin/update.sh
-}
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
