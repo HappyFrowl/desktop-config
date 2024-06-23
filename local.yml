@@ -8,6 +8,7 @@
     ansible.builtin.package:
       name:
         - kcalc
+        - kedconnect
         - kalendarac
         - kmail
         - kmailtransport-akonadi
