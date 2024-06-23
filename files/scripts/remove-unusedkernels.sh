@@ -34,7 +34,7 @@ if [ "$1" == "exec" ]; then
 
 	if [ -n "$OLD_MODULES" ]; then
 		for each in $OLD_MODULES; do
-			sudo rm -rf /lib/modules/$module
+			sudo rm -rf /lib/modules/$each
 			echo "Removed $each"
 		done
 	else
