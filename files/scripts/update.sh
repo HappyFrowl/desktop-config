@@ -6,17 +6,18 @@ echo "Welcome to Update Manager"
 sleep 0.5
 START_TIME=$SECONDS
 
+LOGFILE="/var/log/update/update.log"
+ERRORLOG="/var/log/update/error.log"
+
+echo -e "\n$(date)" | tee -a $LOGFILE
+
 # Set the environment variable to noninteractive
-#export DEBIAN_FRONTEND=noninteractive
+export DEBIAN_FRONTEND=noninteractive
 
 update_system() {
 
-        LOGFILE="/var/log/update/update.log"
-        ERRORLOG="/var/log/update/error.log"
-
         echo -e "Please provide password\n"
         sudo apt update
-        echo -e "\n$(date)" >> $LOGFILE
         echo -e  "\nApt packages:" | tee -a $LOGFILE
         sudo apt dist-upgrade -y 2>>$ERRORLOG | tee -a $LOGFILE
         echo ""

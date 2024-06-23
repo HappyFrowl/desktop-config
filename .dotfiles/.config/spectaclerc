@@ -8,10 +8,10 @@ onLaunchAction=UseLastUsedCapturemode
 useReleaseToCapture=true
 
 [GuiConfig]
-cropRegion=959,506,624,494
+cropRegion=3063,273,893,735
 quitAfterSaveCopyExport=true
 window-position=0,0
 
 [Save]
 defaultSaveLocation=file:///home/filip/Pictures/Screenshots
-lastSaveLocation=file:///home/filip/Pictures/Screenshots/Screenshot_20240515_194401.png
+lastSaveLocation=file:///home/filip/Pictures/Screenshots/Screenshot_20240622_173219.png
