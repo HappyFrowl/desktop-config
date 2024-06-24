@@ -1,4 +1,4 @@
-#!/bin/bash/env bash
+#!/usr/bin/env bash
 # Script extracting all photos and videos from Android phone
 set -e
 
