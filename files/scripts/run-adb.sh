@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 # Script extracting all photos and videos from Android phone
+# Prerequisites are Developer Mode and USB debugging must be enabled on the phone
 set -e
 
 # Define source and destination path
 SOURCES=("/storage/sdcard0/DCIM/Camera/" "/storage/sdcard0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images")
-DESTINATION="$HOME/Pictures/phone"
+DESTINATION="$HOME/Pictures/temp"
 
 # Transfer paths to destination
 for SOURCE in $SOURCES; do
-	while [ ! -d "$DESTINATION" ]; do
+	if [ ! -d "$DESTINATION" ]; then
 		mkdir -p "$DESTINATION"
-	done
+	fi
 	adb pull -a "$SOURCE" "$DESTINATION"
 done
 
@@ -21,12 +22,16 @@ find "$DESTINATION" -type f -name *trashed* -delete
 SRC="$HOME/Pictures/phone/Camera/*"
 DEST="$HOME/Pictures/testphotos/Camera"
 
+# Set counter
+TRANSFERRED=0
+
 # Copy all unique regular files to destination directory
 for FILE in $SRC; do
 	BASE=$(basename "$FILE")
 	if [ ! -e "$DEST/$BASE" ] && [ -f "$FILE" ]; then
 		cp -n "$FILE" "$DEST"
 		echo "Copied $FILE"
+		TRANSFERRED=$((TRANSFERRED +1))
 	elif [ -d "$FILE" ]; then
 		echo "$FILE is a directory, skipping..."
 	elif [ -e "$FILE" ]; then
@@ -43,10 +48,11 @@ DEST="$HOME/Pictures/testphotos/here"
 
 # Copy all unique regular files to destination directory
 for FILE in $SRC; do
-	BASE=$(basename $FILE)
+	BASE=$(basename "$FILE")
 	if [ ! -e "$DEST/$BASE" ] && [ -f "$FILE" ]; then
 		cp -n "$FILE" "$DEST"
 		echo "Copied $FILE"
+		TRANSFERRED=$((TRANSFERRED +1))
 	elif [ -d "$FILE" ]; then
 		echo "$FILE is a directory, skipping..."
 	elif [ -e "$FILE" ]; then
@@ -58,5 +64,7 @@ done
 
 # Empty adb directories
 find $DESTINATION -mindepth 2 -type f -delete
+
+echo "$TRANSFERRED files have been transferred"
 
 exit
