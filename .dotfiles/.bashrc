@@ -98,6 +98,7 @@ alias lla='ls -Alh'
 alias upd="sudo bash /usr/local/bin/update.sh"
 alias ruk="sudo bash /usr/local/bin/remove-unusedkernels.sh"
 alias unmount=umount
+alias lastcron="cat /var/log/update/cron.log"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
