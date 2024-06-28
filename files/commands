@@ -12,7 +12,6 @@ man test
 # show the command 
 command -v <input>
 
- 
 #reset network card
 sudo systemctl restart NetworkManager
 
@@ -27,4 +26,6 @@ cat /etc/passwd | awk -F: '{print }'
 
 # show keyboard input (^H for ctrl Backspace)
 cat -v
-modprobe -r pcspkr #remove pc speaker in eg tty
+
+#remove pc speaker noise in eg tty
+modprobe -r pcspkr 
