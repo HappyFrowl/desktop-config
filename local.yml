@@ -110,7 +110,6 @@
     ansible.builtin.get_url:
       url: https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
       dest: "/tmp/teamviewer.deb"
-    become: no
 
   - name: Install TeamViewer
     ansible.builtin.shell: dpkg -i "/tmp/teamviewer.deb"
@@ -119,7 +118,6 @@
     ansible.builtin.get_url:
       url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
       dest: "/tmp/code.deb"
-    become: no
 
   - name: Install Visual Studio Code
     ansible.builtin.shell: dpkg -i "/tmp/code.deb"
