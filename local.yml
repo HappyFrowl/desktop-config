@@ -102,7 +102,7 @@
         - uk.org.greenend.chiark.sgtatham.putty
         - org.kde.kcalc
         - io.github.mimbrero.WhatsAppDesktop
-        - org.freedesktop.Platform.GL.nvidia-525-147-05
+        - org.freedesktop.Platform.GL.nvidia-535-183-01
         - org.qbittorrent.qBittorrent
       state: present
 
