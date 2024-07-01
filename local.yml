@@ -206,8 +206,3 @@
       path: "/home/filip/bin"
       mode: u+x
       recurse: yes
-
-  - name: Clean up Downloads folder
-    ansible.builtin.file:
-      path: "/home/filip/Downloads/*"
-      state: absent
