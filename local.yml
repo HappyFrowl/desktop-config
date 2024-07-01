@@ -19,7 +19,7 @@
         - konqueror
         - juk
         - dragonplayer
-        - libreoffice
+        - libreoffice-core
         - firefox-esr
       state: absent
 
