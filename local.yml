@@ -195,18 +195,18 @@
 
   - name: Create script directory /home/filip/bin
     ansible.builtin.file:
-      path: "/home/filip/bin"
+      path: "/usr/local/bin"
       state: directory
 
   - name: Copy scripts
     ansible.builtin.copy:
       src: files/scripts/
-      dest: "/home/filip/bin/"
+      dest: "/usr/local/bin/"
       owner: filip
       group: filip
 
   - name: Set execution permissions for files in scripts folder
     ansible.builtin.file:
-      path: "/home/filip/bin"
+      path: "/usr/local/bin"
       mode: u+x
       recurse: yes
