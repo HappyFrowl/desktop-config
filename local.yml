@@ -109,20 +109,20 @@
   - name: Download TeamViewer
     ansible.builtin.get_url:
       url: https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
-      dest: "{{ lookup('env', 'HOME') }}/Downloads/teamviewer.deb"
+      dest: "/tmp/teamviewer.deb"
     become: no
 
   - name: Install TeamViewer
-    ansible.builtin.shell: dpkg -i "{{ lookup('env', 'HOME') }}/Downloads/teamviewer.deb"
+    ansible.builtin.shell: dpkg -i "/tmp/teamviewer.deb"
 
   - name: Download Visual Studio Code
     ansible.builtin.get_url:
       url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
-      dest: "{{ lookup('env', 'HOME') }}/Downloads/code.deb"
+      dest: "/tmp/code.deb"
     become: no
 
   - name: Install Visual Studio Code
-    ansible.builtin.shell: dpkg -i "{{ lookup('env', 'HOME') }}/Downloads/code.deb"
+    ansible.builtin.shell: dpkg -i "/tmp/code.deb"
 
   - name: Configure plasma 1
     become: true
