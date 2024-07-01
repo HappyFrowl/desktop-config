@@ -15,13 +15,17 @@
         - kmailtransport-akonadi
         - korganizer
         - knotes
+        - kmouth
         - kdepim-themeeditors
         - konqueror
         - juk
         - dragonplayer
-        - libreoffice-core
         - firefox-esr
       state: absent
+
+  - name: Purge Liberty
+    become: true
+    shell: apt purge "libreoffice*"
 
   - name: Remove and purge dependencies
     ansible.builtin.apt:
