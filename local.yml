@@ -9,7 +9,7 @@
       name:
         - kcalc
         - kwalletmanager
-        - kedconnect
+        - kdeconnect
         - kalendarac
         - kmail
         - kmailtransport-akonadi
@@ -23,7 +23,7 @@
         - firefox-esr
       state: absent
 
-  - name: Remove dependencies that are no longer required and purge their configuration files
+  - name: Remove and purge dependencies
     ansible.builtin.apt:
       autoremove: yes
       purge: true
