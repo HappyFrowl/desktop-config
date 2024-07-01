@@ -28,14 +28,7 @@
     become: true
     become_user: filip
     ansible.builtin.debug:
-      msg: "{{ lookup('env', 'HOME') }}"
-
-  - name: Debug HOME directory as filip (using ansible_env)
-    become: true
-    become_user: filip
-    ansible.builtin.debug:
-      msg: "{{ ansible_env.HOME }}"
-
+      msg: "/home/{{ logged_in_user }}"
 
   - name: Remove and purge dependencies
     ansible.builtin.apt:
