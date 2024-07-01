@@ -25,7 +25,7 @@
 
 
   - name: debug 1 false
-    become: false
+    become_user: filip
     ansible.builtin.debug:
       msg: "{{ lookup('env', 'HOME') }}/Downloads/*"
 
@@ -40,19 +40,9 @@
       msg: "{{ ansible_env.HOME }}"
 
   - name: debug 2 false
-    become: false
+    become_user: filip
     ansible.builtin.debug:
       msg: "{{ ansible_env.HOME }}"
-
-  - name: debug 3 true
-    become: true
-    ansible.builtin.debug:
-      msg: "{{ home_dir }}"
-
-  - name: debug 3 true
-    become: false
-    ansible.builtin.debug:
-      msg: "{{ home_dir }}"
 
 
   - name: Remove and purge dependencies
