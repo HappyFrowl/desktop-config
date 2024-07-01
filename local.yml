@@ -25,7 +25,7 @@
 
   - name: Purge Liberty
     become: true
-    shell: apt purge "libreoffice*"
+    shell: apt purge "libreoffice*" -y
 
   - name: Remove and purge dependencies
     ansible.builtin.apt:
