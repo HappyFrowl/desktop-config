@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   connection: local
+  become: true
 
   tasks:
   - name: Remove packages
@@ -23,22 +24,14 @@
       state: absent
 
 
-  - name: debug 1 false
+  - name: Debug HOME directory as filip (using lookup)
+    become: true
     become_user: filip
     ansible.builtin.debug:
-      msg: "{{ lookup('env', 'HOME') }}/Downloads/*"
+      msg: "{{ lookup('env', 'HOME') }}"
 
-  - name: debug 1 true
+  - name: Debug HOME directory as filip (using ansible_env)
     become: true
-    ansible.builtin.debug:
-      msg: "{{ lookup('env', 'HOME') }}/Downloads/*"
-
-  - name: debug 2 true
-    become: true
-    ansible.builtin.debug:
-      msg: "{{ ansible_env.HOME }}"
-
-  - name: debug 2 false
     become_user: filip
     ansible.builtin.debug:
       msg: "{{ ansible_env.HOME }}"
