@@ -23,13 +23,6 @@
         - firefox-esr
       state: absent
 
-
-  - name: Debug HOME directory as filip (using lookup)
-    become: true
-    become_user: filip
-    ansible.builtin.debug:
-      msg: "/home/{{ logged_in_user }}"
-
   - name: Remove and purge dependencies
     ansible.builtin.apt:
       autoremove: yes
@@ -73,14 +66,14 @@
   - name: Copy .bashrc config file
     ansible.builtin.copy:
       src: .dotfiles/.bashrc
-      dest: "{{ lookup('env', 'HOME') }}/.bashrc"
+      dest: "/home/filip/.bashrc"
       owner: filip
       group: filip
 
   - name: Copy bashrc keybindings file
     ansible.builtin.copy:
       src: .dotfiles/.inputrc
-      dest: "{{ lookup('env', 'HOME') }}/.inputrc"
+      dest: "/home/filip/.inputrc"
       owner: filip
       group: filip
 
@@ -133,7 +126,7 @@
     become: true
     ansible.builtin.copy:
       src: .dotfiles/.config/plasma-org.kde.plasma.desktop-appletsrc
-      dest: "{{ lookup('env', 'HOME') }}/.config/plasma-org.kde.plasma.desktop-appletsrc"
+      dest: "/home/filip/.config/plasma-org.kde.plasma.desktop-appletsrc"
       owner: filip
       group: filip
 
@@ -141,7 +134,7 @@
     become: true
     ansible.builtin.copy:
       src: .dotfiles/.config/kdeglobals
-      dest: "{{ lookup('env', 'HOME') }}/.config/kdeglobals"
+      dest: "/home/filip/.config/kdeglobals"
       owner: filip
       group: filip
 
@@ -149,7 +142,7 @@
     become: true
     ansible.builtin.copy:
       src: .dotfiles/.config/xsettingsd/xsettingsd.conf
-      dest: "{{ lookup('env', 'HOME') }}/.config/xsettingsd/xsettingsd.conf"
+      dest: "/home/filip/.config/xsettingsd/xsettingsd.conf"
       owner: filip
       group: filip
 
@@ -157,64 +150,64 @@
     become: true
     ansible.builtin.copy:
       src: .dotfiles/.config/kwinrc
-      dest: "{{ lookup('env', 'HOME') }}/.config/kwinrc"
+      dest: "/home/filip/.config/kwinrc"
       owner: filip
       group: filip
 
   - name: Copy konsolerc
     ansible.builtin.copy:
       src: .dotfiles/.config/konsolerc
-      dest: "{{ lookup('env', 'HOME') }}/.config/konsolerc"
+      dest: "/home/filip/.config/konsolerc"
       owner: filip
       group: filip
 
   - name: Copy mimeapps.list
     ansible.builtin.copy:
       src: .dotfiles/.config/mimeapps.list
-      dest: "{{ lookup('env', 'HOME') }}/.config/mimeapps.list"
+      dest: "/home/filip/.config/mimeapps.list"
       owner: filip
       group: filip
 
   - name: Copy lock screen duration settings
     ansible.builtin.copy:
       src: .dotfiles/.config/kdedefaults/kscreenlockerrc
-      dest: "{{ lookup('env', 'HOME') }}/.config/kdedefaults/kscreenlockerrc"
+      dest: "/home/filip/.config/kdedefaults/kscreenlockerrc"
       owner: filip
       group: filip
 
   - name: Copy spectacle config
     ansible.builtin.copy:
       src: .dotfiles/.config/spectaclerc
-      dest: "{{ lookup('env', 'HOME') }}/.config/spectaclerc"
+      dest: "/home/filip/.config/spectaclerc"
       owner: filip
       group: filip
 
   - name: Copy nanorc config
     ansible.builtin.copy:
       src: .dotfiles/.nanorc
-      dest: "{{ lookup('env', 'HOME') }}/.nanorc"
+      dest: "/home/filip/.nanorc"
       owner: filip
       group: filip
 
-  - name: Create script directory {{ lookup('env', 'HOME') }}/bin
+  - name: Create script directory /home/filip/bin
     ansible.builtin.file:
-      path: "{{ lookup('env', 'HOME') }}/bin"
+      path: "/home/filip/bin"
       state: directory
 
   - name: Copy scripts
     ansible.builtin.copy:
       src: files/scripts/
-      dest: "{{ lookup('env', 'HOME') }}/bin/"
+      dest: "/home/filip/bin/"
       owner: filip
       group: filip
 
   - name: Set execution permissions for files in scripts folder
     ansible.builtin.file:
-      path: "{{ lookup('env', 'HOME') }}/bin"
+      path: "/home/filip/bin"
       mode: u+x
       recurse: yes
 
   - name: Clean up Downloads folder
     ansible.builtin.file:
-      path: "{{ lookup('env', 'HOME') }}/Downloads/*"
+      path: "/home/filip/Downloads/*"
       state: absent
