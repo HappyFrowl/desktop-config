@@ -19,7 +19,7 @@ done
 find "$DESTINATION" -type f -name *trashed* -delete
 
 # Define source and destination directories for photos
-SRC="$HOME/Pictures/phone/Camera/*"
+SRC="$HOME/Pictures/temp/Camera/*"
 DEST="$HOME/Pictures/testphotos/Camera"
 
 # Set counter
@@ -64,6 +64,7 @@ done
 
 # Empty adb directories
 find $DESTINATION -mindepth 2 -type f -delete
+echo "$DESTINATION has been emptied"
 
 echo "$TRANSFERRED files have been transferred"
 
