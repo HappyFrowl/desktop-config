@@ -34,8 +34,8 @@ trap 'error_handling "Line $LINENO: Command failed with exit code $?"' ERR
 update_system
 
 echo -e "\nFlatPak updates:" | tee -a $LOGFILE
-sudo flatpak update -y  | tee -a $LOGFILE
-sudo flatpak uninstall --unused | tee -a $LOGFILE
+flatpak update -y  | tee -a $LOGFILE
+flatpak uninstall --unused | tee -a $LOGFILE
 
 echo -e "\nTime taken to run updates:"
 ELPASED_TIME=$(($SECONDS - $START_TIME))
