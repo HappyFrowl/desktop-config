@@ -35,7 +35,7 @@ update_system
 
 echo -e "\nFlatPak updates:" | tee -a $LOGFILE
 flatpak update -y  | tee -a $LOGFILE
-flatpak uninstall --unused | tee -a $LOGFILE
+flatpak uninstall --unused -y | tee -a $LOGFILE
 
 echo -e "\nTime taken to run updates:"
 ELPASED_TIME=$(($SECONDS - $START_TIME))
