@@ -39,13 +39,6 @@
       owner: root
       group: root
 
-  - name: Add Brave Browser repo key
-    become: true
-    shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-
-  - name: Copy Brave Browser GPG file
-    shell: echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" > /etc/apt/sources.list.d/brave-browser-release.list   
-
   - name: Update apt cache
     ansible.builtin.apt:
       update_cache: yes
@@ -56,7 +49,6 @@
       - htop
       - tmux
       - neofetch
-      - curl
       - python3-psutil
       - timeshift
       - ksystemlog
@@ -66,6 +58,13 @@
       - adb
       - net-tools
       - locate
+
+  - name:   Add Brave Browser repo key
+    become: true
+    shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+  - name: Copy Brave Browser GPG file
+    shell: echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" > /etc/apt/sources.list.d/brave-browser-release.list   
 
   - name: Copy .bashrc config file
     ansible.builtin.copy:
@@ -100,12 +99,12 @@
     become: true
     community.general.flatpak:
       name:
+        - com.ktechpit.whatsie
         - org.onlyoffice.desktopeditors
         - org.mozilla.firefox
         - org.videolan.VLC
         - uk.org.greenend.chiark.sgtatham.putty
         - org.kde.kcalc
-        - io.github.mimbrero.WhatsAppDesktop
         - org.freedesktop.Platform.GL.nvidia-535-183-01
         - org.qbittorrent.qBittorrent
       state: present
