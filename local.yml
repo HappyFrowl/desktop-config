@@ -89,9 +89,6 @@
   - name: Configure nvidia power management
     ansible.builtin.shell: echo "options nvidia NVreg_PreserveVideoMemoryAllocations=1 NVreg_TemporaryFilePath=/var/tmp" > /etc/modprobe.d/nvidia-power-management.conf
 
-  - name: Install ZeroTier
-    ansible.builtin.shell: curl -s https://install.zerotier.com | sudo bash
-
   - name: Add flathub remote if not exists
     ansible.builtin.shell: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
