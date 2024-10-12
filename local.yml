@@ -112,6 +112,7 @@
       dest: "/tmp/teamviewer.deb"
 
   - name: Install TeamViewer
+    become: true
     ansible.builtin.shell: dpkg -i "/tmp/teamviewer.deb"
 
   - name: Download Visual Studio Code
