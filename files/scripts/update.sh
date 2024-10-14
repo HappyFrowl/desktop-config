@@ -2,43 +2,52 @@
 # System update script
 set -e
 
-echo "Welcome to Update Manager"
-sleep 0.5
-START_TIME=$SECONDS
-
-LOGFILE="/var/log/update/update.log"
-ERRORLOG="/var/log/update/error.log"
-
-echo -e "\n$(date)" | tee -a "${LOGFILE}"
-
 # Set the environment variable to noninteractive
 export DEBIAN_FRONTEND=noninteractive
 
-update_system() {
+# Set paths
+LOGFILE="/var/log/update/update.log"
+ERRORLOG="/var/log/update/error.log"
 
-        echo -e "Please provide password\n"
-        sudo apt update
-        echo -e  "\nApt packages:" | tee -a "${LOGFILE}"
-        sudo apt dist-upgrade -y 2>>"${ERRORLOG}" | tee -a "${LOGFILE}"
-        echo ""
-        sudo apt autoremove -y 2>>"${ERRORLOG}" | tee -a "${LOGFILE}"
+# Functions:
+
+update() {
+	echo -e "Please provide password\n"
+    sudo apt update
+    echo -e  "\nApt packages:" | tee -a ${LOGFILE}
+    sudo apt dist-upgrade -y 2>>${ERRORLOG} | tee -a ${LOGFILE}
 }
 
-error_handling() {
-        echo "An error has occurred: $1"
-        exit 1
+cleanup() {
+    sudo apt autoremove -yy 2>>${ERRORLOG} | tee -a ${LOGFILE}
+	sudo apt autoclean 2>>${ERRORLOG} | tee -a ${LOGFILE}
 }
 
-trap 'error_handling "Line $LINENO: Command failed with exit code $?"' ERR
+update_flatpak() {
+	echo -e "\nFlatPak updates:" | tee -a ${LOGFILE}
+	flatpak update -y  | tee -a ${LOGFILE}
+}
 
-update_system "$@"
+cleanup_flatpak() {
+	flatpak uninstall --unused -y | tee -a  ${LOGFILE}
+}
 
-echo -e "\nFlatPak updates:" | tee -a "${LOGFILE}"
-flatpak update -y  | tee -a $LOGFILE
-flatpak uninstall --unused -y | tee -a "${LOGFILE}"
+# Execution
 
+echo "Welcome to Update Manager"
+echo -e "\n$(date)" | tee -a ${LOGFILE}
+START_TIME=$SECONDS
+
+update
+cleanup
+update_flatpak
+cleanup_flatpak
+
+echo "----------------------------------------"
+echo "-        Update completed              -"
+echo "----------------------------------------"
 echo -e "\nTime taken to run updates:"
-ELPASED_TIME=$(("${SECONDS}" - "${START_TIME}"))
-echo "${ELPASED_TIME}" seconds
+ELPASED_TIME=$((${SECONDS} - ${START_TIME}))
+echo "${ELPASED_TIME} seconds"
 
 exit
