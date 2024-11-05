@@ -93,7 +93,6 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -Alh'
-#alias l='ls -CF'
 
 alias upd="sudo bash /usr/local/bin/update.sh"
 alias ruk="sudo bash /usr/local/bin/remove-unusedkernels.sh"
