@@ -50,7 +50,7 @@ DialogWidth=880
 
 [Containments][111][Applets][114][Configuration][General]
 groupedTaskVisualization=1
-launchers=preferred://filemanager,applications:org.kde.konsole.desktop,preferred://browser,applications:org.mozilla.firefox.desktop,applications:io.github.mimbrero.WhatsAppDesktop.desktop,applications:spotify.desktop,applications:code.desktop,applications:org.kde.kate.desktop,applications:org.kde.kcalc.desktop,file:///usr/share/applications/com.teamviewer.TeamViewer.desktop,applications:uk.org.greenend.chiark.sgtatham.putty.desktop,applications:virtualbox.desktop
+launchers=preferred://filemanager,applications:org.kde.konsole.desktop,applications:brave-browser.desktop,applications:org.mozilla.firefox.desktop,applications:spotify.desktop,applications:code.desktop,applications:org.kde.kate.desktop,applications:org.kde.kcalc.desktop,file:///usr/share/applications/com.teamviewer.TeamViewer.desktop,applications:virtualbox.desktop
 wheelEnabled=false
 
 [Containments][111][Applets][115]
@@ -189,7 +189,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][117][Applets][166][Configuration]
-PreloadWeight=54
+PreloadWeight=79
 
 [Containments][117][Applets][167][Configuration]
 PreloadWeight=42
@@ -200,10 +200,10 @@ DialogWidth=880
 
 [Containments][117][General]
 extraItems=org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.clipboard
-hiddenItems=whatsdesk1,org.kde.plasma.nightcolorcontrol,org.kde.plasma.bluetooth,chrome_status_icon_1,blueman,chrome_status_icon_2,Plasma_microphone,org.kde.plasma.notifications,org.kde.plasma.clipboard,whatsapp-desktop-linux1,org.kde.plasma.battery
+hiddenItems=whatsdesk1,org.kde.plasma.nightcolorcontrol,org.kde.plasma.bluetooth,chrome_status_icon_1,blueman,chrome_status_icon_2,Plasma_microphone,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.battery,WhatSie
 iconSpacing=1
 knownItems=org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.volume
-shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement,privateinternetaccess
+shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement,privateinternetaccess,whatsapp-desktop-linux1
 
 [Containments][136]
 activityId=
@@ -301,6 +301,9 @@ PreloadWeight=42
 immutability=1
 plugin=org.kde.plasma.notifications
 
+[Containments][142][Applets][146][Configuration]
+PreloadWeight=65
+
 [Containments][142][Applets][147][Configuration]
 PreloadWeight=42
 
@@ -351,7 +354,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][142][Applets][159][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 
 [Containments][142][Applets][160]
 immutability=1
@@ -366,15 +369,22 @@ PreloadWeight=42
 [Containments][142][Applets][162][Configuration]
 PreloadWeight=42
 
+[Containments][142][Applets][171]
+immutability=1
+plugin=org.kde.plasma.battery
+
+[Containments][142][Applets][171][Configuration]
+PreloadWeight=55
+
 [Containments][142][ConfigDialog]
 DialogHeight=660
 DialogWidth=880
 
 [Containments][142][General]
-extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.notifications
-hiddenItems=Discover Notifier_org.kde.DiscoverNotifier,whatsdesk1,org.kde.plasma.bluetooth,chrome_status_icon_1,privateinternetaccess,blueman,chrome_status_icon_2,org.kde.plasma.notifications,whatsapp-desktop-linux1,org.kde.plasma.nightcolorcontrol
+extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.battery
+hiddenItems=Discover Notifier_org.kde.DiscoverNotifier,whatsdesk1,org.kde.plasma.bluetooth,chrome_status_icon_1,privateinternetaccess,chrome_status_icon_2,org.kde.plasma.notifications,whatsapp-desktop-linux1,org.kde.plasma.nightcolorcontrol,WhatSie,blueman
 knownItems=org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.volume
-shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement
+shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.battery
 
 [Containments][168]
 ItemGeometries-1920x1080=
@@ -394,7 +404,7 @@ DialogHeight=660
 DialogWidth=880
 
 [Containments][168][General]
-positions={"2560x1440":["1"\\,"21"\\,"desktop:/asdsds"\\,"0"\\,"3"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/testfolder"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/config script.sh"\\,"0"\\,"7"\\,"desktop:/config device names"\\,"0"\\,"6"\\,"desktop:/bladeel2"\\,"0"\\,"5"\\,"desktop:/bla"\\,"0"\\,"4"\\,"desktop:/ticket system"\\,"0"\\,"9"\\,"desktop:/connect-azaccount.ps1"\\,"0"\\,"8"]\\,"1920x1080":["1"\\,"16"\\,"desktop:/config device names"\\,"0"\\,"6"\\,"desktop:/bladeel2"\\,"0"\\,"5"\\,"desktop:/bla"\\,"0"\\,"4"\\,"desktop:/connect-azaccount.ps1"\\,"0"\\,"9"\\,"desktop:/ticket system"\\,"0"\\,"8"\\,"desktop:/asdsds"\\,"0"\\,"3"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/testfolder"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/config script.sh"\\,"0"\\,"7"]\\,"0x0":[]\\,"2276x1280":[]}
+positions={"2560x1440":["1"\\,"21"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/asdsds"\\,"0"\\,"3"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/loperamide"\\,"0"\\,"1"\\,"desktop:/config device names"\\,"0"\\,"6"\\,"desktop:/config script.sh"\\,"0"\\,"7"\\,"desktop:/bla"\\,"0"\\,"4"\\,"desktop:/bladeel2"\\,"0"\\,"5"\\,"desktop:/ticket system"\\,"0"\\,"9"]\\,"1920x1080":["1"\\,"16"\\,"desktop:/testy"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/bla"\\,"0"\\,"3"\\,"desktop:/asdsds"\\,"0"\\,"2"\\,"desktop:/config device names"\\,"0"\\,"5"\\,"desktop:/bladeel2"\\,"0"\\,"4"\\,"desktop:/loperamide"\\,"0"\\,"7"\\,"desktop:/config script.sh"\\,"0"\\,"6"\\,"desktop:/ticket system"\\,"0"\\,"8"]\\,"0x0":[]\\,"2276x1280":[]\\,"1080x1920":[""]\\,"2048x1080":["1"\\,"17"\\,"desktop:/bla"\\,"0"\\,"4"\\,"desktop:/asdsds"\\,"0"\\,"3"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/testfolder"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/ticket system"\\,"0"\\,"9"\\,"desktop:/itinerary"\\,"0"\\,"8"\\,"desktop:/config script.sh"\\,"0"\\,"7"\\,"desktop:/config device names"\\,"0"\\,"6"\\,"desktop:/bladeel2"\\,"0"\\,"5"]\\,"4480x1440":[""]}
 sortMode=-1
 
 [Containments][169]
@@ -410,6 +420,15 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][170]
+activityId=9f86f85b-2a62-486b-ad9f-7726d4e367e9
+formfactor=0
+immutability=1
+lastScreen=2
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
 [ScreenMapping]
 itemsOnDisabledScreens=0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,5,trash:/0-MD-101 Managing Modern Desktops (Video) Warren,trash:/0-Sander - Linux Foundation Certified System Administrator (LFCS)\\, 3rd Edition,trash:/0-.b4c02c4a26003e5c197f07aea6135ff07de93f1e.parts,trash:/0-MD-101 Pluralsight - Managing Microsoft Desktops series Glenn Weadock,trash:/0-progressz
-screenMapping=desktop:/bladeel2,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy%5C,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config device names,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/asdsds,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testfolder,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bla,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/StudyMaterials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/connect-azaccount.ps1,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
+screenMapping=desktop:/config device names,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy%5C,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bla,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bladeel2,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/asdsds,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/loperamide,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/StudyMaterials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
