@@ -13,6 +13,7 @@ OLD_KERNELS=$(
 	dpkg --list |
 		grep -Ei 'linux-headers-|linux-image-' |
 		grep -v $IN_USE |
+		grep -vE "(linux-image-amd64|linux-headers-amd64)" |
 		awk '{print $2}'
 )
 echo -e "\nOld kernels present:"
