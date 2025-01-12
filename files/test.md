@@ -1,4 +1,6 @@
-- [The boot process](#The-boot-process)
+# Notes for LFCS/ Linux+/ LPIC-1
+
+- The boot process (#The-boot-process)
 
 
 
