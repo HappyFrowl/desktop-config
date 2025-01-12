@@ -1,5 +1,7 @@
 # Notes for LFCS/ Linux+/ LPIC-1
 
+[[_TOC_]]
+
 ## The boot process:  
 
 **1. BIOS/ UEFI**
@@ -52,12 +54,13 @@
     * Also see which are enabled, disabled, masked 
  
 
-During the boot many messages are shows:
-Two ways of showing these are boot: 
+During the boot many messages are shows. Two ways of showing these are: 
 * `dmesg` 
 * `cat /var/log/dmesg`
 
  
+![alt text](image-1.png)
+
 
  
 
