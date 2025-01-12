@@ -1,8 +1,8 @@
 # Notes for LFCS/ Linux+/ LPIC-1
 
-The boot process:  
+## The boot process:  
 
-1. **BIOS/ UEFI**
+**1. BIOS/ UEFI**
 * Hardware is booted 
 * BIOS/UEFI runs POST 
     * Power On Self Test 
@@ -14,7 +14,7 @@ The boot process:
     * CD 
     * PXE 
 
-2. **GRUB2** 
+**2. GRUB2** 
 * GRand Unified Bootloader 
 * Its jobs 
     * Locate the kernel on the disk 
@@ -26,7 +26,7 @@ The boot process:
     * Once the actual file system is mounted, the OS continues to load from the real file system 
     * Initfs (initial file system) is the successor of initrd  
 
-3. **Kernel** 
+**3. Kernel** 
 * Once the kernel is loaded into memory, the kernel takes to finish the startup process 
 * It starts 
     * Kernel modules 
