@@ -1,8 +1,8 @@
-# Notes for LFCS/ Linux+/ LPIC-1
+- The boot process (##The boot process)
 
-[[_TOC_]]
 
-## The boot process:  
+
+# The boot process:  
 
 **1. BIOS/ UEFI**
 * Hardware is booted 
@@ -60,6 +60,9 @@ During the boot many messages are shows. Two ways of showing these are:
 
  
 ![alt text](image-1.png)
+
+
+
 
 
  
