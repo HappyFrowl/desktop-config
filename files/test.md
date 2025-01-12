@@ -52,13 +52,10 @@
     * Also see which are enabled, disabled, masked 
  
 
-During the boot many messages are shows 
-
+During the boot many messages are shows:
 Two ways of showing these are boot: 
-
-dmesg 
-
-/var/log/dmesg 
+* `dmesg` 
+* `cat /var/log/dmesg`
 
  
 
