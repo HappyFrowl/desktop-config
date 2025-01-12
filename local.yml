@@ -52,12 +52,13 @@
       - python3-psutil
       - timeshift
       - ksystemlog
-      - zsh
       - flatpak
       - webcamoid
       - adb
       - net-tools
       - locate
+      - git
+      - tldr
 
   - name:   Add Brave Browser repo key
     become: true
