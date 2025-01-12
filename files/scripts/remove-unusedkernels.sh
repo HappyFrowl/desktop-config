@@ -19,6 +19,7 @@ OLD_KERNELS=$(
 echo -e "\nOld kernels present:"
 echo "${OLD_KERNELS}"
 
+#Modules in use
 OLD_MODULES=$(ls /lib/modules |	grep -v $DEB || true)
 echo "Old modules present:"
 echo "${OLD_MODULES}"
