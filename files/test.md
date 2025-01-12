@@ -63,6 +63,83 @@ During the boot many messages are shows. Two ways of showing these are:
  
 ![alt text](image-1.png)
 
+# Linux System Architecture
+
+## udev
+- **Type**: Device Manager  
+- **Purpose**: Responsible for dynamically managing device nodes in the `/dev/` directory.  
+  - Device nodes represent hardware devices like disks, USB drives, network interfaces, and more.  
+- **Capabilities**:  
+  - Low-level access to the Linux device tree  
+  - Handles user-space events (e.g., loading firmware, adding hardware)  
+- **Example**:  
+  - Access is provided by a temporary filesystem (`tmpfs`) mounted to `/dev/`
+
+## dbus
+- **Type**: Inter-Process Communication System  
+- **Purpose**: Facilitates communication between applications and system services.  
+  - Allows processes to send messages to each other.  
+- **Example**:  
+  - Applications like `NetworkManager` use D-Bus to communicate with the system's networking stack.
+
+## sysfs
+- **Type**: Virtual Filesystem  
+- **Purpose**: Exposes kernel device and subsystem information to user space.  
+  - Mounted at `/sys` and provides a structured way to view and manipulate kernel objects.  
+  - Presents information about:  
+    - Various kernel subsystems  
+    - Hardware devices  
+    - Drivers  
+- **Example**:  
+  - Check `/sys/class/net` for network interface details.
+
+## procfs
+- **Type**: Virtual Filesystem  
+- **Purpose**: Provides an interface to kernel data structures.  
+  - Mounted at `/proc` and allows user space to query or control the kernel.  
+  - Presents information about:  
+    - Processes  
+    - System information  
+- **Example**:  
+  - Access `/proc/cpuinfo` for CPU details or `/proc/meminfo` for memory usage.  
+  - Run `ls /proc` to list all running processes.  
+  - Interface with the kernel to change parameters on the fly.  
+  - The `cmdline` file contains options passed by GRUB during boot.  
+  - Linux version and kernel are stored as files in `/proc`.
+
+## tmpfs
+- **Type**: Temporary Filesystem  
+- **Purpose**: A memory-based filesystem used for temporary data storage that does not persist after reboot.  
+- **Example**:  
+  - The `/tmp` directory is often mounted as `tmpfs`.
+
+## devtmpfs
+- **Type**: Virtual Filesystem  
+- **Purpose**: Automatically populates the `/dev` directory with device nodes at boot, which are then managed by `udev`.  
+- **Example**:  
+  - Provides base device nodes for hardware detected during boot.
+
+## cgroups
+- **Type**: Resource Management Subsystem  
+- **Purpose**: Limits, prioritizes, and accounts for resources (CPU, memory, I/O) used by groups of processes.  
+- **Example**:  
+  - Docker and Kubernetes use `cgroups` to manage container resource allocation.
+
+## FUSE (Filesystem in User Space)
+- **Type**: Virtual Filesystem Framework  
+- **Purpose**: Allows non-privileged users to create and manage filesystems in user space.  
+- **Example**:  
+  - Filesystems like `SSHFS` or `NTFS-3G` use FUSE.
+
+## Modules
+- **Type**: Loadable Kernel Module (LKM)  
+- **Purpose**: Extend the running kernel without needing to recompile or reboot the system.  
+  - LKMs are object files dynamically loaded and unloaded into the kernel as needed.  
+- **Examples**:  
+  - Use `lsmod` to list currently loaded kernel modules and their usage.  
+  - Remove modules with `rmmod` and add them with `modprobe`.
+
+
 
 
 
