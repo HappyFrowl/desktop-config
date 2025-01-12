@@ -1,4 +1,4 @@
-- [The boot process](#The boot process)
+- [The boot process](#The-boot-process)
 
 
 
