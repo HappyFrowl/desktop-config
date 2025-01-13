@@ -153,56 +153,56 @@ Regular user
     - Configures databases, websites, etc
 
 Service user:
-    - Specific to the service (webserver, database)
-    - No interactive login
-    - Runs in the background
+- Specific to the service (webserver, database)
+- No interactive login
+- Runs in the background
 
 Substitute/ switch user
-    - `su - <username>` - switch to another user account 
-    - `su - root` or `sudo su` - switch to root
-    - `sudoedit` - gain elevated editing permissions to a specific file if, and only if, the user is member of `editors` group and the group has editing permissions to the file
-        - `%editors ALL = sudoedit /path/to/file`
-    - `visudo`
-        - edits `/etc/sudoers`
-        - Add users to `sudo` group 
-        - `visudo -c` checks the sudoers file for errors
-    - `wheel` 
-        - Group for granting users `sudo` right
-        - Used on distros that do not by default have the `sudo` group
-        - e.g. Centos
+- `su - <username>` - switch to another user account 
+- `su - root` or `sudo su` - switch to root
+- `sudoedit` - gain elevated editing permissions to a specific file if, and only if, the user is member of `editors` group and the group has editing permissions to the file
+    - `%editors ALL = sudoedit /path/to/file`
+- `visudo`
+    - edits `/etc/sudoers`
+    - Add users to `sudo` group 
+    - `visudo -c` checks the sudoers file for errors
+- `wheel` 
+    - Group for granting users `sudo` right
+    - Used on distros that do not by default have the `sudo` group
+    - e.g. Centos
 
 Managing users and groups:
-    - `useradd` - add a user
-        - `-D` - show default settigns for cerating a user
-        - `-u` - choose a specific uid
-        - `-s` - choose a specific shell
-        - `-m` - explicitely create a home directory
-        - `-r` - create system user
-        - `-e` - set expiration date for the user
-        - `-c` - add comment to the user, e.g. full name
-    - `userdel` - delete a user
-        - `-r` - delete the home directory also
-    - `usermod` - modify a user
-        - `-l` - set new login name
-        - `-u` - set new uid
-        - `-a -G` - add the user to a group
-    - `groupadd` - create a group
-        - `--system` - create a system group
-        - `--gid` - set gid
-        - `-o` - create group with duplicate gid
-    - `groupmod` - modify group
-        - `-g` - change name
-        - `-u` - change gid
-    - `chage` - change expiration date 
-        - `-E` - set expiration date for user account
-        - `-l` - list expiration date for user
-        - `-w` - set a warning for a user
-    - `passwd` - change password for a user
-        - `-l` - lock or unlock a user 
-        - `-d` - make password blank
-        - `-S` - see password status for a user
-    - `id`- get user id and group membership
-    
+- `useradd` - add a user
+    - `-D` - show default settigns for cerating a user
+    - `-u` - choose a specific uid
+    - `-s` - choose a specific shell
+    - `-m` - explicitely create a home directory
+    - `-r` - create system user
+    - `-e` - set expiration date for the user
+    - `-c` - add comment to the user, e.g. full name
+- `userdel` - delete a user
+    - `-r` - delete the home directory also
+- `usermod` - modify a user
+    - `-l` - set new login name
+    - `-u` - set new uid
+    - `-a -G` - add the user to a group
+- `groupadd` - create a group
+    - `--system` - create a system group
+    - `--gid` - set gid
+    - `-o` - create group with duplicate gid
+- `groupmod` - modify group
+    - `-g` - change name
+    - `-u` - change gid
+- `chage` - change expiration date 
+    - `-E` - set expiration date for user account
+    - `-l` - list expiration date for user
+    - `-w` - set a warning for a user
+- `passwd` - change password for a user
+    - `-l` - lock or unlock a user 
+    - `-d` - make password blank
+    - `-S` - see password status for a user
+- `id`- get user id and group membership
+
 
 
 
