@@ -140,6 +140,100 @@ During the boot many messages are shows. Two ways of showing these are:
   - Remove modules with `rmmod` and add them with `modprobe`.
 
 
+# File System
+
+# The Linux File System
+
+`/` - Root
+- The root directory is the top-level directory in the Linux filesystem hierarchy.
+
+---
+
+`/bin` - Essential Binaries
+- Contains binaries or executables that are essential to the entire OS.
+- Commands like `gzip`, `curl`, `ls` are stored here.
+- All users can by default run these 
+
+---
+
+`/sbin` - System Binaries
+- Contains system binaries or executables for the superuser (root).
+- Example: `mount`.
+
+---
+
+`/lib` - Libraries
+- Shared libraries for essential binaries in `/bin` and `/sbin` are stored here.
+
+---
+
+`/usr` - User Directory
+- Contains non-essential binaries or executables intended for the end user.
+- Includes:
+  - `/usr/bin`: Non-essential binaries.
+  - `/usr/sbin`: Non-essential system binaries.
+  - `/usr/lib`: Libraries for `/usr/bin` and `/usr/sbin`.
+- `/usr/local`:
+  - Contains manually compiled binaries in `/usr/local/bin`.
+  - Provides a safe place to avoid conflicts with system-installed packages.
+- Path and Precedence
+  - All these binaries are mapped together using the `PATH` environment variable (`$PATH`).
+  - `which` command shows the location of a binary and gives precedence to `/usr/bin` if the command exists in multiple places.
+
+---
+
+`/etc` - Editable Text Config
+- Stores system configuration files (e.g., `.config` files).
+
+---
+
+`/home` - User Files
+- Contains user-specific files and configurations.
+
+---
+
+`/boot` - Boot Files
+- Contains files required to boot the system:
+  - `initrd`
+  - The Linux kernel:
+    - `vmlinux`: Uncompressed kernel.
+    - `vmlinuz`: Compressed kernel.
+
+---
+
+`dev` - Device Files
+- Provides access to hardware and drivers as if they are files.
+
+---
+
+`/opt` - Optional Software
+- Stores optional or add-on software.
+
+---
+
+ `/var` - Variable Files
+- Contains files that change while the OS is running:
+  - Logs are stored here.
+
+---
+
+## `/tmp` - Temporary Files
+- Stores temporary files.
+- Files in `/tmp` are non-persistent between reboots.
+
+---
+
+## `/proc` - Process Filesystem
+- An illusionary filesystem created in memory by the Linux kernel.
+- Used to keep track of running processes.
+
+
+
+
+
+
+
+
 
 
 # User and Group management
@@ -297,6 +391,15 @@ Substitute/ switch user
   - `umask 777` - restrict `rwx` for everyone
   - `umask  a-e` - remove default execute permissions for everyone
 
+## Access Control Lists
+- More granular file control than permissions
+- set access to one or multiple directories
+- `getfacl` - Get file ACL It outputs:
+  - file, owner, group, and user/group/other permissions
+- `setfacl` - set file ACL for a user or group specifically
+  - `setfacl -m u:username:rwx /path/to/file_or_directory` - give `username` read, write, and execute permissions to `file`
+  - `setfacl -x -all path/to/file_or_directory` - remove all permissions for all users. Same as `chmod 0000 path/to/file_or_directory`
+  - `-b` - Remove all entries except standard permissions
 
   ## File ownership 
 -  `chown` / `chgrp`
@@ -337,6 +440,7 @@ Substitute/ switch user
   - `-R` - same but recursively
 
 
+
 ## Special permissions
 Less privileged users are allowed to execute a file by assuming the privileges of the file's owner or group
 
@@ -366,9 +470,6 @@ Less privileged users are allowed to execute a file by assuming the privileges o
   - `T` appears if the directory lacks execute permissions `rwxr-xr-T`
 
 
-test
-
-
 
 
 
@@ -377,6 +478,181 @@ test
 
 
 
+
+# Storage 
+
+
+
+
+
+
+
+
+
+
+# Basic scripting
+
+
+# Linux Commands and Features
+
+## Man Pages
+
+- Man pages may have multiple sources, indicated by the `(x)` in the corner.
+- Sections are identified by their number:
+  1. General commands  
+  2. System calls  
+  3. C library functions  
+  4. Special files  
+  5. File formats and conventions  
+  6. Games and screensavers  
+  7. Misc  
+  8. System admin commands/daemons  
+
+### Searching the Man Pages
+- **Search**: Press `/` and type your query to search within a man page.
+- **`apropos`**: Search the name section of all man pages (great for finding commands).
+- **`whatis`**: Display a brief description of a command.
+- **`info`**: Display the info page of a command.
+
+---
+
+## GNU and Unix Commands
+
+### Environment and Basics
+- **`env`**: Display user environment variables (temporary, only for the session).
+- **`pwd`**: Print working (current) directory.
+- **`$HISTFILE`**: Path to the history file (e.g., `~/.bash_history`).
+  - View history: `cat ~/.bash_history` or use the `history` command.
+  - Export session history:
+    ```bash
+    export HISTFILE=<path>
+    ```
+  - Defaults back after logout.
+
+### System Information
+- **`uname`**: Print system information.
+
+### File Operations
+- **`cut`**: Extract portions of a file.
+  - `-c`: Extract specific characters (e.g., `cut -c 3-5 file`).
+  - `-d`: Specify delimiter.
+  - `-f`: Specify field to extract (e.g., `cut -d, -f2 file`).
+
+- **`expand / unexpand`**: Convert tabs to 8 spaces and vice versa.
+  - Example: `expand file > file2`.
+
+- **`wc`**: Count lines, words, and bytes in a file.
+
+- **`fmt`**: Format text.
+
+- **`head / tail`**: Display the first or last lines of a file.
+  - `-n`: Specify the number of lines (default: 5).
+
+- **`join`**: Join two files based on a common field.
+
+- **`nl`**: Similar to `cat` but adds line numbers.
+
+- **`od`**: Octal dump of a file.
+
+- **`paste`**: Merge lines of files.
+
+- **`pr`**: Format files for printing.
+
+- **`sed`**: Stream editor for substitutions.
+  - Example: `sed 's/old/new/' file`.
+
+- **`split`**: Split a file (default: 1000 lines per split).
+  - Example: `split file newfile`.
+
+- **`tr`**: Translate or delete characters.
+
+- **`uniq`**: Remove duplicate adjacent lines.
+  - Use `sort` to make duplicates adjacent before using `uniq`.
+
+- **`expr`**: Perform mathematical operations.
+  - Example: `expr 5 \* 3`.
+
+---
+
+## Disk and Archive Management
+- **`df`**: Display filesystem usage.
+  - Use `df -h` for human-readable format (e.g., MiBs, GiBs).
+
+- **`tar`**: Archive files.
+  - Common options:
+    - `c`: Create an archive.
+    - `v`: Verbose (list files being processed).
+    - `f`: Specify the filename.
+    - `z`: Compress or decompress with gzip.
+    - `t`: List archive contents.
+  - Examples:
+    ```bash
+    tar cvf archive.tar file1 file2
+    tar zcvf archive.tar.gz file1 file2
+    tar tvf archive.tar
+    ```
+
+- **`gzip`**: Compress files using the DEFLATE algorithm.
+  - Use `gunzip` to decompress.
+
+- **`dd`**: Copy and convert files.
+  - Example: Backup the MBR (Master Boot Record):
+    ```bash
+    dd if=/dev/sda of=mbr.bak bs=446 count=1
+    ```
+
+- **`xxd`**: Hexdump files.
+
+---
+
+## Streams and Redirection
+- **Streams**:
+  - `STDIN` (0): Input.
+  - `STDOUT` (1): Output.
+  - `STDERR` (2): Error.
+
+- **Redirection**:
+  - `>`: Redirect output to a file (overwrites existing content).
+    ```bash
+    command > file
+    ```
+  - `>>`: Append output to a file.
+    ```bash
+    command >> file
+    ```
+  - `<`: Redirect a file as input to a command.
+    ```bash
+    command < file
+    ```
+  - `2>`: Redirect errors to a file.
+    ```bash
+    command 2> error.log
+    ```
+  - Redirect both `STDOUT` and `STDERR`:
+    ```bash
+    command > file 2>&1
+    ```
+
+- **Piping**:
+  - Use `|` to chain commands.
+  - Example:
+    ```bash
+    ls | wc -l
+    ```
+
+- **`xargs`**: Process input line by line.
+  - Example:
+    ```bash
+    find . -name "*.txt" | xargs rm
+    ```
+
+- **`tee`**: Redirect output to a file while also displaying it.
+  - Example:
+    ```bash
+    ls | tee output.txt
+    ```
+
+---
 
 
     
