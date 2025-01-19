@@ -340,7 +340,7 @@ Substitute/ switch user
 ## Special permissions
 Less privileged users are allowed to execute a file by assuming the privileges of the file's owner or group
 
-1. SUID - Set User ID (`s`/ `S` on user position)
+1. **SUID - Set User ID** (`s`/ `S` on user position)
 - **Purpose**: Allows a file to execute with the permissions of its owner, regardless of who runs it.
 - **Applicable to**: Executable files.
 - **Usage**: Commonly used for programs that require elevated privileges (e.g., passwd).
@@ -348,7 +348,7 @@ Less privileged users are allowed to execute a file by assuming the privileges o
   - `s` replaces `x` in the user execute field if executable `rws------`
   - `S` appears if the file lacks execute permissions `rwS------`
 
-2. SGID - Set Group ID
+2. **SGID - Set Group ID** Set User ID (`s`/ `S` on group position)
 - **Purpose:**
   - For files: Ensures the file executes with the permissions of its group.
   - For directories: Files created inside inherit the group ownership of the directory, not the creator’s primary group.
@@ -358,7 +358,7 @@ Less privileged users are allowed to execute a file by assuming the privileges o
 -   `S` appears if the file lacks execute permissions `rwxr-Sr-x`
 
 
-3. Sticky Bit (`t` / `T` on others execute position)
+3. **Sticky Bit** (`t` / `T` on others execute position)
 - **Purpose:** Restricts deletion of files within a directory. Only the owner of a file, the owner of the directory, or the root user can delete files in that directory.
 - **Applicable to:** Directories (rarely used on files).
 - **Symbol:**
