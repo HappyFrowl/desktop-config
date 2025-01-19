@@ -211,19 +211,19 @@ During the boot many messages are shows. Two ways of showing these are:
 
 ---
 
- `/var` - Variable Files
+`/var` - Variable Files
 - Contains files that change while the OS is running:
   - Logs are stored here.
 
 ---
 
-## `/tmp` - Temporary Files
+`/tmp` - Temporary Files
 - Stores temporary files.
 - Files in `/tmp` are non-persistent between reboots.
 
 ---
 
-## `/proc` - Process Filesystem
+`/proc` - Process Filesystem
 - An illusionary filesystem created in memory by the Linux kernel.
 - Used to keep track of running processes.
 
@@ -237,16 +237,16 @@ During the boot many messages are shows. Two ways of showing these are:
 
 
 # User and Group management
-Root
-    - super user
-    - admin 
-    - UID 0 
+**Root:**
+  - super user
+  - admin 
+  - UID 0 
 
-Regular user 
-    - Runs apps
-    - Configures databases, websites, etc
+**Regular user:**
+  - Runs apps
+  - Configures databases, websites, etc
 
-Service user:
+**Service user:**
 - Specific to the service (webserver, database)
 - No interactive login
 - Runs in the background
@@ -492,7 +492,6 @@ Less privileged users are allowed to execute a file by assuming the privileges o
 
 # Basic scripting
 
-
 # Linux Commands and Features
 
 ## Man Pages
@@ -531,6 +530,8 @@ Less privileged users are allowed to execute a file by assuming the privileges o
 
 ### System Information
 - **`uname`**: Print system information.
+- `uname -r` - Print kernel versiokn
+- `uname -n` - Print node name, i.e. Distro
 
 ### File Operations
 - **`cut`**: Extract portions of a file.
@@ -652,7 +653,166 @@ Less privileged users are allowed to execute a file by assuming the privileges o
     ls | tee output.txt
     ```
 
+
+## `if` Statements in Shell Scripting
+
+Conditional expressions in shell scripting allow you to evaluate strings, files, and directories. Below are some commonly used conditions.
+
 ---
+
+### String Conditions
+- **`-z <string>`**:  
+  True if the length of `<string>` is zero.
+- **`-n <string>`**:  
+  True if the length of `<string>` is non-zero.
+- **`<string1> = <string2>`**:  
+  True if `<string1>` is equal to `<string2>`.
+- **`<string1> != <string2>`**:  
+  True if `<string1>` is not equal to `<string2>`.
+- **`<string>`**:  
+  True if `<string>` is not empty.
+
+---
+
+### File and Directory Conditions
+- **`-e <file>`**:  
+  True if `<file>` exists.
+- **`-f <file>`**:  
+  True if `<file>` exists and is a regular file.
+- **`-d <directory>`**:  
+  True if `<directory>` exists and is a directory.
+- **`-x <file>`**:  
+  True if `<file>` exists and is executable.
+- **`-s <file>`**:  
+  True if `<file>` exists and has a size greater than zero.
+
+
+
+---
+
+
+# Searching Text Files Using Regular Expressions
+
+## Regular Expressions
+Regular expressions (regex) are sequences of symbols and characters used to express patterns for searching text.
+
+### Symbols
+- `|`: OR  
+  Example: `grey|gray` matches either "grey" or "gray".
+- `()`: Grouping  
+  Example: `gr(e|a)y` matches "grey" or "gray".
+- `$`: End of line  
+  Example: `e$` matches any line ending with "e".
+- `^`: Start of line  
+  Example: `^Hello` matches lines starting with "Hello".
+- `.`: Matches any single character.
+
+### Quantifiers
+- `?`: 0 or 1 occurrence of the preceding element.
+- `*`: 0 or more occurrences of the preceding element.
+- `+`: 1 or more occurrences of the preceding element.
+- `{n}`: Matches the preceding element exactly `n` times.
+- `{min,}`: Matches the preceding element at least `min` times.
+- `{min,max}`: Matches the preceding element between `min` and `max` times.
+
+---
+
+## `grep`
+- Stands for **Globally search for a Regular Expression and Print**.
+- Uses symbols and regular expressions to search plain text.
+
+### Commands
+- **`grep`**: Basic search.
+- **`egrep`**: Extended `grep`, allowing regular expression quantifiers without escaping.
+- **`fgrep`**: Literal search; no interpretation of special characters.
+
+### Examples
+- `grep <pattern> *`: Search files in the current directory.
+- `grep -v 'e$' *`: Find strings that do not end with "e".
+- `egrep 'l+' *`: Match one or more occurrences of "l" without escaping.
+- `fgrep 'l\+' *`: Search for a literal `\` and `+`.
+
+---
+
+## `sed` - Stream Editor
+- Replace characters in a regular expression.
+- Syntax:
+  ```bash
+  sed 's/<pattern>/<replacement>/' <file>
+
+
+
+# Performing File Editing Using `vim`
+
+`vim` is a powerful text editor in Linux with two primary modes: **Command Mode** and **Insert Mode**.
+
+---
+
+## Modes
+
+### 1. Command Mode
+- Used for navigating and manipulating text without typing.
+- Key bindings control movement and text actions.
+
+### 2. Insert Mode
+- Used for directly editing text.
+- Entered using specific keys (e.g., `i`, `a`, `o`) from Command Mode.
+
+---
+
+## Navigation in Command Mode
+- **`h`**: Move left.
+- **`l`**: Move right.
+- **`j`**: Move down.
+- **`k`**: Move up.
+- **`/`**: Search forward.
+  - Use **`n`** for the next occurrence.
+- **`?`**: Search backward.
+  - Use **`n`** for the next occurrence.
+- **`Shift+g`**: Move to the end of the file.
+
+---
+
+## Editing in Command Mode
+
+### Deleting Text
+- **`x`**: Delete the character under the cursor.
+- **`dd`**: Delete the current line.
+
+### Pasting Text
+- **`p`**: Paste below the current line.
+- **`P`**: Paste above the current line.
+
+### Entering Insert Mode
+- **`i`**: Insert before the cursor.
+- **`a`**: Insert after the cursor.
+- **`o`**: Insert a new line below the current line.
+- **`O`**: Insert a new line above the current line.
+
+---
+
+## Saving and Exiting
+
+### Without Saving
+- **`:q`**: Exit without saving.
+- **`:q!`**: Force exit without saving.
+
+### Saving
+- **`:w`**: Save the file.
+- **`:wq`**: Save and exit.
+- **`Shift+ZZ`**: Save and exit.
+
+---
+
+## Additional Commands
+- **`/`**: Search forward for a term.
+- **`?`**: Search backward for a term.
+- **`n`**: Jump to the next search result.
+- **`N`**: Jump to the previous search result.
+
+---
+
+
 
 
     
