@@ -39,6 +39,21 @@
       owner: root
       group: root
 
+  - name:   Add Brave Browser repo key
+    become: true
+    shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+  - name: Copy Brave Browser GPG file
+    shell: echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" > /etc/apt/sources.list.d/brave-browser-release.list
+
+  - name: Add Signal signing key
+    become: true
+    shell: wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg \ cat signal-desktop-keyring.gpg | sudo tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+
+  - name: Add Signal repo
+    become: true
+    shell: echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\  sudo tee /etc/apt/sources.list.d/signal-xenial.list
+
   - name: Update apt cache
     ansible.builtin.apt:
       update_cache: yes
@@ -61,13 +76,8 @@
       - tldr
       - tree
       - iperf
-
-  - name:   Add Brave Browser repo key
-    become: true
-    shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-
-  - name: Copy Brave Browser GPG file
-    shell: echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" > /etc/apt/sources.list.d/brave-browser-release.list   
+      - brave-browser
+      - signal-desktop
 
   - name: Copy .bashrc config file
     ansible.builtin.copy:
@@ -82,12 +92,6 @@
       dest: "/home/filip/.inputrc"
       owner: filip
       group: filip
-
-  - name: Install Brave Browser
-    become: true
-    ansible.builtin.apt:
-      name: brave-browser
-      state: present
 
   - name: Configure nvidia power management
     ansible.builtin.shell: echo "options nvidia NVreg_PreserveVideoMemoryAllocations=1 NVreg_TemporaryFilePath=/var/tmp" > /etc/modprobe.d/nvidia-power-management.conf
