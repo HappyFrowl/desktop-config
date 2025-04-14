@@ -39,7 +39,7 @@
       owner: root
       group: root
 
-  - name:   Add Brave Browser repo key
+  - name: Add Brave Browser repo key
     become: true
     shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 
@@ -58,9 +58,13 @@
     become: true
     shell: echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\  sudo tee /etc/apt/sources.list.d/signal-xenial.list
 
-  - name: Update apt cache
+  - name: Update apt
     ansible.builtin.apt:
       update_cache: yes
+
+  - name: upgrade system
+    ansible.builtin.apt:
+      upgrade: dist
 
   - name: Install packages
     ansible.builtin.apt:
