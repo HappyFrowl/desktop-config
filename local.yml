@@ -76,7 +76,7 @@
       - python3-psutil
       - timeshift
       - ksystemlog
-      - latpak
+      - flatpak
       - webcamoid
       - adb
       - net-tools
