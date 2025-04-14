@@ -56,7 +56,7 @@
 
   - name: Add Signal repo
     become: true
-    shell: echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\  sudo tee /etc/apt/sources.list.d/signal-xenial.list
+    shell: echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |  sudo tee /etc/apt/sources.list.d/signal-xenial.list
 
   - name: Update apt cache
     ansible.builtin.apt:
