@@ -56,7 +56,7 @@
 
   - name: Add Signal repo
     become: true
-    shell: echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |  sudo tee /etc/apt/sources.list.d/signal-xenial.list
+    shell: echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\  sudo tee /etc/apt/sources.list.d/signal-xenial.list
 
   - name: Update apt cache
     ansible.builtin.apt:
@@ -71,7 +71,7 @@
       - python3-psutil
       - timeshift
       - ksystemlog
-      - flatpak
+      - latpak
       - webcamoid
       - adb
       - net-tools
@@ -107,7 +107,6 @@
     become: true
     community.general.flatpak:
       name:
-        - com.ktechpit.whatsie
         - org.onlyoffice.desktopeditors
         - io.gitlab.librewolf-community
         - org.videolan.VLC
