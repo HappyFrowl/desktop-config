@@ -6,13 +6,13 @@ set -e
 
 update() {
 	echo -e "Please provide password\n"
-    sudo apt update
-    echo -e  "\nApt packages:" | tee -a ${LOGFILE}
-    sudo apt dist-upgrade -y 2>>${ERRORLOG} | tee -a ${LOGFILE}
+	sudo apt update
+	echo -e  "\nApt packages:" | tee -a ${LOGFILE}
+	sudo apt dist-upgrade -y 2>>${ERRORLOG} | tee -a ${LOGFILE}
 }
 
 cleanup() {
-    sudo apt autoremove -yy 2>>${ERRORLOG} | tee -a ${LOGFILE}
+	sudo apt autoremove -yy 2>>${ERRORLOG} | tee -a ${LOGFILE}
 	sudo apt autoclean 2>>${ERRORLOG} | tee -a ${LOGFILE}
 }
 
@@ -34,15 +34,29 @@ export DEBIAN_FRONTEND="noninteractive"
 LOGFILE="/var/log/update/update.log"
 ERRORLOG="/var/log/update/error.log"
 
-# execute functions
+# Check for file existence and create it not exists
+FILES=("$LOGFILE" "$ERRORLOG")
+for file in "${FILES[@]}"; do
+	dir=$(dirname $file)
+	sudo mkdir -p $dir
+
+	if [ ! -f $file ]; then
+		sudo touch $file
+	fi
+done
+
+# Execute functions
 echo "Welcome to Update Manager"
-echo -e "\n$(date)" | tee -a ${LOGFILE}
+echo -e "\n$(date)" | sudo tee -a $LOGFILE
 START_TIME=$SECONDS
 
 update
 cleanup
-update_flatpak
-cleanup_flatpak
+
+if which flatpak ; then
+	update_flatpak
+	cleanup_flatpak
+fi
 
 echo "----------------------------------------"
 echo "-           Update completed           -"
