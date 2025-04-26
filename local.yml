@@ -87,6 +87,7 @@
       - iperf
       - brave-browser
       - signal-desktop
+      - vim
 
   - name: Copy .bashrc config file
     ansible.builtin.copy:
