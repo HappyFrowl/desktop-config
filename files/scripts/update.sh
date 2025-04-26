@@ -47,7 +47,7 @@ done
 
 # Execute functions
 echo "Welcome to Update Manager"
-echo -e "\n$(date)" | sudo tee -a $LOGFILE
+echo -e "\n$(date)" | tee -a $LOGFILE
 START_TIME=$SECONDS
 
 update
