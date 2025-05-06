@@ -121,15 +121,6 @@
         - org.qbittorrent.qBittorrent
       state: present
 
-  - name: Download TeamViewer
-    ansible.builtin.get_url:
-      url: https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
-      dest: "/tmp/teamviewer.deb"
-
-  - name: Install TeamViewer
-    become: true
-    ansible.builtin.shell: dpkg -i "/tmp/teamviewer.deb"
-
   - name: Download Visual Studio Code
     ansible.builtin.get_url:
       url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
