@@ -37,7 +37,7 @@ ERRORLOG="/var/log/update/error.log"
 # Check for file existence and create it not exists
 FILES=("$LOGFILE" "$ERRORLOG")
 for file in "${FILES[@]}"; do
-	DIR=$(dirname $FILE)
+	DIR=$(dirname $file)
 	sudo mkdir -p $DIR
 
 	if [ ! -f $file ]; then
