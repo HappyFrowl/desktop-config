@@ -37,11 +37,11 @@ ERRORLOG="/var/log/update/error.log"
 # Check for file existence and create it not exists
 FILES=("$LOGFILE" "$ERRORLOG")
 for file in "${FILES[@]}"; do
-	dir=$(dirname $file)
-	sudo mkdir -p $dir
+	DIR=$(dirname $FILE)
+	sudo mkdir -p $DIR
 
 	if [ ! -f $file ]; then
-		sudo touch $file
+		sudo touch $FILE
 	fi
 done
 
