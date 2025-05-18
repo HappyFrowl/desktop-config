@@ -29,3 +29,7 @@ cat -v
 
 #remove pc speaker noise in eg tty
 modprobe -r pcspkr 
+
+
+# change all instances of x to y: 
+:%s/x/y/g
