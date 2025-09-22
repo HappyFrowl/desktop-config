@@ -14,8 +14,7 @@ Active=true
 EveningBeginFixed=2300
 Mode=Times
 MorningBeginFixed=0700
-NightTemperature=3000
-TransitionTime=20
+NightTemperature=2700
 
 [Tiling]
 padding=4
@@ -32,6 +31,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][3c373409-48e0-57e9-a1a9-eb32e49f8772]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][3ef48749-fe25-5656-8ffa-7d22577cceaf]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][4b87bd91-27d3-5707-a0d2-104292040599]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -42,6 +44,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][648da9b2-b8d2-531d-b4e4-73507e0c9914]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][66f36a0c-3d43-556f-a653-a955a6347fa8]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][6e095e16-7b8f-5160-9579-342270366143]

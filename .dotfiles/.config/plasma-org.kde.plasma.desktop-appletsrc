@@ -21,8 +21,8 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][111][Applets][112][Configuration]
 PreloadWeight=100
-popupHeight=638
-popupWidth=733
+popupHeight=650
+popupWidth=745
 
 [Containments][111][Applets][112][Configuration][ConfigDialog]
 DialogHeight=660
@@ -45,12 +45,12 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][111][Applets][114][Configuration][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
+DialogHeight=540
+DialogWidth=720
 
 [Containments][111][Applets][114][Configuration][General]
 groupedTaskVisualization=1
-launchers=preferred://filemanager,applications:org.kde.konsole.desktop,applications:brave-browser.desktop,applications:io.gitlab.librewolf-community.desktop,applications:spotify.desktop,applications:code.desktop,applications:org.kde.kate.desktop,applications:org.kde.kcalc.desktop,file:///usr/share/applications/com.teamviewer.TeamViewer.desktop,applications:virtualbox.desktop
+launchers=preferred://filemanager,applications:org.kde.konsole.desktop,applications:brave-browser.desktop,applications:io.gitlab.librewolf-community.desktop,applications:spotify.desktop,applications:code.desktop,applications:jetbrains-pycharm-e70b96c4-ce8e-4f45-99be-2fd20505a614.desktop,applications:org.kde.kate.desktop,applications:org.kde.kcalc.desktop,applications:signal-desktop.desktop,applications:virtualbox.desktop,applications:com.github.iwalton3.jellyfin-media-player.desktop
 wheelEnabled=false
 
 [Containments][111][Applets][115]
@@ -71,19 +71,24 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][111][Applets][129][Configuration]
 PreloadWeight=100
-popupHeight=550
-popupWidth=484
+popupHeight=558
+popupWidth=818
 
 [Containments][111][Applets][129][Configuration][Appearance]
 customDateFormat=dd/MM/yyyy
 dateFormat=custom
+enabledCalendarPlugins=holidaysevents
 firstDayOfWeek=1
+fontFamily=Bitstream Charter
+fontSize=18
+fontStyleName=Regular
+fontWeight=400
 showWeekNumbers=true
 use24hFormat=2
 
 [Containments][111][Applets][129][Configuration][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
+DialogHeight=540
+DialogWidth=720
 
 [Containments][111][Applets][130]
 immutability=1
@@ -103,8 +108,8 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.private.systemtray
-popupHeight=528
-popupWidth=528
+popupHeight=540
+popupWidth=540
 wallpaperplugin=org.kde.image
 
 [Containments][117][Applets][118][Configuration]
@@ -121,14 +126,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][117][Applets][121][Configuration]
-PreloadWeight=70
+PreloadWeight=100
 
 [Containments][117][Applets][122]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][117][Applets][122][Configuration]
-PreloadWeight=60
+PreloadWeight=70
 
 [Containments][117][Applets][123][Configuration]
 PreloadWeight=42
@@ -157,7 +162,7 @@ migrated=true
 
 [Containments][117][Applets][131]
 immutability=1
-plugin=org.kde.plasma.nightcolorcontrol
+plugin=org.kde.plasma.cameraindicator
 
 [Containments][117][Applets][131][Configuration]
 PreloadWeight=0
@@ -173,7 +178,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][117][Applets][134][Configuration]
-PreloadWeight=100
+PreloadWeight=97
 
 [Containments][117][Applets][163][Configuration]
 PreloadWeight=42
@@ -189,20 +194,37 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][117][Applets][166][Configuration]
-PreloadWeight=92
+PreloadWeight=97
 
 [Containments][117][Applets][167][Configuration]
 PreloadWeight=42
 
+[Containments][117][Applets][220]
+immutability=1
+plugin=org.kde.plasma.brightness
+
+[Containments][117][Applets][220][Configuration]
+PreloadWeight=55
+
+[Containments][117][Applets][223]
+immutability=1
+plugin=org.kde.plasma.devicenotifier
+
+[Containments][117][Applets][223][Configuration]
+PreloadWeight=100
+
+[Containments][117][Applets][224][Configuration]
+PreloadWeight=42
+
 [Containments][117][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
+DialogHeight=540
+DialogWidth=720
 
 [Containments][117][General]
-extraItems=org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.clipboard
-hiddenItems=whatsdesk1,org.kde.plasma.nightcolorcontrol,org.kde.plasma.bluetooth,chrome_status_icon_1,blueman,chrome_status_icon_2,Plasma_microphone,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.battery,WhatSie
+extraItems=org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.brightness,org.kde.plasma.devicenotifier
+hiddenItems=whatsdesk1,org.kde.plasma.nightcolorcontrol,org.kde.plasma.bluetooth,chrome_status_icon_1,blueman,chrome_status_icon_2,Plasma_microphone,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.battery,WhatSie,org.kde.plasma.brightness
 iconSpacing=1
-knownItems=org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.volume
+knownItems=org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.cameraindicator,org.kde.plasma.brightness,org.kde.kdeconnect
 shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement,privateinternetaccess,whatsapp-desktop-linux1
 
 [Containments][136]
@@ -220,8 +242,8 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][136][Applets][137][Configuration]
 PreloadWeight=100
-popupHeight=574
-popupWidth=733
+popupHeight=586
+popupWidth=745
 
 [Containments][136][Applets][137][Configuration][General]
 favoritesPortedToKAstats=true
@@ -237,8 +259,12 @@ plugin=org.kde.plasma.pager
 immutability=1
 plugin=org.kde.plasma.icontasks
 
+[Containments][136][Applets][139][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][136][Applets][139][Configuration][General]
-launchers=preferred://filemanager,preferred://browser
+launchers=preferred://filemanager,preferred://browser,applications:signal-desktop.desktop
 
 [Containments][136][Applets][140]
 immutability=1
@@ -265,6 +291,7 @@ popupWidth=484
 customDateFormat=dd/MM/yyyy
 dateFormat=custom
 firstDayOfWeek=1
+fontWeight=400
 use24hFormat=2
 
 [Containments][136][Applets][154][Configuration][ConfigDialog]
@@ -335,7 +362,7 @@ migrated=true
 
 [Containments][142][Applets][156]
 immutability=1
-plugin=org.kde.plasma.nightcolorcontrol
+plugin=org.kde.plasma.cameraindicator
 
 [Containments][142][Applets][156][Configuration]
 PreloadWeight=0
@@ -375,22 +402,33 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][142][Applets][171][Configuration]
-PreloadWeight=49
+PreloadWeight=54
 
 [Containments][142][Applets][171][Configuration][General]
 showPercentage=true
 
+[Containments][142][Applets][219]
+immutability=1
+plugin=org.kde.plasma.brightness
+
+[Containments][142][Applets][221][Configuration]
+PreloadWeight=42
+
+[Containments][142][Applets][222][Configuration]
+PreloadWeight=42
+
 [Containments][142][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
+DialogHeight=540
+DialogWidth=720
 
 [Containments][142][General]
-extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.battery
-hiddenItems=Discover Notifier_org.kde.DiscoverNotifier,whatsdesk1,org.kde.plasma.bluetooth,chrome_status_icon_1,privateinternetaccess,chrome_status_icon_2,org.kde.plasma.notifications,whatsapp-desktop-linux1,org.kde.plasma.nightcolorcontrol,WhatSie,blueman
-knownItems=org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.volume
+extraItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.cameraindicator,org.kde.plasma.brightness
+hiddenItems=Discover Notifier_org.kde.DiscoverNotifier,whatsdesk1,org.kde.plasma.bluetooth,chrome_status_icon_1,privateinternetaccess,chrome_status_icon_2,org.kde.plasma.notifications,whatsapp-desktop-linux1,org.kde.plasma.nightcolorcontrol,WhatSie,blueman,org.kde.plasma.brightness
+knownItems=org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.cameraindicator,org.kde.plasma.brightness,org.kde.kdeconnect
 shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.battery
 
 [Containments][168]
+ItemGeometries-1707x960=
 ItemGeometries-1920x1080=
 ItemGeometries-2276x1280=
 ItemGeometries-2560x1440=
@@ -408,7 +446,7 @@ DialogHeight=660
 DialogWidth=880
 
 [Containments][168][General]
-positions={"2560x1440":["1"\\,"21"\\,"desktop:/config script.sh"\\,"0"\\,"4"\\,"desktop:/ticket system"\\,"0"\\,"5"\\,"desktop:/parameters.json"\\,"0"\\,"6"\\,"desktop:/template.json"\\,"0"\\,"7"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/testy"\\,"0"\\,"1"\\,"desktop:/bla"\\,"0"\\,"2"\\,"desktop:/bladeel2"\\,"0"\\,"3"]\\,"1920x1080":["1"\\,"16"\\,"desktop:/bla"\\,"0"\\,"2"\\,"desktop:/parameters.json"\\,"0"\\,"5"\\,"desktop:/config script.sh"\\,"0"\\,"4"\\,"desktop:/ticket system"\\,"0"\\,"7"\\,"desktop:/template.json"\\,"0"\\,"6"\\,"desktop:/testy"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/bladeel2"\\,"0"\\,"3"]\\,"0x0":[]\\,"2276x1280":[]\\,"1080x1920":[""]\\,"2048x1080":["1"\\,"17"\\,"desktop:/bla"\\,"0"\\,"4"\\,"desktop:/asdsds"\\,"0"\\,"3"\\,"desktop:/testy"\\,"0"\\,"2"\\,"desktop:/testfolder"\\,"0"\\,"1"\\,"desktop:/StudyMaterials"\\,"0"\\,"0"\\,"desktop:/ticket system"\\,"0"\\,"9"\\,"desktop:/itinerary"\\,"0"\\,"8"\\,"desktop:/config script.sh"\\,"0"\\,"7"\\,"desktop:/config device names"\\,"0"\\,"6"\\,"desktop:/bladeel2"\\,"0"\\,"5"]\\,"4480x1440":[""]}
+positions={"0x0":[],"1080x1920":[""],"1707x960":["1","15","desktop:/config script.sh","0","3","desktop:/StudyMaterials","0","5","desktop:/kutleven","0","4","desktop:/bladeel2","0","1","desktop:/testy","0","6","desktop:/bla","0","0","desktop:/ticket system","0","2"],"1920x1080":["1","16","desktop:/bla","0","2","desktop:/config script.sh","0","4","desktop:/ticket system","0","7","desktop:/kutleven","0","8","desktop:/testy","0","1","desktop:/StudyMaterials","0","0","desktop:/bladeel2","0","3"],"2048x1080":["1","17","desktop:/bla","0","4","desktop:/asdsds","0","3","desktop:/testy","0","2","desktop:/testfolder","0","1","desktop:/StudyMaterials","0","0","desktop:/ticket system","0","9","desktop:/itinerary","0","8","desktop:/config script.sh","0","7","desktop:/config device names","0","6","desktop:/bladeel2","0","5"],"2276x1280":["1","21","desktop:/testy","0","6","desktop:/lijstje huis.xlsx","0","7","desktop:/ticket system","0","2","desktop:/Krov 27","0","8","desktop:/config script.sh","0","3","desktop:/StudyMaterials","0","5"],"2560x1440":["1","21","desktop:/kutleven","0","5","desktop:/config script.sh","0","4","desktop:/ticket system","0","6","desktop:/testy","0","1","desktop:/StudyMaterials","0","0","desktop:/bladeel2","0","3","desktop:/bla","0","2"],"4480x1440":[""]}
 sortMode=-1
 
 [Containments][169]
@@ -424,7 +462,13 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][169][General]
+positions={"1707x960":[]}
+
 [Containments][170]
+ItemGeometries-2276x1280=
+ItemGeometries-2560x1440=
+ItemGeometriesHorizontal=
 activityId=9f86f85b-2a62-486b-ad9f-7726d4e367e9
 formfactor=0
 immutability=1
@@ -433,6 +477,160 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][170][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=697
+ToolBoxButtonY=54
+positions={"2276x1280":[]}
+
+[Containments][196]
+activityId=
+formfactor=2
+immutability=1
+lastScreen=2
+location=4
+plugin=org.kde.panel
+wallpaperplugin=org.kde.image
+
+[Containments][196][Applets][197]
+immutability=1
+plugin=org.kde.plasma.kickoff
+
+[Containments][196][Applets][197][Configuration]
+PreloadWeight=100
+popupHeight=574
+popupWidth=729
+
+[Containments][196][Applets][197][Configuration][General]
+favoritesPortedToKAstats=true
+
+[Containments][196][Applets][197][Configuration][Shortcuts]
+global=Alt+F1
+
+[Containments][196][Applets][198]
+immutability=1
+plugin=org.kde.plasma.pager
+
+[Containments][196][Applets][199]
+immutability=1
+plugin=org.kde.plasma.icontasks
+
+[Containments][196][Applets][199][Configuration][General]
+launchers=preferred://filemanager,preferred://browser
+
+[Containments][196][Applets][200]
+immutability=1
+plugin=org.kde.plasma.marginsseparator
+
+[Containments][196][Applets][201]
+immutability=1
+plugin=org.kde.plasma.systemtray
+
+[Containments][196][Applets][201][Configuration]
+PreloadWeight=65
+SystrayContainmentId=202
+
+[Containments][196][Applets][213]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][196][Applets][213][Configuration]
+PreloadWeight=55
+popupHeight=550
+popupWidth=484
+
+[Containments][196][Applets][213][Configuration][Appearance]
+fontWeight=400
+
+[Containments][196][Applets][214]
+immutability=1
+plugin=org.kde.plasma.showdesktop
+
+[Containments][196][General]
+AppletOrder=197;198;199;200;201;213;214
+
+[Containments][202]
+activityId=
+formfactor=2
+immutability=1
+lastScreen=2
+location=4
+plugin=org.kde.plasma.private.systemtray
+popupHeight=528
+popupWidth=528
+wallpaperplugin=org.kde.image
+
+[Containments][202][Applets][203][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][204][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][205][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][206][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][207]
+immutability=1
+plugin=org.kde.plasma.clipboard
+
+[Containments][202][Applets][208][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][209][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][210][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][211][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][212]
+immutability=1
+plugin=org.kde.plasma.volume
+
+[Containments][202][Applets][212][Configuration][General]
+migrated=true
+
+[Containments][202][Applets][215]
+immutability=1
+plugin=org.kde.plasma.cameraindicator
+
+[Containments][202][Applets][215][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][216]
+immutability=1
+plugin=org.kde.plasma.battery
+
+[Containments][202][Applets][217]
+immutability=1
+plugin=org.kde.plasma.brightness
+
+[Containments][202][Applets][217][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][218][Configuration]
+PreloadWeight=42
+
+[Containments][202][Applets][224]
+immutability=1
+plugin=org.kde.kdeconnect
+
+[Containments][202][ConfigDialog]
+DialogHeight=660
+DialogWidth=880
+
+[Containments][202][General]
+extraItems=org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.brightness,org.kde.kdeconnect
+hiddenItems=Discover Notifier_org.kde.DiscoverNotifier,blueman,org.kde.plasma.clipboard,qBittorrent,privateinternetaccess
+iconSpacing=1
+knownItems=org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.cameraindicator,org.kde.plasma.brightness,org.kde.kdeconnect
+shownItems=org.kde.plasma.battery,org.kde.plasma.volume
+
 [ScreenMapping]
-itemsOnDisabledScreens=0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,5,trash:/0-MD-101 Managing Modern Desktops (Video) Warren,trash:/0-Sander - Linux Foundation Certified System Administrator (LFCS)\\, 3rd Edition,trash:/0-.b4c02c4a26003e5c197f07aea6135ff07de93f1e.parts,trash:/0-MD-101 Pluralsight - Managing Microsoft Desktops series Glenn Weadock,trash:/0-progressz
-screenMapping=desktop:/bla,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/parameters.json,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/template.json,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy%5C,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/bladeel2,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/StudyMaterials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
+itemsOnDisabledScreens=0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,4,trash:/0-MD-101 Pluralsight - Managing Microsoft Desktops series Glenn Weadock,trash:/0-MD-101 Managing Modern Desktops (Video) Warren,trash:/0-Sander - Linux Foundation Certified System Administrator (LFCS)\\, 3rd Edition,trash:/0-.b4c02c4a26003e5c197f07aea6135ff07de93f1e.parts
+screenMapping=desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/StudyMaterials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/lijstje huis.xlsx,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy%5C,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Krov 27,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
