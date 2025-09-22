@@ -15,40 +15,39 @@ ConfigVersion=1
 detailViewIconSize=16
 
 [MainWindow]
-1707x960 screen: Height=884
+1707x960 screen: Height=404
 1707x960 screen: Width=853
-1707x960 screen: Window-Maximized=true
-1707x960 screen: XPosition=853
-1707x960 screen: YPosition=28
+1707x960 screen: XPosition=0
+1707x960 screen: YPosition=508
 1920x1080 screen: Height=887
 1920x1080 screen: Width=1619
 1920x1080 screen: XPosition=941
 1920x1080 screen: YPosition=193
-2 screens: Height=884
-2 screens: Width=1707
+2 screens: Height=1204
+2 screens: Width=2276
 2 screens: Window-Maximized=true
-2 screens: XPosition=0
+2 screens: XPosition=1920
 2 screens: YPosition=28
-2276x1280 screen: Height=844
-2276x1280 screen: Width=1594
-2276x1280 screen: Window-Maximized=true
+2276x1280 screen: Height=1204
+2276x1280 screen: Width=1138
 2276x1280 screen: XPosition=365
 2276x1280 screen: YPosition=196
 2560x1440 screen: Window-Maximized=true
-3 screens: Height=554
-3 screens: Width=911
-3 screens: XPosition=682
-3 screens: YPosition=353
+3 screens: Height=884
+3 screens: Width=1707
+3 screens: Window-Maximized=true
+3 screens: XPosition=0
+3 screens: YPosition=208
 :0.0=:0.0
 DP-0 DP-4=DP-0
 DP-2=DP-2
 DP-2 DP-4=DP-4
 DP-2 DP-4 HDMI-0=DP-2
+DP-2.8 DP-4=DP-2.8
+DP-2.8 DP-4 HDMI-0=DP-4
 DP-4=DP-4
 DP-4 HDMI-0=DP-4
 RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAQAAAAAAAAEYAAACm/wCAAAAAvsAAAAiAFEAdQBpAGMAawBDAG8AbQBtAGEAbgBkAHMARABvAGMAawAAAABMAAACmwAAAXwBAAAD+wAAABwAUwBTAEgATQBhAG4AYQBnAGUAcgBEAG8AYwBrAAAAAEwAAAKbAAABFQEAAAMAAAarAAADKAAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAQAAAOj/////AAAAAAAAAAA=
-ToolBarsMovable=Disabled
 
 [UiSettings]
 ColorScheme=Breeze Dark

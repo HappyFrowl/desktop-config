@@ -4,13 +4,17 @@ update_info=spectacle_clipboard.upd:clipboard-settings-change,spectacle_remember
 [General]
 autoSaveImage=true
 clipboardGroup=PostScreenshotCopyImage
-onLaunchAction=UseLastUsedCapturemode
+launchAction=UseLastUsedCaptureMode
 useReleaseToCapture=true
 
 [GuiConfig]
 quitAfterSaveCopyExport=true
-window-position=745,0
+window-position=2373,0
 
-[Save]
-defaultSaveLocation=file:///home/filip/Pictures/Screenshots
-lastSaveLocation=file:///home/filip/Pictures/Screenshots/Screenshot_20250301_131036-1.png
+[ImageSave]
+imageSaveLocation=file:///home/filip/Pictures/Screenshots
+lastImageSaveLocation=file:///home/filip/Pictures/Screenshots/Screenshot_20250922_012910.png
+translatedScreenshotsFolder=Screenshots
+
+[VideoSave]
+translatedScreencastsFolder=Screencasts
