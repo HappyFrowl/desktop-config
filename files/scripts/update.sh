@@ -15,7 +15,7 @@ handle_error(){
 update() {
 	echo -e "Please provide password\n"
 	sudo apt update || handle_error "Failed to update packages" 
-	echo -e  "\nApt packages:" | tee -a ${LOGFILE} || 
+	echo -e  "\nApt packages:" | tee -a ${LOGFILE} 
 	sudo apt dist-upgrade -y | tee -a ${LOGFILE} || handle_error "Failed to upgrade packages" 
 }
 
@@ -37,7 +37,7 @@ cleanup_flatpak() {
 #region init 
 
 # Set the environment variable to noninteractive
-export DEBIAN_FRONTEND="noninteractive"
+export DEBIAN_FRONTEND=noninteractive
 
 # Set paths
 LOGFILE="/var/log/update/update.log"

@@ -21,8 +21,8 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][111][Applets][112][Configuration]
 PreloadWeight=100
-popupHeight=650
-popupWidth=745
+popupHeight=666
+popupWidth=761
 
 [Containments][111][Applets][112][Configuration][ConfigDialog]
 DialogHeight=660
@@ -71,8 +71,8 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][111][Applets][129][Configuration]
 PreloadWeight=100
-popupHeight=558
-popupWidth=818
+popupHeight=574
+popupWidth=834
 
 [Containments][111][Applets][129][Configuration][Appearance]
 customDateFormat=dd/MM/yyyy
@@ -108,8 +108,8 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.private.systemtray
-popupHeight=540
-popupWidth=540
+popupHeight=556
+popupWidth=556
 wallpaperplugin=org.kde.image
 
 [Containments][117][Applets][118][Configuration]
@@ -178,7 +178,10 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][117][Applets][134][Configuration]
-PreloadWeight=97
+PreloadWeight=100
+
+[Containments][117][Applets][134][Configuration][General]
+currentDetailsTab=details
 
 [Containments][117][Applets][163][Configuration]
 PreloadWeight=42
@@ -194,7 +197,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][117][Applets][166][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][117][Applets][167][Configuration]
 PreloadWeight=42
@@ -242,8 +245,8 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][136][Applets][137][Configuration]
 PreloadWeight=100
-popupHeight=586
-popupWidth=745
+popupHeight=602
+popupWidth=761
 
 [Containments][136][Applets][137][Configuration][General]
 favoritesPortedToKAstats=true
@@ -284,8 +287,8 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][136][Applets][154][Configuration]
 PreloadWeight=100
-popupHeight=550
-popupWidth=484
+popupHeight=554
+popupWidth=488
 
 [Containments][136][Applets][154][Configuration][Appearance]
 customDateFormat=dd/MM/yyyy
@@ -312,8 +315,8 @@ immutability=1
 lastScreen=1
 location=4
 plugin=org.kde.plasma.private.systemtray
-popupHeight=528
-popupWidth=528
+popupHeight=536
+popupWidth=536
 wallpaperplugin=org.kde.image
 
 [Containments][142][Applets][143][Configuration]
@@ -382,7 +385,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][142][Applets][159][Configuration]
-PreloadWeight=92
+PreloadWeight=60
 
 [Containments][142][Applets][160]
 immutability=1
@@ -446,7 +449,7 @@ DialogHeight=660
 DialogWidth=880
 
 [Containments][168][General]
-positions={"0x0":[],"1080x1920":[""],"1707x960":["1","15","desktop:/config script.sh","0","3","desktop:/StudyMaterials","0","5","desktop:/kutleven","0","4","desktop:/bladeel2","0","1","desktop:/testy","0","6","desktop:/bla","0","0","desktop:/ticket system","0","2"],"1920x1080":["1","16","desktop:/bla","0","2","desktop:/config script.sh","0","4","desktop:/ticket system","0","7","desktop:/kutleven","0","8","desktop:/testy","0","1","desktop:/StudyMaterials","0","0","desktop:/bladeel2","0","3"],"2048x1080":["1","17","desktop:/bla","0","4","desktop:/asdsds","0","3","desktop:/testy","0","2","desktop:/testfolder","0","1","desktop:/StudyMaterials","0","0","desktop:/ticket system","0","9","desktop:/itinerary","0","8","desktop:/config script.sh","0","7","desktop:/config device names","0","6","desktop:/bladeel2","0","5"],"2276x1280":["1","21","desktop:/testy","0","6","desktop:/lijstje huis.xlsx","0","7","desktop:/ticket system","0","2","desktop:/Krov 27","0","8","desktop:/config script.sh","0","3","desktop:/StudyMaterials","0","5"],"2560x1440":["1","21","desktop:/kutleven","0","5","desktop:/config script.sh","0","4","desktop:/ticket system","0","6","desktop:/testy","0","1","desktop:/StudyMaterials","0","0","desktop:/bladeel2","0","3","desktop:/bla","0","2"],"4480x1440":[""]}
+positions={"0x0":[],"1080x1920":[""],"1707x960":["1","15","desktop:/config script.sh","0","3","desktop:/lijstje huis.xlsx","0","1","desktop:/ticket system","0","2","desktop:/truenas-25.10.0.1-20251219172107.db","0","4","desktop:/StudyMaterials","0","5","desktop:/Krov 27","0","0","desktop:/testy","0","6","desktop:/brave-gnjebjndbfoadfklaooplilpkecfajpo-Default.desktop","0","7"],"1920x1080":["1","16","desktop:/bla","0","2","desktop:/config script.sh","0","4","desktop:/ticket system","0","7","desktop:/kutleven","0","8","desktop:/testy","0","1","desktop:/StudyMaterials","0","0","desktop:/bladeel2","0","3"],"2048x1080":["1","17","desktop:/bla","0","4","desktop:/asdsds","0","3","desktop:/testy","0","2","desktop:/testfolder","0","1","desktop:/StudyMaterials","0","0","desktop:/ticket system","0","9","desktop:/itinerary","0","8","desktop:/config script.sh","0","7","desktop:/config device names","0","6","desktop:/bladeel2","0","5"],"2276x1280":["1","21","desktop:/testy","0","6","desktop:/ticket system","0","2","desktop:/StudyMaterials","0","5","desktop:/lijstje huis.xlsx","0","7","desktop:/Krov 27","0","8","desktop:/config script.sh","0","3","desktop:/truenas-25.10.0.1-20251219172107.db","0","0"],"2560x1440":["1","21","desktop:/kutleven","0","5","desktop:/config script.sh","0","4","desktop:/ticket system","0","6","desktop:/testy","0","1","desktop:/StudyMaterials","0","0","desktop:/bladeel2","0","3","desktop:/bla","0","2"],"4480x1440":[""]}
 sortMode=-1
 
 [Containments][169]
@@ -498,8 +501,8 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][196][Applets][197][Configuration]
 PreloadWeight=100
-popupHeight=574
-popupWidth=729
+popupHeight=578
+popupWidth=733
 
 [Containments][196][Applets][197][Configuration][General]
 favoritesPortedToKAstats=true
@@ -535,9 +538,9 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][196][Applets][213][Configuration]
-PreloadWeight=55
-popupHeight=550
-popupWidth=484
+PreloadWeight=65
+popupHeight=554
+popupWidth=488
 
 [Containments][196][Applets][213][Configuration][Appearance]
 fontWeight=400
@@ -633,4 +636,4 @@ shownItems=org.kde.plasma.battery,org.kde.plasma.volume
 
 [ScreenMapping]
 itemsOnDisabledScreens=0,f79dfd8b-5ef7-4b02-9462-c8da0612c4a7,4,trash:/0-MD-101 Pluralsight - Managing Microsoft Desktops series Glenn Weadock,trash:/0-MD-101 Managing Modern Desktops (Video) Warren,trash:/0-Sander - Linux Foundation Certified System Administrator (LFCS)\\, 3rd Edition,trash:/0-.b4c02c4a26003e5c197f07aea6135ff07de93f1e.parts
-screenMapping=desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/StudyMaterials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/lijstje huis.xlsx,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy%5C,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Krov 27,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
+screenMapping=desktop:/lijstje huis.xlsx,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Study Materials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/config script.sh,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/StudyMaterials,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/Krov 27,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/brave-gnjebjndbfoadfklaooplilpkecfajpo-Default.desktop,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/testy%5C,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/truenas-25.10.0.1-20251219172107.db,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9,desktop:/ticket system,0,9f86f85b-2a62-486b-ad9f-7726d4e367e9
