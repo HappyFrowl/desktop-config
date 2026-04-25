@@ -99,6 +99,7 @@ alias ruk="sudo bash /usr/local/bin/remove-unusedkernels.sh"
 alias unmount=umount
 alias lastcron="cat /var/log/update/cron.log"
 alias cls=clear
+alias mansplain=man
 
 mkcd(){
 	mkdir -p "$1" ; cd "$_"
@@ -113,12 +114,3 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-tunnel()
-{
- sudo zerotier-cli set 56374ac9a424ec31 allowDefault=1
-}
-
-notunnel()
-{
- sudo zerotier-cli set  56374ac9a424ec31 allowDefault=0
-}
