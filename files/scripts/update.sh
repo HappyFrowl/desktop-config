@@ -68,6 +68,14 @@ if which flatpak ; then
 	cleanup_flatpak
 fi
 
+
+# Update docker container
+cd /home/filip/docker/immich-ML
+sudo docker compose pull
+sudo docker compose up -d
+cd -
+
+
 echo "----------------------------------------"
 echo "-           Update completed           -"
 echo "----------------------------------------"
