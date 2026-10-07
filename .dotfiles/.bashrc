@@ -114,3 +114,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+
+# Created by `pipx` on 2026-05-10 11:17:41
+export PATH="$PATH:/home/filip/.local/bin"

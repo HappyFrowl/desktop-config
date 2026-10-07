@@ -73,8 +73,8 @@ fi
 cd /home/filip/docker/immich-ML
 sudo docker compose pull
 sudo docker compose up -d
+yes | sudo docker system prune -a
 cd -
-
 
 echo "----------------------------------------"
 echo "-           Update completed           -"

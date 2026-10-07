@@ -9,7 +9,6 @@
       name:
         - kcalc
         - kwalletmanager
-        - kdeconnect
         - kalendarac
         - kmail
         - kmailtransport-akonadi
@@ -76,7 +75,6 @@
       - timeshift
       - ksystemlog
       - flatpak
-      - webcamoid
       - adb
       - net-tools
       - network-manager
