@@ -116,7 +116,7 @@
         - org.videolan.VLC
         - org.kde.kcalc
         - org.freedesktop.Platform.GL.nvidia-535-183-01
-        - org.qbittorrent.qBittorrent
+        - org.jellyfin.JellyfinDesktop
       state: present
 
   - name: Download Visual Studio Code
